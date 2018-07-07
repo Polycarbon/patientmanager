@@ -7,12 +7,20 @@
     <br>
     <div class="row col s12 register">
       <form action="/patient/add/new/save" method="post">
+        <div class="input-field col s2">
+          <select id="title" name="title">
+            <option value='นาง'>นาง</option>
+            <option value='นางสาว'>นางสาว</option>
+          </select>
+          <label for="title">คำนำหน้า</label>
+        </div>
+
         <div class="input-field col s6">
           <input type="text" name="name" id="name" class="validate" required>
           <label for="name">ชื่อ-สกุล</label>
         </div>
         <div class="input-field col s2">
-          <input type="number" name="age" id="age" class="validate" required>
+          <input type="number" min="1" max="120" name="age" id="age" class="validate" required>
           <label for="age">อายุ</label>
         </div>
         <div class="input-field col s4">
@@ -21,15 +29,15 @@
         </div>
 
         <div class="input-field col s3">
-          <input type="number" name="weight" id="weight" class="validate" required>
+          <input type="number" min="1" max="120" name="weight" id="weight" class="validate" required>
           <label for="weight">น้ำหนัก (กก.)</label>
         </div>
         <div class="input-field col s3">
-          <input type="number" name="height" id="height" class="validate" required>
+          <input type="number" min="1" max="120" name="height" id="height" class="validate" required>
           <label for="height">สูง (ซม.)</label>
         </div>
         <div class="input-field col s3">
-          <input type="text" name="HN" id="HN" class="validate" required>
+          <input type="text" min="1" name="HN" id="HN" class="validate" required>
           <label for="job">HN</label>
         </div>
         <div class="input-field col s3">
@@ -38,24 +46,24 @@
         </div>
 
         <div class="input-field col s2">
-          <input type="text" name="G" id="G" required>
+          <input type="number" min="0" name="G" id="G" required>
           <label for="G">G</label>
         </div>
         <div class="input-field col s2">
 
-          <input type="text" name="P" id="P" required>
+          <input type="number" min="0" name="P" id="P" required>
           <label for="P">P</label>
         </div>
         <div class="input-field col s2">
-          <input type="text" name="A" id="A" required>
+          <input type="number" min="0" name="A" id="A" required>
           <label for="A">A</label>
         </div>
         <div class="input-field col s2">
-          <input type="text" name="L" id="L" required>
+          <input type="number" min="0" name="L" id="L" required>
           <label for="L">L</label>
         </div>
         <div class="input-field col s3">
-          <input type="text" name="GA" id="GA" required>
+          <input type="number" min="0" name="GA" id="GA" required>
           <label for="GA">GA (wks)</label>
         </div>
 

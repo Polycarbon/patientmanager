@@ -20,20 +20,21 @@
           <li>
             <a class="collapsible-header" style="padding-right:0;">
               <i class="fa fa-user-circle"></i>
-              <span style="padding-left:1em;">Patient</span><i class="material-icons right">expand_more</i>
+              <span style="padding-left:1em;font-family:Ekk;font-weight:bold;font-size:20px">ผู้ป่วย</span>
+              <i class="material-icons right">expand_more</i>
             </a>
             <div class="collapsible-body">
               <ul>
                 <li>
                   <a href="/patients/dashboard">
                     <i class="fa fa-search"></i>
-                    <span style="padding-left:1.25em;">Search</span>
+                    <span style="padding-left:1.25em;font-family:Ekk;font-weight:bold;font-size:17px">ค้นหา</span>
                   </a>
                 </li>
                 <li>
                   <a href="/patient/add/new">
                     <i class="fa fa-user-plus"></i>
-                    <span style="padding-left:1em;">Add Patient</span>
+                    <span style="padding-left:1em;font-family:Ekk;font-weight:bold;font-size:17px">เพิ่มผู้ป่วย</span>
                   </a>
                 </li>
               </ul>
@@ -45,17 +46,18 @@
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
-            <a class="collapsible-header" style="padding-right:0;"> 
+            <a class="collapsible-header" style="padding-right:0;">
               <i class="fa fa-cog"></i>
-              <span style="padding-left:1em;">Setting</span> 
-              <span style="padding-left:1em;"></span><i class="material-icons right">expand_more</i>
+              <span style="padding-left:1em;font-family:Ekk;font-weight:bold;font-size:20px">ตั้งค่า</span>
+              <span style="padding-left:1em;"></span>
+              <i class="material-icons right">expand_more</i>
             </a>
             <div class="collapsible-body">
               <ul>
                 <li>
                   <a href="/user/profile/{{user.id}}">
                     <i class="fa fa-user"></i>
-                    <span style="padding-left:1.25em;">My Profile</span>
+                    <span style="padding-left:1.25em;font-family:Ekk;font-weight:bold;font-size:17px">ข้อมูลส่วนตัว</span>
                   </a>
                 </li>
                 {{#if user.admin}}
@@ -64,20 +66,21 @@
                     <li>
                       <a class="collapsible-header" style="padding-right:0;">
                         <i class="fa fa-users"></i>
-                        <span style="padding-left:1em;">Manage Users</span><i class="material-icons right">expand_more</i>
+                        <span style="padding-left:1em;font-family:Ekk;font-weight:bold;font-size:17px">จัดการผู้ใช้</span>
+                        <i class="material-icons right">expand_more</i>
                       </a>
                       <div class="collapsible-body">
                         <ul>
                           <li>
                             <a href="/user/register" style="padding-left:4em;">
                               <i class="fa fa-plus"></i>
-                              <span style="padding-left:1.25em;">Add User</span>
+                              <span style="padding-left:1.25em;font-family:Ekk;font-weight:bold;font-size:17px">เพิ่มพยาบาล</span>
                             </a>
                           </li>
                           <li>
                             <a href="/user/show" style="padding-left:4em;">
                               <i class="fa fa-pencil-alt"></i>
-                              <span style="padding-left:1.25em;">Edit User</span>
+                              <span style="padding-left:1.25em;font-family:Ekk;font-weight:bold;font-size:17px">แก้ไขข้อมูลพยาบาล</span>
                             </a>
                           </li>
                         </ul>
