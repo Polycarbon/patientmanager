@@ -1,4 +1,4 @@
-{{!-- แบบสรุปข้อมูลการจาหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด) --}}
+{{!-- แบบสรุปข้อมูลการจำหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด) --}}
 
 <br>
 <div class="row z-depth-3">
@@ -8,7 +8,7 @@
     <form action="/patient/form3/save/{{patient.id}}" method="post">
       <div class="row"></div>
       <div class="col s12 center">
-        <span style="font-size: 125%; font-weight: bold;">แบบสรุปข้อมูลการจาหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด)</span>
+        <span style="font-size: 125%; font-weight: bold;">แบบสรุปข้อมูลการจำหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด)</span>
       </div>
       <div class="row"></div>
       <div class="row"></div>
@@ -25,15 +25,15 @@
       <div class="row"></div>
       <div class="col s4">
         <label>ชื่อ-สกุล</label>
-        <input type="text" name="name" placeholder="ชื่อ-สกุล" value="{{patient.name}}" >
+        <input type="text" name="name" placeholder="ชื่อ-สกุล" value="{{patient.name}}">
       </div>
       <div class="col s2">
         <label>อายุ (ปี)</label>
-        <input type="number" name="age" placeholder="อายุ (ปี)" value="{{patient.age}}" >
+        <input type="number" name="age" placeholder="อายุ (ปี)" value="{{patient.age}}">
       </div>
       <div class="col s2">
         <label>HN</label>
-        <input type="text" name="HN" placeholder="HN" value="{{patient.HN}}" >
+        <input type="text" name="HN" placeholder="HN" value="{{patient.HN}}">
       </div>
       <div class="row">
         <div class="col s12">
@@ -45,25 +45,25 @@
       <div class="col s12">
         <div class="col s2">
           <label>เลขที่</label>
-          <input type="text" name="addr1" placeholder="เลขที่" value="{{patient.addr1}}" >
+          <input type="text" name="addr1" placeholder="เลขที่" value="{{patient.addr1}}">
         </div>
         <div class="col s3">
           <label>หมู่/ถนน</label>
-          <input type="text" name="addr2" placeholder="หมู่/ถนน" value="{{patient.addr2}}" >
+          <input type="text" name="addr2" placeholder="หมู่/ถนน" value="{{patient.addr2}}">
         </div>
         <div class="col s3">
           <label>ตำบล</label>
-          <input type="text" name="addr3" placeholder="ตำบล" value="{{patient.addr3}}" >
+          <input type="text" name="addr3" placeholder="ตำบล" value="{{patient.addr3}}">
         </div>
 
         <div class="col s3">
           <label>อำเภอ</label>
-          <input type="text" name="addr4" placeholder="อำเภอ" value="{{patient.addr4}}" >
+          <input type="text" name="addr4" placeholder="อำเภอ" value="{{patient.addr4}}">
         </div>
         <div class="row"></div>
         <div class="col s3 l2">
           <label>จังหวัด</label>
-          <select id="addr5" name="addr5" >
+          <select id="addr5" name="addr5">
             {{#select patient.addr5}}
             <option value='กรุงเทพมหานคร'>กรุงเทพมหานคร</option>
             <option value='กระบี่'>กระบี่</option>
@@ -147,7 +147,7 @@
         </div>
         <div class="col s3 l2">
           <label>โทรศัพท์</label>
-          <input type="tel" name="phone" placeholder="โทรศัพท์" value="{{patient.phone}}" >
+          <input type="tel" name="phone" placeholder="โทรศัพท์" value="{{patient.phone}}">
         </div>
         <div class="col s3 l2">
           <label>สถานที่ใกล้เคียง</label>
@@ -155,7 +155,7 @@
         </div>
         <div class="col s3 l2">
           <label>อาชีพ</label>
-          <input type="text" name="job" placeholder="อาชีพ" value="{{patient.job}}" >
+          <input type="text" name="job" placeholder="อาชีพ" value="{{patient.job}}">
         </div>
       </div>
       <div class="col s3">
@@ -185,15 +185,15 @@
       <div class="col s12">
         <div class="col s1">
           <label>G</label>
-          <input type="text" name="G" placeholder="G" value="{{patient.G}}" >
+          <input type="text" name="G" placeholder="G" value="{{patient.G}}">
         </div>
         <div class="col s1">
           <label>P</label>
-          <input type="text" name="P" placeholder="P" value="{{patient.P}}" >
+          <input type="text" name="P" placeholder="P" value="{{patient.P}}">
         </div>
         <div class="col s2 l1 ">
           <label>GA (wks)</label>
-          <input type="text" name="GA" placeholder="GA (wks)" value="{{patient.GA}}" >
+          <input type="text" name="GA" placeholder="GA (wks)" value="{{patient.GA}}">
         </div>
         <div class="col s8 l9">
           <label>...</label>
@@ -239,11 +239,11 @@
         </div>
         <div class="col s2">
           <label>น้ำหนัก (กก.)</label>
-          <input type="number" name="weight" placeholder="น้ำหนัก (กก.)" value="{{patient.weight}}" >
+          <input type="number" name="weight" placeholder="น้ำหนัก (กก.)" value="{{patient.weight}}">
         </div>
         <div class="col s1 l2">
           <label>สูง (ซม.)</label>
-          <input type="number" name="height" placeholder="สูง (ซม.)" value="{{patient.height}}" >
+          <input type="number" name="height" placeholder="สูง (ซม.)" value="{{patient.height}}">
         </div>
         <div class="col s2 l3">
           <label>BMI</label>

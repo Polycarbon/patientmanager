@@ -1,4 +1,4 @@
-{{!-- แบบสรุปข้อมูลการจาหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด) --}}
+{{!-- แบบสรุปข้อมูลการจำหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด) --}}
 
 <br>
 <div class="row z-depth-3 no-print">
@@ -7,7 +7,7 @@
     {{!-- Form --}}
     <div class="row"></div>
     <div class="col s12 center">
-      <span style="font-size: 125%; font-weight: bold;">แบบสรุปข้อมูลการจาหน่าย / ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง (สูติ/หลังคลอด)</span>
+      <span style="font-size: 125%; font-weight: bold;">แบบสรุปข้อมูลการจำหน่าย / ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง (สูติ/หลังคลอด)</span>
     </div>
     <div class="row"></div>
     <div class="row"></div>
@@ -261,16 +261,16 @@
 
 
     <div class="row"></div>
-   
+
     <div class="col s12">
-        <div class="left">
-          <a class="btn waves-effect waves-light right blue" href="javascript:print('แบบรายงานประวัติ')" name="action">
-            <i class="fa fa-print"></i> Print</a>
-        </div>
-        <div class="right">
-          <a class="btn waves-effect waves-light right red" href="javascript:history.back()" name="action">Back</a>
-        </div>
+      <div class="left">
+        <a class="btn waves-effect waves-light right blue" href="javascript:print('แบบรายงานประวัติ')" name="action">
+          <i class="fa fa-print"></i> Print</a>
       </div>
+      <div class="right">
+        <a class="btn waves-effect waves-light right red" href="javascript:history.back()" name="action">Back</a>
+      </div>
+    </div>
     <div class="row"></div>
 
     <!-- End Form -->
@@ -279,117 +279,117 @@
 
 {{!-- Print Form3 --}}
 <div class="printContainer print printForm" id="form1">
-    <div class="title">
-      <p>แบบสรุปข้อมูลการจำหน่าย / ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง (สูติ/หลังคลอด)
-      </p>
-    </div>
-    <div class="form3-line1" style="margin-bottom:10px;">
-      <p>หอผู้ป่วย</p>
-      <p class="value">{{form3.dorm}}</p>
-      <p></p>
-      <p>เตียง / ห้อง</p>
-      <p class="value">{{form3.room}}</p>
-    </div>
-    <div class="form3-line2">
-      <p>ขื่อ-สกุล</p>
-      <p class="value">{{form3.name}}</p>
-      <p>อายุ</p>
-      <p class="value">{{form3.age}}</p>
-      <p>ปี</p>
-      <p>HN</p>
-      <p class="value">{{form3.HN}}</p>
-      <p></p>
-      <p class="upper-border" style="padding-left: 10px;">สิทธิการรักษา</p>
-    </div>
-    <div class="form3-line3" >
-      <p>ที่อยู่ (ปัจจุบัน) : เลขที่</p>
-      <p class="value">{{form3.addr1}}</p>
-      <p>หมู่ / ถนน</p>
-      <p class="value">{{form3.addr2}}</p>
-      <p>ตำบล</p>
-      <p class="value">{{form3.addr3}}</p>
-      <p></p>
-      <p class="middle-border"></p>
-    </div>
-    <div class="form3-line4">
-      <p>อำเภอ</p>
-      <p class="value">{{form3.addr4}}</p>
-      <p>จังหวัด</p>
-      <p class="value">{{form3.addr5}}</p>
-      <p>โทรศัพท์</p>
-      <p class="value">{{form3.phone}}</p>
-      <p></p>
-      <p class="middle-border"></p>
-    </div>
-    <div class="form3-line5">
-      <p>สถานที่ใกล้เคียง</p>
-      <p class="value">{{form3.nearbyplace}}</p>
-      <p>อาชีพ</p>
-      <p class="value">{{form3.job}}</p>
-      <p></p>
-      <p class="lower-border"></p>
-    </div>
-    <div class="form3-line6">
-      <p>วันที่อยู่ป่วย</p>
-      <p class="value">{{form3.checkInDate}}</p>
-      <p>เวลา</p>
-      <p class="value">{{form3.checkInTime}}</p>
-      <p>น.</p>
-      <p>แพทย์</p>
-      <p class="value">{{form3.doctor}}</p>
-    </div>
-    <div class="form3-line7" style="margin-bottom:5px;">
-      <p>อาการสำคัญ</p>
-      <p class="value">{{form3.symptom}}</p>
-    </div>
-    <div class="form3-line8"style="margin-bottom:5px;" >
-      <p>อาการปัจจุบัน : &nbsp;&nbsp;G</p>
-      <p class="value">{{form3.G}}</p>
-      <p>P</p>
-      <p class="value">{{form3.P}}</p>
-      <p>GA</p>
-      <p class="value">{{form3.GA}}</p>
-      <p>wks</p>
-      <p class="value">{{form3.currentSymptom}}</p>
-    </div>
-    <div class="form3-line9" style="margin-bottom:5px;">
-      <p>ภาวะแทรกซ้อน</p>
-      <p class="value">{{form3.complications}}</p>
-      <p>โรคประจำตัว</p>
-      <p class="value">{{form3.congenitalDisorder}}</p>
-    </div>
-    <div class="form3-line10" style="margin-bottom:5px;">
-      <p>สัญญานชีพแรกรับ : &nbsp;&nbsp;T</p>
-      <p class="value">{{form3.T}}</p>
-      <p>c</p>
-      <p>P</p>
-      <p class="value">{{form3.pressure}}</p>
-      <p>/min</p>
-      <p>R</p>
-      <p class="value">{{form3.R}}</p>
-      <p>/min</p>
-      <p>BP</p>
-      <p class="value">{{form3.BP}}</p>
-      <p>mmHg</p>
-      <p>O2Sat</p>
-      <p class="value">{{form3.O2Sat}}</p>
-      <p>%</p>
-    </div>
-    <div class="form3-line11" style="margin-bottom:5px;">
-      <p></p>
-      <p>น้ำหนัก</p>
-      <p class="value">{{form3.weight}}</p>
-      <p>กก.</p>
-      <p>สูง</p>
-      <p class="value">{{form3.height}}</p>
-      <p>ซม.</p>
-      <p>BMI</p>
-      <p class="value">{{form3.BMI}}</p>
-    </div>
-    <div class="form3-line12">
-      <p>Diagnosis(1)</p>
-      <p class="value">{{form3.Diagnosis1}}</p>
-      <p>Diagnosis(2)</p>
-      <p class="value">{{form3.Diagnosis2}}</p>
-    </div>
+  <div class="title">
+    <p>แบบสรุปข้อมูลการจำหน่าย / ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง (สูติ/หลังคลอด)
+    </p>
   </div>
+  <div class="form3-line1" style="margin-bottom:10px;">
+    <p>หอผู้ป่วย</p>
+    <p class="value">{{form3.dorm}}</p>
+    <p></p>
+    <p>เตียง / ห้อง</p>
+    <p class="value">{{form3.room}}</p>
+  </div>
+  <div class="form3-line2">
+    <p>ขื่อ-สกุล</p>
+    <p class="value">{{form3.name}}</p>
+    <p>อายุ</p>
+    <p class="value">{{form3.age}}</p>
+    <p>ปี</p>
+    <p>HN</p>
+    <p class="value">{{form3.HN}}</p>
+    <p></p>
+    <p class="upper-border" style="padding-left: 10px;">สิทธิการรักษา</p>
+  </div>
+  <div class="form3-line3">
+    <p>ที่อยู่ (ปัจจุบัน) : เลขที่</p>
+    <p class="value">{{form3.addr1}}</p>
+    <p>หมู่ / ถนน</p>
+    <p class="value">{{form3.addr2}}</p>
+    <p>ตำบล</p>
+    <p class="value">{{form3.addr3}}</p>
+    <p></p>
+    <p class="middle-border"></p>
+  </div>
+  <div class="form3-line4">
+    <p>อำเภอ</p>
+    <p class="value">{{form3.addr4}}</p>
+    <p>จังหวัด</p>
+    <p class="value">{{form3.addr5}}</p>
+    <p>โทรศัพท์</p>
+    <p class="value">{{form3.phone}}</p>
+    <p></p>
+    <p class="middle-border"></p>
+  </div>
+  <div class="form3-line5">
+    <p>สถานที่ใกล้เคียง</p>
+    <p class="value">{{form3.nearbyplace}}</p>
+    <p>อาชีพ</p>
+    <p class="value">{{form3.job}}</p>
+    <p></p>
+    <p class="lower-border"></p>
+  </div>
+  <div class="form3-line6">
+    <p>วันที่อยู่ป่วย</p>
+    <p class="value">{{form3.checkInDate}}</p>
+    <p>เวลา</p>
+    <p class="value">{{form3.checkInTime}}</p>
+    <p>น.</p>
+    <p>แพทย์</p>
+    <p class="value">{{form3.doctor}}</p>
+  </div>
+  <div class="form3-line7" style="margin-bottom:5px;">
+    <p>อาการสำคัญ</p>
+    <p class="value">{{form3.symptom}}</p>
+  </div>
+  <div class="form3-line8" style="margin-bottom:5px;">
+    <p>อาการปัจจุบัน : &nbsp;&nbsp;G</p>
+    <p class="value">{{form3.G}}</p>
+    <p>P</p>
+    <p class="value">{{form3.P}}</p>
+    <p>GA</p>
+    <p class="value">{{form3.GA}}</p>
+    <p>wks</p>
+    <p class="value">{{form3.currentSymptom}}</p>
+  </div>
+  <div class="form3-line9" style="margin-bottom:5px;">
+    <p>ภาวะแทรกซ้อน</p>
+    <p class="value">{{form3.complications}}</p>
+    <p>โรคประจำตัว</p>
+    <p class="value">{{form3.congenitalDisorder}}</p>
+  </div>
+  <div class="form3-line10" style="margin-bottom:5px;">
+    <p>สัญญานชีพแรกรับ : &nbsp;&nbsp;T</p>
+    <p class="value">{{form3.T}}</p>
+    <p>c</p>
+    <p>P</p>
+    <p class="value">{{form3.pressure}}</p>
+    <p>/min</p>
+    <p>R</p>
+    <p class="value">{{form3.R}}</p>
+    <p>/min</p>
+    <p>BP</p>
+    <p class="value">{{form3.BP}}</p>
+    <p>mmHg</p>
+    <p>O2Sat</p>
+    <p class="value">{{form3.O2Sat}}</p>
+    <p>%</p>
+  </div>
+  <div class="form3-line11" style="margin-bottom:5px;">
+    <p></p>
+    <p>น้ำหนัก</p>
+    <p class="value">{{form3.weight}}</p>
+    <p>กก.</p>
+    <p>สูง</p>
+    <p class="value">{{form3.height}}</p>
+    <p>ซม.</p>
+    <p>BMI</p>
+    <p class="value">{{form3.BMI}}</p>
+  </div>
+  <div class="form3-line12">
+    <p>Diagnosis(1)</p>
+    <p class="value">{{form3.Diagnosis1}}</p>
+    <p>Diagnosis(2)</p>
+    <p class="value">{{form3.Diagnosis2}}</p>
+  </div>
+</div>

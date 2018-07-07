@@ -6,24 +6,14 @@
 
   <div class="collection">
 
-  {{#unless patient.form1}} 
-  <a href="/patient/add/forms/1/{{patient._id}}" class="collection-item">แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</a> 
-  {{/unless}}  
-    
-  {{#unless patient.form2}}  
-  <a href="/patient/add/forms/2/{{patient._id}}" class="collection-item">แบบบันทึกรายงานการคลอด</a> 
-  {{/unless}}
-
-  {{#unless patient.form3}}
-    <a href="/patient/add/forms/3/{{patient._id}}" class="collection-item">แบบสรุปข้อมูลการจาหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด)</a>
-  {{/unless}}
-
-  {{#unless patient.form4}}
+    {{#unless patient.form1}}
+    <a href="/patient/add/forms/1/{{patient._id}}" class="collection-item">แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</a>
+    {{/unless}} {{#unless patient.form2}}
+    <a href="/patient/add/forms/2/{{patient._id}}" class="collection-item">แบบบันทึกรายงานการคลอด</a>
+    {{/unless}} {{#unless patient.form3}}
+    <a href="/patient/add/forms/3/{{patient._id}}" class="collection-item">แบบสรุปข้อมูลการจำหน่าย /ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด)</a>
+    {{/unless}} {{#unless patient.form4}}
     <a href="/patient/add/forms/4/{{patient._id}}" class="collection-item">ใบประเมินแรกรับ</a>
-  {{/unless}}
-  
-  {{#ifAllExist patient.form1 patient.form2 patient.form3 patient.form4 }} 
-  {{/ifAllExist}}
+    {{/unless}} {{#ifAllExist patient.form1 patient.form2 patient.form3 patient.form4 }} {{/ifAllExist}}
   </div>
 </div>
-
