@@ -260,7 +260,7 @@ module.exports = {
     const form3 = {
       dorm: req.body.dorm,
       room: req.body.room,
-      name: req.body.title + req.body.name,
+      name: req.body.name,
       age: req.body.age,
       HN: req.body.HN,
       addr1: req.body.addr1,

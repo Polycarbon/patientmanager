@@ -38,7 +38,7 @@ router.get('/add/new', ensureAuthenticated, (req, res) => {
 // Add New Patient Process
 router.post('/add/new/save', ensureAuthenticated, (req, res) => {
   const newPatient = new Patient({
-    name: req.body.title + req.body.name,
+    name: req.body.title + req.body.fname + ' ' + req.body.lname,
     age: req.body.age,
     job: req.body.job,
     weight: req.body.weight,
@@ -77,7 +77,7 @@ router.get('/edit/:id', ensureAuthenticated, (req, res) => {
 router.put('/edit/save/:id', ensureAuthenticated, (req, res) => {
   Patient.findOne({ _id: req.params.id })
     .then(patient => {
-      patient.name = req.body.title + req.body.name;
+      patient.name = req.body.name;
       patient.age = req.body.age;
       patient.job = req.body.job;
       patient.weight = req.body.weight;
@@ -215,7 +215,7 @@ router.post('/form2/save/:id', ensureAuthenticated, (req, res) => {
 // Add Process Form3 (Existing Patient)
 router.post('/form3/save/:id', ensureAuthenticated, (req, res) => {
   const update = {
-    name: req.body.title + req.body.name,
+    name: req.body.name,
     age: req.body.age,
     job: req.body.job,
     HN: req.body.HN,
@@ -383,7 +383,7 @@ router.put('/edit/form/2/:id', ensureAuthenticated, (req, res) => {
 // Edit Form3 Process
 router.put('/edit/form/3/:id', ensureAuthenticated, (req, res) => {
   const update = {
-    name: req.body.title + req.body.name,
+    name: req.body.name,
     age: req.body.age,
     job: req.body.job,
     HN: req.body.HN,

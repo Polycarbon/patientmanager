@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th class="dashboard-text">
-       แบบฟอร์ม
+        แบบฟอร์ม
       </th>
       <th>สร้างโดย</th>
       <th>อัพเดทล่าสุดโดย</th>
@@ -41,14 +41,17 @@
         </a>
         <form action="/patient/delete/1/{{patient.form1.id}}?_method=DELETE" method="post" id="delete-form">
           <input type="hidden" name="_method" value="DELETE">
-          
+
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ" href="#modal1"><i class="material-icons">delete</i></a>
+          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ"
+            href="#modal1">
+            <i class="material-icons">delete</i>
+          </a>
 
           <!-- Modal Structure -->
           <div id="modal1" class="modal">
             <div class="modal-content">
-              <h4>Delete Confirmation</h4>
+              <h4>ลบแบบฟอร์ม</h4>
               <p style="font-size: 18px !important;">ยืนยันการลบฟอร์ม "แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม" ของผู้ป่วย {{patient.name}}</p>
             </div>
             <div class="modal-footer">
@@ -57,14 +60,15 @@
             </div>
           </div>
 
-        </form> <!-- End Form -->
+        </form>
+        <!-- End Form -->
       </td>
     </tr>
     {{/if}} {{#if patient.form2}}
     <tr>
       <td class="dashboard-text">
         <a href="">
-         แบบบันทึกรายงานการคลอด
+          แบบบันทึกรายงานการคลอด
         </a>
       </td>
       <td>
@@ -90,12 +94,15 @@
           <input type="hidden" name="_method" value="DELETE">
 
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ" href="#modal2"><i class="material-icons">delete</i></a>
+          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ"
+            href="#modal2">
+            <i class="material-icons">delete</i>
+          </a>
 
           <!-- Modal Structure -->
           <div id="modal2" class="modal">
             <div class="modal-content">
-              <h4>Delete Confirmation</h4>
+              <h4>ลบแบบฟอร์ม</h4>
               <p style="font-size: 18px !important;">ยืนยันการลบฟอร์ม "แบบบันทึกรายงานการคลอด" ของผู้ป่วย {{patient.name}}</p>
             </div>
             <div class="modal-footer">
@@ -104,7 +111,8 @@
             </div>
           </div>
 
-        </form> <!-- End Form -->
+        </form>
+        <!-- End Form -->
       </td>
     </tr>
     {{/if}} {{#if patient.form3}}
@@ -137,12 +145,15 @@
           <input type="hidden" name="_method" value="DELETE">
 
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ" href="#modal3"><i class="material-icons">delete</i></a>
+          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ"
+            href="#modal3">
+            <i class="material-icons">delete</i>
+          </a>
 
           <!-- Modal Structure -->
           <div id="modal3" class="modal">
             <div class="modal-content">
-              <h4>Delete Confirmation</h4>
+              <h4>ลบแบบฟอร์ม</h4>
               <p style="font-size: 18px !important;">ยืนยันการลบฟอร์ม "แบบสรุปข้อมูลการจาหน่าย / ส่งต่อผู้ป่วยเพื่อการดูแลต่อเนื่อง(สูติ/หลังคลอด)" ของผู้ป่วย {{patient.name}}</p>
             </div>
             <div class="modal-footer">
@@ -151,7 +162,8 @@
             </div>
           </div>
 
-        </form> <!-- End Form -->
+        </form>
+        <!-- End Form -->
       </td>
     </tr>
     {{/if}} {{#if patient.form4}}
@@ -184,12 +196,15 @@
           <input type="hidden" name="_method" value="DELETE">
 
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ" href="#modal4"><i class="material-icons">delete</i></a>
+          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped" data-position="top" data-delay="20" data-tooltip="ลบ"
+            href="#modal4">
+            <i class="material-icons">delete</i>
+          </a>
 
           <!-- Modal Structure -->
           <div id="modal4" class="modal">
             <div class="modal-content">
-              <h4>Delete Confirmation</h4>
+              <h4>ลบแบบฟอร์ม</h4>
               <p style="font-size: 18px !important;">ยืนยันการลบฟอร์ม "ใบประเมินแรกรับ" ของผู้ป่วย {{patient.name}}</p>
             </div>
             <div class="modal-footer">
@@ -197,7 +212,8 @@
               <a class="modal-close waves-effect waves-green btn-flat" style="font-size: 18px;">ยกเลิก</a>
             </div>
           </div>
-        </form> <!-- End Form -->
+        </form>
+        <!-- End Form -->
       </td>
     </tr>
     {{/if}}
