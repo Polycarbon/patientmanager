@@ -170,7 +170,8 @@
           <label for="addr5">จังหวัด</label>
         </div>
         <div class="input-field col s4">
-          <input type="tel" name="phone" id="phone" required>
+          <input type="tel" name="phone" id="phone" onkeyup="autoTab(this)" maxlength="12" onkeypress="return event.charCode>= 48 && event.charCode<= 57"
+            required>
           <label for="phone">โทรศัพท์</label>
         </div>
 
@@ -184,3 +185,22 @@
   </div>
   <div class="col s3 m3"></div>
 </div>
+
+<script type="text/javascript">
+  function autoTab(obj) {
+    var pattern = new String("___-___-____"); // กำหนดรูปแบบในนี้
+    var pattern_ex = new String("-"); // กำหนดสัญลักษณ์หรือเครื่องหมายที่ใช้แบ่งในนี้
+    var returnText = new String("");
+    var obj_l = obj.value.length;
+    var obj_l2 = obj_l - 1;
+    for (i = 0; i < pattern.length; i++) {
+      if (obj_l2 == i && pattern.charAt(i + 1) == pattern_ex) {
+        returnText += obj.value + pattern_ex;
+        obj.value = returnText;
+      }
+    }
+    if (obj_l >= pattern.length) {
+      obj.value = obj.value.substr(0, pattern.length);
+    }
+  }
+</script>
