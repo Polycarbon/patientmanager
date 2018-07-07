@@ -22,7 +22,7 @@ module.exports = {
   },
   saveForm2: function (req, res) {
     var newPatient = module.exports.init_form2(req, res);
-    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;    
+    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;
     const form2 = new Form2(newPatient);
     form2.save();
 
@@ -30,7 +30,7 @@ module.exports = {
   },
   saveForm3: function (req, res) {
     var newPatient = module.exports.init_form3(req, res);
-    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;    
+    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;
     const form3 = new Form3(newPatient);
     form3.save();
 
@@ -38,13 +38,13 @@ module.exports = {
   },
   saveForm4: function (req, res) {
     var newPatient = module.exports.init_form4(req, res);
-    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;    
+    newPatient.user_created = req.user.firstName + ' ' + req.user.lastName;
     const form4 = new Form4(newPatient);
     form4.save();
 
     return form4;
   },
-  init_form1: function(req, res){
+  init_form1: function (req, res) {
     const form1 = {
       recordDate: req.body.recordDate,
       recordTime: req.body.recordTime,
@@ -153,7 +153,7 @@ module.exports = {
     };
     return form1;
   },
-  init_form2: function(req, res){
+  init_form2: function (req, res) {
     const form2 = {
       patient_name: req.body.patient_name,
       patient_age: req.body.patient_age,
@@ -256,11 +256,11 @@ module.exports = {
     };
     return form2;
   },
-  init_form3: function(req, res){
+  init_form3: function (req, res) {
     const form3 = {
       dorm: req.body.dorm,
       room: req.body.room,
-      name: req.body.name,
+      name: req.body.title + req.body.name,
       age: req.body.age,
       HN: req.body.HN,
       addr1: req.body.addr1,
@@ -294,7 +294,7 @@ module.exports = {
     };
     return form3;
   },
-  init_form4: function(req, res){
+  init_form4: function (req, res) {
     let name = req.body.name[0];
     let age = req.body.age[0];
     let HN = req.body.HN[0];

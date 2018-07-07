@@ -275,5 +275,5 @@ $(document).ready(function () {
 });
 
 function printForm() {
-    window.print();
+  window.print();
 }

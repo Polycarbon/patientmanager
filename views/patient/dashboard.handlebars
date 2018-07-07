@@ -34,15 +34,14 @@
         <a href="#" class="dashboard-text record-text name-text">{{name}}</a>
       </td>
       <td>
-        <span class="record-text">{{formatDate date 'MMMM Do YYYY'}}</span>
+        <span class="record-text">{{formatDate date 'Do MMM YYYY'}}</span>{{!-- Do MMMM YYYY --}}
       </td>
       <td class="center">
         <a href="/patient/show/{{_id}}" class="btn-floating btn tooltipped" data-position="top" data-delay="20" data-tooltip="เพิ่มเติม">
           <i class="material-icons">visibility</i>
         </a>
-        
-        <a href="/patient/edit/{{_id}}" class="btn-floating tooltipped" data-position="top" data-delay="20"
-          data-tooltip="แก้ไข">
+
+        <a href="/patient/edit/{{_id}}" class="btn-floating tooltipped" data-position="top" data-delay="20" data-tooltip="แก้ไข">
           <i class="material-icons">edit</i>
         </a>
         <form action="/patient/profile/remove/{{_id}}?_method=DELETE" method="post" id="delete-form">
@@ -75,7 +74,7 @@
 <div class="row">
   <div class="row">
     <div class="row"></div>
-    <div class="col s12" >
+    <div class="col s12">
       <p style="margin-left:10px;">No patients listed</p>
 
     </div>

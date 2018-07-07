@@ -6,6 +6,8 @@ module.exports = {
     return options.fn(this).replace(new RegExp(' value=\"' + selected + '\"'), '$&selected="selected"').replace(new RegExp('>' + selected + '</option>'), 'selected="selected"$&');
   },
   formatDate: function (date, format) {
+    moment.locale('th');
+    moment().set('year', 2009);/* moment().get('year') + 543 */
     return moment(date).format(format);
   },
   setChecked: function (value, currentValue) {
@@ -15,15 +17,15 @@ module.exports = {
       return "";
     }
   },
-  ifAllExist: function(v1,v2, v3, v4){
-    if(v1 && v2 && v3 && v4){
+  ifAllExist: function (v1, v2, v3, v4) {
+    if (v1 && v2 && v3 && v4) {
       return "<p>ฟอร์มทุกฟอร์มได้ถูกบันทึกแล้ว</p>";
     } else {
       return "";
     }
   },
-  tableValue: function(value, dbValue){
-    if(value === dbValue){
+  tableValue: function (value, dbValue) {
+    if (value === dbValue) {
       return ('/img/check.png');
     } else {
       return '';

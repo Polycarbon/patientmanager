@@ -388,7 +388,7 @@ module.exports = {
         // new values
         form3.dorm = req.body.dorm;
         form3.room = req.body.room;
-        form3.name = req.body.name;
+        form3.name = req.body.title + req.body.name;
         form3.age = req.body.age;
         form3.HN = req.body.HN;
         form3.addr1 = req.body.addr1;
@@ -427,7 +427,7 @@ module.exports = {
           .then(patient => {
             if (patient.form1) {
               const update = {
-                patient_name: req.body.name,
+                patient_name: req.body.title + req.body.name,
                 patient_age: req.body.age,
                 job: req.body.job,
                 HN: req.body.HN,
@@ -444,7 +444,7 @@ module.exports = {
             }
             if (patient.form2) {
               const update = {
-                patient_name: req.body.name,
+                patient_name: req.body.title + req.body.name,
                 patient_age: req.body.age,
                 HN: req.body.HN,
                 G: req.body.G,
@@ -460,7 +460,7 @@ module.exports = {
             }
             if (patient.form4) {
               const update = {
-                name: req.body.name,
+                name: req.body.title + req.body.name,
                 age: req.body.age,
                 job: req.body.job,
                 HN: req.body.HN,

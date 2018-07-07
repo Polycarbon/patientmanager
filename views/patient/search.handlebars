@@ -18,7 +18,7 @@
           <a href="/patient/profile/{{_id}}" class="dashboard-text record-text">{{name}}</a>
         </td>
         <td>
-          <span class="record-text">{{formatDate date 'MMMM Do YYYY'}}</span>
+          <span class="record-text">{{formatDate date 'Do MMM YYYY'}}</span>
         </td>
         <td class="center">
           <a href="/patient/show/{{_id}}" class="btn-floating btn tooltipped" data-position="top" data-delay="20" data-tooltip="เพิ่มเติม">
@@ -31,20 +31,23 @@
 
           <form action="/patient/profile/remove/{{_id}}?_method=DELETE" method="post" id="delete-form">
             <input type="hidden" name="_method" value="DELETE">
-             <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped right" data-position="top" data-delay="20" data-tooltip="ลบผู้ป่วย" href="#modal{{id}}" style="margin-right: 20px !important;"><i class="material-icons">delete</i></a>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped right" data-position="top" data-delay="20" data-tooltip="ลบผู้ป่วย"
+              href="#modal{{id}}" style="margin-right: 20px !important;">
+              <i class="material-icons">delete</i>
+            </a>
 
-          <!-- Modal Structure -->
-          <div id="modal{{id}}" class="modal">
-            <div class="modal-content">
-              <h4>Delete Confirmation</h4>
-              <p style="font-size: 18px !important;">ยืนยันการลบผู้ป่วย {{name}}</p>
+            <!-- Modal Structure -->
+            <div id="modal{{id}}" class="modal">
+              <div class="modal-content">
+                <h4>Delete Confirmation</h4>
+                <p style="font-size: 18px !important;">ยืนยันการลบผู้ป่วย {{name}}</p>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-size: 18px;">ตกลง</button>
+                <a class="modal-close waves-effect waves-green btn-flat" style="font-size: 18px;">ยกเลิก</a>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat" style="font-size: 18px;">ตกลง</button>
-              <a class="modal-close waves-effect waves-green btn-flat" style="font-size: 18px;">ยกเลิก</a>
-            </div>
-          </div>
             </button>
 
           </form>
@@ -58,7 +61,7 @@
   {{/if}}
   <div class="row">
     <div class="center">
-      <a class="btn waves-effect waves-light red" href="javascript:history.back()" name="action" >Back</a>
+      <a class="btn waves-effect waves-light red" href="javascript:history.back()" name="action">Back</a>
     </div>
   </div>
 </div>

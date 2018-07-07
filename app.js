@@ -129,14 +129,15 @@ app.post('/patients/dashboard/search', ensureAuthenticated, (req, res) => {
         for (var i = 0; i < searchArray.length; i++) {
           for (var j = 0; j < patient.length; j++) {
             // split each patient name into arrays
-            var patientLower =  patient[j].name.toLowerCase();
+            var patientLower = patient[j].name.toLowerCase();
             patientArray = patientLower.split(" ");
             // compare search_array with each patient_array
             for (var k = 0; k < patientArray.length; k++) {
-              if (patientArray[k].localeCompare(searchArray[i].toLowerCase()) == 0) {
+              // if (patientArray[k].localeCompare(searchArray[i].toLowerCase()) == 0) {
+              if (patientArray[k].indexOf(searchArray[i]) !== -1) {
                 // check if matched array has already been pushed
-                for(var z=0; z<searchResult.length; z++){
-                  if(patient[j]._id.toString().localeCompare(searchResult[z]._id.toString()) != 0){
+                for (var z = 0; z < searchResult.length; z++) {
+                  if (patient[j]._id.toString().localeCompare(searchResult[z]._id.toString()) != 0) {
                     exist = false;
                   } else {
                     // if exist get out of loop
@@ -145,16 +146,21 @@ app.post('/patients/dashboard/search', ensureAuthenticated, (req, res) => {
                   }
                 }
                 // if not exist push into result array
-                if(!exist) searchResult.push(patient[j]);
+                if (!exist) {
+                  searchResult.push(patient[j]);
+                }
+
               }
             }
           }
         }
+
         // if none exist recheck by filtering HN
-        if(searchResult.length < 1){
-          for(var i = 0; i< searchArray.length; i++){
-            for(var j = 0; j < patient.length; j++){
-              if(searchArray[i].localeCompare(patient[j].HN) == 0){
+        if (searchResult.length < 1) {
+          for (var i = 0; i < searchArray.length; i++) {
+            for (var j = 0; j < patient.length; j++) {
+              if (patient[j].HN.indexOf(searchArray[i]) !== -1) {
+                // if (searchArray[i].localeCompare(patient[j].HN) == 0) {
                 searchResult.push(patient[j]);
               }
             }

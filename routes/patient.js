@@ -15,6 +15,7 @@ const Form1 = mongoose.model('form1');
 const Form2 = mongoose.model('form2');
 const Form3 = mongoose.model('form3');
 const Form4 = mongoose.model('form4');
+moment.locale('th')
 
 let today = moment().format('Do MMMM[,] YYYY');
 let time = moment().format('h:mm');
@@ -37,7 +38,7 @@ router.get('/add/new', ensureAuthenticated, (req, res) => {
 // Add New Patient Process
 router.post('/add/new/save', ensureAuthenticated, (req, res) => {
   const newPatient = new Patient({
-    name: req.body.name,
+    name: req.body.title + req.body.name,
     age: req.body.age,
     job: req.body.job,
     weight: req.body.weight,
@@ -76,7 +77,7 @@ router.get('/edit/:id', ensureAuthenticated, (req, res) => {
 router.put('/edit/save/:id', ensureAuthenticated, (req, res) => {
   Patient.findOne({ _id: req.params.id })
     .then(patient => {
-      patient.name = req.body.name;
+      patient.name = req.body.title + req.body.name;
       patient.age = req.body.age;
       patient.job = req.body.job;
       patient.weight = req.body.weight;
@@ -208,13 +209,13 @@ router.post('/form2/save/:id', ensureAuthenticated, (req, res) => {
       save_all.save(req, res, 2);
     }
   });
-  
+
 });
 
 // Add Process Form3 (Existing Patient)
 router.post('/form3/save/:id', ensureAuthenticated, (req, res) => {
   const update = {
-    name: req.body.name,
+    name: req.body.title + req.body.name,
     age: req.body.age,
     job: req.body.job,
     HN: req.body.HN,
@@ -382,7 +383,7 @@ router.put('/edit/form/2/:id', ensureAuthenticated, (req, res) => {
 // Edit Form3 Process
 router.put('/edit/form/3/:id', ensureAuthenticated, (req, res) => {
   const update = {
-    name: req.body.name,
+    name: req.body.title + req.body.name,
     age: req.body.age,
     job: req.body.job,
     HN: req.body.HN,
@@ -407,7 +408,7 @@ router.put('/edit/form/3/:id', ensureAuthenticated, (req, res) => {
       edit_function.editform3(req, res);
     }
   });
-  
+
 });
 // Edit Form4 Process
 router.put('/edit/form/4/:id', ensureAuthenticated, (req, res) => {
@@ -432,7 +433,7 @@ router.put('/edit/form/4/:id', ensureAuthenticated, (req, res) => {
       edit_function.editform4(req, res);
     }
   });
-  
+
 });
 
 
