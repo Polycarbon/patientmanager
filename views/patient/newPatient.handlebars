@@ -170,8 +170,8 @@
           <label for="addr5">จังหวัด</label>
         </div>
         <div class="input-field col s4">
-          <input type="tel" name="phone" id="phone" onkeyup="autoTab(this)" maxlength="12" onkeypress="return event.charCode>= 48 && event.charCode<= 57"
-            required>
+          <input type="tel" name="phone" id="phone" {{!-- onkeyup="autoTab(this)" onkeypress="return event.charCode>= 48 && event.charCode<= 57"
+            --}} required>
           <label for="phone">โทรศัพท์</label>
         </div>
 
@@ -186,6 +186,7 @@
   <div class="col s3 m3"></div>
 </div>
 
+{{!--
 <script type="text/javascript">
   function autoTab(obj) {
     var pattern = new String("___-___-____"); // กำหนดรูปแบบในนี้
@@ -203,4 +204,12 @@
       obj.value = obj.value.substr(0, pattern.length);
     }
   }
+</script> --}}
+<script src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script>
+  $(document).ready(function ($) {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('#phone').mask("999-999-9999", { placeholder: " ", autoclear: false });
+  });
 </script>

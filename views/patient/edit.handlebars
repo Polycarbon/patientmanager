@@ -3,7 +3,8 @@
   <div class="col s3 m3"></div>
   <div class="col s6 m6 z-depth-3 ">
     <img src="/img/logo.png" class="logo">
-    <h4 class="center-align" style="font-family: Ekk;"><i class="fa fa-pencil-alt"></i> {{patient.name}}</h4>
+    <h4 class="center-align" style="font-family: Ekk;">
+      <i class="fa fa-pencil-alt"></i> {{patient.name}}</h4>
     <br>
     <div class="row col s12 register">
       <form action="/patient/edit/save/{{patient.id}}?_method=PUT" method="post">
@@ -177,3 +178,14 @@
   </div>
   <div class="col s3 m3"></div>
 </div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script>
+  $(document).ready(function ($) {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('#phone').mask("999-999-9999", { placeholder: " ", autoclear: false });
+  });
+</script>

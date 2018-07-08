@@ -147,7 +147,7 @@
         </div>
         <div class="col s3 l2">
           <label>โทรศัพท์</label>
-          <input type="tel" name="phone" placeholder="โทรศัพท์" value="{{patient.phone}}">
+          <input type="tel" name="phone" id="phone" placeholder="โทรศัพท์" value="{{patient.phone}}">
         </div>
         <div class="col s3 l2">
           <label>สถานที่ใกล้เคียง</label>
@@ -271,3 +271,14 @@
     <!-- End Form -->
   </div>
 </div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+<script>
+  $(document).ready(function ($) {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('#phone').mask("999-999-9999", { placeholder: " ", autoclear: false });
+  });
+</script>

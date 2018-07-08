@@ -277,3 +277,9 @@ $(document).ready(function () {
 function printForm() {
   window.print();
 }
+
+$(document).ready(function ($) {
+  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+  $('#phone').mask("999-999-9999", { placeholder: " ", autoclear: false });
+});
+
