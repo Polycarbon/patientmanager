@@ -29,9 +29,9 @@
         <label>ชื่อ-สกุล</label>
         <input type="text" name="name" placeholder="ชื่อ-สกุล" value="{{patient.name}}">
       </div>
-      <div class="col s2">
-        <label>อายุ (ปี)</label>
-        <input type="number" name="age" placeholder="อายุ (ปี)" value="{{patient.age}}">
+      <div class="input-field col s2">
+        <input type="number" name="age" min="1" max="120" placeholder="อายุ (ปี)" value="{{patient.age}}" class="validate" required>
+        <label for="age">อายุ (ปี)</label>
       </div>
       <div class="col s2">
         <label>HN</label>
@@ -149,7 +149,7 @@
         </div>
         <div class="col s3 l2">
           <label>โทรศัพท์</label>
-          <input type="tel" name="phone" id="phone" placeholder="โทรศัพท์" value="{{patient.phone}}">
+          <input type="tel" name="phone" id="phone" placeholder="โทรศัพท์" value="{{patient.phone}}" class="validate" required>
         </div>
         <div class="col s3 l2">
           <label>สถานที่ใกล้เคียง</label>
@@ -187,15 +187,15 @@
       <div class="col s12">
         <div class="col s1">
           <label>G</label>
-          <input type="text" name="G" placeholder="G" value="{{patient.G}}">
+          <input type="number" min="0" name="G" placeholder="G" value="{{patient.G}}" class="validate" required>
         </div>
         <div class="col s1">
           <label>P</label>
-          <input type="text" name="P" placeholder="P" value="{{patient.P}}">
+          <input type="number" min="0" name="P" placeholder="P" value="{{patient.P}}" class="validate" required>
         </div>
         <div class="col s2 l1 ">
           <label>GA (wks)</label>
-          <input type="text" name="GA" placeholder="GA (wks)" value="{{patient.GA}}">
+          <input type="number" min="0" name="GA" placeholder="GA (wks)" value="{{patient.GA}}" class="validate" required>
         </div>
         <div class="col s8 l9">
           <label>...</label>
@@ -221,35 +221,37 @@
       <div class="col s12">
         <div class="col s1">
           <label>T (c)</label>
-          <input type="text" name="T" placeholder="T (c)" value="{{form3.T}}">
+          <input type="number" min="0" name="T" placeholder="T (c)" value="{{form3.T}}" class="validate" required>
         </div>
         <div class="col s1">
           <label>P /min</label>
-          <input type="text" name="pressure" placeholder="P /min" value="{{form3.pressure}}">
+          <input type="number" min="0" name="pressure" placeholder="P /min" value="{{form3.pressure}}" class="validate" required>
         </div>
         <div class="col s1">
           <label>R /min</label>
-          <input type="text" name="R" placeholder="R /min" value="{{form3.R}}">
+          <input type="number" min="0" name="R" placeholder="R /min" value="{{form3.R}}" class="validate" required>
         </div>
         <div class="col s2 l1">
           <label>BP (mmHg)</label>
-          <input type="text" name="BP" placeholder="BP (mmHg)" value="{{form3.BP}}">
+          <input type="number" min="0" name="BP" placeholder="BP (mmHg)" value="{{form3.BP}}" class="validate" required>
         </div>
         <div class="col s1">
           <label>O2Sat %</label>
-          <input type="text" name="O2Sat" placeholder="O2Sat %" value="{{form3.O2Sat}}">
+          <input type="number" min="0" name="O2Sat" placeholder="O2Sat %" value="{{form3.O2Sat}}" class="validate" required>
         </div>
         <div class="col s2">
           <label>น้ำหนัก (กก.)</label>
-          <input type="number" name="weight" placeholder="น้ำหนัก (กก.)" value="{{patient.weight}}">
+          <input type="number" min="1" max="500" name="weight" placeholder="น้ำหนัก (กก.)" value="{{patient.weight}}" class="validate"
+            required>
         </div>
         <div class="col s1 l2">
           <label>สูง (ซม.)</label>
-          <input type="number" name="height" placeholder="สูง (ซม.)" value="{{patient.height}}">
+          <input type="number" min="1" max="500" name="height" placeholder="สูง (ซม.)" value="{{patient.height}}" class="validate"
+            required>
         </div>
         <div class="col s2 l3">
           <label>BMI</label>
-          <input type="text" name="BMI" placeholder="BMI" value="{{form3.BMI}}">
+          <input type="number" min="0" name="BMI" placeholder="BMI" value="{{form3.BMI}}" class="validate" required>
         </div>
       </div>
       <div class="col s6">
