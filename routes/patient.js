@@ -17,7 +17,7 @@ const Form3 = mongoose.model('form3');
 const Form4 = mongoose.model('form4');
 moment.locale('th')
 
-let today = moment().format('Do MMMM[,] YYYY');
+let today = moment().format('Do MMMM YYYY');
 let time = moment().format('h:mm');
 
 // Save & Edit functions
