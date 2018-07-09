@@ -4,10 +4,12 @@
 <div class="row z-depth-3">
   <div class="col s12">
 
-    {{!-- Form  --}}
+    {{!-- Form --}}
     <form action="/patient/form1/save/{{patient.id}}" method="post">
       <div class="row"></div>
-      <div class="col s12 center"><span style="font-size: 125%; font-weight: bold;">แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</span></div>
+      <div class="col s12 center">
+        <span style="font-size: 125%; font-weight: bold;">แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</span>
+      </div>
       <div class="row"></div>
       <div class="row"></div>
       {{!-- First Line --}}
@@ -17,7 +19,7 @@
       </div>
       <div class="col s3">
         <label for="">เวลา</label>
-        <input type="text" class="timepicker" name="recordTime" placeholder="เวลา" value="{{time}}">
+        <input type="text" class="timepicker" name="recordTime" placeholder="เวลา" {{!-- value="{{time}}" --}}>
       </div>
       <div class="col s6">
         <div class="col s6">
@@ -595,7 +597,7 @@
       <div class="col s1">
         <label for="">ward</label>
         <input type="text" name="ward" placeholder="ward" value="{{patient.ward}}">
-      </div> 
+      </div>
       <div class="col s2">
         <label for="">ห้องคลอด</label>
         <input type="text" name="room" placeholder="ห้องคลอด">
