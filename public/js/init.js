@@ -6,15 +6,21 @@ $(document).ready(() => {
 $('.datepicker').pickadate({
   selectMonths: true, // Creates a dropdown to control month
   selectYears: 15, // Creates a dropdown of 15 years to control year,
-  year: 2561,
   today: 'Today',
   clear: 'Clear',
   close: 'Ok',
+  format: 'd mmmm yyyy',
   closeOnSelect: false,// Close upon selecting a date,
   monthsFull: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
   monthsShort: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'],
   weekdaysFull: ['อาทติย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศกุร์', 'เสาร์'],
-  weekdaysShort: ['อ.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'],
+  weekdaysShort: ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.']
+
+});
+$('.datepicker').change(function () {
+  var th = $(this).val();
+  var spl = th.split(' ');
+  ($(this).val(spl[0] + ' ' + spl[1] + ' ' + (parseInt(spl[2]) + 543)));
 });
 
 
