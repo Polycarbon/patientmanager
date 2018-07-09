@@ -10,7 +10,6 @@ const session = require('express-session');
 const passport = require('passport');
 const { ensureAuthenticated } = require('./helpers/auth');
 
-
 const app = express();
 
 require("./models/User");

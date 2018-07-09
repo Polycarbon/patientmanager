@@ -45,12 +45,49 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/css/uikit.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.20/css/uikit.css">  
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <script src="/js/init.js"></script> {{#if init4}}
   <script src="/js/form4_init.js"></script> {{/if}}
+  <!-- dependencies for zip mode -->
+  <script type="text/javascript" src="/jquery.Thailand.js/dependencies/zip.js/zip.js"></script>
+  <!-- / dependencies for zip mode -->
+
+  <script type="text/javascript" src="/jquery.Thailand.js/dependencies/JQL.min.js"></script>
+  <script type="text/javascript" src="/jquery.Thailand.js/dependencies/typeahead.bundle.js"></script>
+  
+  <script type="text/javascript" src="/jquery.Thailand.js/dist/jquery.Thailand.min.js"></script>
+  
+  <script type="text/javascript">
+      /******************\
+        *     DEMO 1     *
+      \******************/ 
+      // demo 1: load database from json. if your server is support gzip. we recommended to use this rather than zip.
+      // for more info check README.md
+
+      $.Thailand({
+          database: '/jquery.Thailand.js/database/db.json',
+          $district: $('#demo1 [name="addr3"]'),
+          $amphoe: $('#demo1 [name="addr4"]'),
+          $province: $('#demo1 [name="addr5"]'),
+          $zipcode: $('#demo1 [name="zipcode"]'),
+
+          onDataFill: function(data){
+              console.info('Data Filled', data);
+          },
+
+          onLoad: function(){
+              console.info('Autocomplete is ready!');
+              $('#loader, .demo').toggle();
+          }
+      });
+  </script>
+
+  
 </body>
 
 </html>
