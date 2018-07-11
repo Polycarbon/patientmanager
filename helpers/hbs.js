@@ -7,8 +7,8 @@ module.exports = {
   },
   formatDate: function (date, format) {
     moment.locale('th');
-    moment().set('year', 2009);/* moment().get('year') + 543 */
-    return moment(date).format(format);
+    /* moment().get('year') + 543 */
+    return moment(date).format(format) + (parseInt(moment().get('year')) + 543);
   },
   setChecked: function (value, currentValue) {
     if (value === currentValue) {

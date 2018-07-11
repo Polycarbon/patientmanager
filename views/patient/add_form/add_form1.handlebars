@@ -25,7 +25,6 @@
         <div class="col s6">
           <label for="">ประวัติได้จาก</label>
           <select id="checkFrom" name="history">
-            <option value="0">ประวัติได้จาก</option>
             <option value="1">ผู้ป่วย</option>
             <option value="2">ญาติ</option>
             <option value="3">อื่นๆ</option>
@@ -52,23 +51,23 @@
       {{!-- G ... --}}
       <div class="col s1">
         <label for="">G</label>
-        <input type="text" name="G" placeholder="G" value="{{patient.G}}">
+        <input type="number" min="0" name="G" placeholder="G" value="{{patient.G}}">
       </div>
       <div class="col s1">
         <label for="">P</label>
-        <input type="text" name="P" placeholder="P" value="{{patient.P}}">
+        <input type="number" min="0" name="P" placeholder="P" value="{{patient.P}}">
       </div>
       <div class="col s1">
         <label for="">A</label>
-        <input type="text" name="A" placeholder="A" value="{{patient.A}}">
+        <input type="number" min="0" name="A" placeholder="A" value="{{patient.A}}">
       </div>
       <div class="col s1">
         <label for="">L</label>
-        <input type="text" name="L" placeholder="L" value="{{patient.L}}">
+        <input type="number" min="0" name="L" placeholder="L" value="{{patient.L}}">
       </div>
       <div class="col s1">
-        <label for="">Last</label>
-        <input type="text" name="Last" placeholder="Last">
+        <label for="">Last(ปี)</label>
+        <inputtype="number" min="0" name="Last" placeholder="Last">
       </div>
       <div class="col s1">
         <label for="">LMP</label>
@@ -94,12 +93,11 @@
       </div>
       <div class="col s2">
         <label for="">รวม (ครั้ง)</label>
-        <input type="text" name="count_ANC" placeholder="รวม (ครั้ง)">
+        <input type="number" min="0" name="count_ANC" placeholder="รวม (ครั้ง)">
       </div>
       <div class="col s2">
         <label for="">TT:</label>
         <select name="TT">
-          <option value="0">TT</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -586,15 +584,15 @@
       </div>
 
       {{!-- Bio --}}
-      <div class="col s6">
+      <div class="col s5">
         <label for="">ชื่อ-สกุล</label>
         <input type="text" name="patient_name" placeholder="ชื่อ-สกุล" value="{{patient.name}}" required>
       </div>
-      <div class="col s3">
+      <div class="col s2">
         <label for="">อายุ (ปี)</label>
-        <input type="number" name="patient_age" placeholder="อายุ (ปี)" value="{{patient.age}}" required>
+        <input type="number" min="1" max="120" name="patient_age" placeholder="อายุ (ปี)" value="{{patient.age}}" required>
       </div>
-      <div class="col s1">
+      <div class="col s3">
         <label for="">ward</label>
         <input type="text" name="ward" placeholder="ward" value="{{patient.ward}}">
       </div>
