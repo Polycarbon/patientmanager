@@ -503,136 +503,148 @@
 {{!-- Print Form4 --}}
 <div class="print printForm">
   <div class="printContainer1" id="form1">
-    <div class="block-wrapper">
-      <div class="form4-line1">
-        <p>
-          1. การแจ้งรับผู้ป่วย &nbsp;&nbsp;
-          <input type="checkbox" name="OPD" id="OPD" {{setChecked 'OPD' form4.reportFrom}}>
-          <label for="OPD">OPD</label>&nbsp;
-          <input type="checkbox" name="ER" id="ER" {{setChecked 'ER' form4.reportFrom}}>
-          <label for="ER">ER</label>&nbsp;
-          <input type="checkbox" name="Ward" id="Ward" {{setChecked 'Ward' form4.reportFrom}}>
-          <label for="Ward">Ward</label>
-        </p>
-        <p class="value">{{form4.wardInput}}</p>
-        <p></p>
-        <p class="block">
-          <span style="font-weight: 700;">ตรวจสอบเอกสาร</span> &nbsp;&nbsp;
-          <input type="checkbox" name="checkDoc3" id="checkDoc3" {{#if form4.checkDoc3}} checked="checked" {{/if}}>
-          <label for="checkDoc3">ใบ OPD Card</label>&nbsp;
-        </p>
+    <div class="table4">
+      <div class = "border4">
+        <div class="form4-line1">
+          <p></p>
+          <p>
+            1. การแจ้งรับผู้ป่วย &nbsp;&nbsp;
+            <input type="checkbox" name="OPD" id="OPD" {{setChecked 'OPD' form4.reportFrom}}>
+            <label for="OPD">OPD</label>&nbsp;
+            <input type="checkbox" name="ER" id="ER" {{setChecked 'ER' form4.reportFrom}}>
+            <label for="ER">ER</label>&nbsp;
+            <input type="checkbox" name="Ward" id="Ward" {{setChecked 'Ward' form4.reportFrom}}>
+            <label for="Ward">Ward</label>
+          </p>
+          <p class="value">{{form4.wardInput}}</p>
+        </div>
+        <div class="form4-line2">
+          <p></p>
+          <p>ชื่อ-สกุลผู้ป่วย</p>
+          <p class="value">{{form4.name}}</p>
+          <p>อายุ</p>
+          <p class="value">{{form4.age}}</p>
+          <p>ปี</p>
+          <p>H.N.</p>
+          <p class="value">{{form4.HN}}</p>
+        </div>
+        <div class="form4-line3">
+          <p></p>
+          <p>การวินิฉัยโรค</p>
+          <p class="value">{{form4.analysis}}</p>
+        </div>
+        <div class="form4-line4">
+          <p></p>
+          <p>
+            การเตรียมรับ : &nbsp;&nbsp;
+            <input type="checkbox" name="type1" id="type1" {{setChecked 'type1' form4.roomType }}>
+            <label for="type1">สามัญ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="type2" id="type2" {{setChecked 'type2' form4.roomType }}>
+            <label for="type2">พิเศษรวม</label>&nbsp;
+          </p>
+          <p>
+            <input type="checkbox" name="type3" id="type3" {{setChecked 'type3' form4.roomType }}>
+            <label for="type3">ห้องแยก</label>&nbsp;
+          </p>
+          <p>
+            <input type="checkbox" name="type4" id="type4" {{setChecked 'type4' form4.roomType }}>
+            <label for="type4">หอผู้ป่วยวิกฤต</label>&nbsp;
+          </p>
+        </div>
+        <div class="form4-line5">
+          <p></p>
+          <p>อุปกรณ์ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;
+            <input type="checkbox" name="equip1" id="equip1" {{#if form4.equip1}} checked="checked" {{/if}}>
+            <label for="equip1">O2 Canular</label>
+          </p>
+          <p>
+            <input type="checkbox" name="equip2" id="equip2" {{#if form4.equip2}} checked="checked" {{/if}}>
+            <label for="equip2">O2 Mask</label>&nbsp;
+          </p>
+          <p>
+            <input type="checkbox" name="equip3" id="equip3" {{#if form4.equip3}} checked="checked" {{/if}}>
+            <label for="equip3">Respiratory</label>&nbsp;
+          </p>
+          <p>
+            <input type="checkbox" name="equip4" id="equip4" {{#if form4.equip4}} checked="checked" {{/if}}>
+            <label for="equip4">อื่นๆ</label>&nbsp;
+          </p>
+        </div>
+        <div class="form4-line6">
+          <p></p>
+          <p>ผู้แจ้ง</p>
+          <p class="value">{{form4.reporter}}</p>
+          <p>วันที่</p>
+          <p class="value">{{form4.reportDate}}</p>
+          <p>เวลา</p>
+          <p class="value">{{form4.reportTime}}</p>
+          <p>น.</p>
+          <p>ผู้รับแจ้ง</p>
+          <p class="value">{{form4.reported}}</p>
+        </div>
       </div>
-      <div class="form4-line2">
-        <p>ชื่อ-สกุลผู้ป่วย</p>
-        <p class="value">{{form4.name}}</p>
-        <p>อายุ</p>
-        <p class="value">{{form4.age}}</p>
-        <p>ปี</p>
-        <p>H.N.</p>
-        <p class="value">{{form4.HN}}</p>
-        <p></p>
-        <p class="block">
-          <input type="checkbox" name="checkDoc1" id="checkDoc1" {{#if form4.checkDoc1}} checked="checked" {{/if}}>
-          <label for="checkDoc1">ใบ Summary</label>
-        </p>
-        <p>
-          <input type="checkbox" name="checkDoc4" id="checkDoc4" {{#if form4.checkDoc4}} checked="checked" {{/if}}>
-          <label for="checkDoc4">ใบยินยอมรักษา</label>&nbsp;
-        </p>
+      <div class = "border4">
+        <div class = "form4-2col">
+          <p></p>
+          <p>
+            <span style="font-weight: 700;"> ตรวจสอบเอกสาร</span> &nbsp;&nbsp;
+          </p>
+          <p>
+            <input type="checkbox" name="checkDoc3" id="checkDoc3" {{#if form4.checkDoc3}} checked="checked" {{/if}}>
+            <label for="checkDoc3">ใบ OPD Card</label>&nbsp;
+          </p>
+          <br>
+          <p>
+            <input type="checkbox" name="checkDoc1" id="checkDoc1" {{#if form4.checkDoc1}} checked="checked" {{/if}}>
+            <label for="checkDoc1">ใบ Summary </label>
+          </p>
+          <p>
+            <input type="checkbox" name="checkDoc4" id="checkDoc4" {{#if form4.checkDoc4}} checked="checked" {{/if}}>
+            <label for="checkDoc4">ใบยินยอมรักษา</label>&nbsp;
+          </p>  
+          <br>
+          
+          <p>
+            <input type="checkbox" name="checkDoc2" id="checkDoc2" {{#if form4.checkDoc1}} checked="checked" {{/if}}>
+            <label for="checkDoc2">ใบตรวจสอบสิทธิ์</label>
+          </p>
+          <p>
+            <input type="checkbox" name="checkDoc5" id="checkDoc5" {{#if form4.checkDoc4}} checked="checked" {{/if}}>
+            <label for="checkDoc5">อื่นๆ..................</label>
+          </p>
+          <br>
+          <p>ของผู้ป่วยที่นำมา</p>
+          <p>
+            <input type="checkbox" name="dontBring" id="dontBring" {{setChecked 'dontBring' form4.bring}}>
+            <label for="dontBring">ไม่มี</label>&nbsp;
+            <input type="checkbox" name="bring" id="bring" {{setChecked 'bring' form4.bring}}>
+            <label for="bring">มี (ระบุ)</label>&nbsp;
+          </p>
+          <br>
+          <p class="value"></p>
+          <p class="value"></p>
+          <br>
+          <p>ผู้ตรวจสอบ</p>
+          <p class="value">{{form4.examiner}}</p>
+        </div>
       </div>
-      <div class="form4-line3">
-        <p>การวินิฉัยโรค</p>
-        <p class="value">{{form4.analysis}}</p>
-        <p></p>
-        <p class="block">
-          <input type="checkbox" name="checkDoc2" id="checkDoc2" {{#if form4.checkDoc1}} checked="checked" {{/if}}>
-          <label for="checkDoc2">ใบตรวจสอบสิทธิ์</label>
-        </p>
-        <p>
-          <input type="checkbox" name="checkDoc5" id="checkDoc5" {{#if form4.checkDoc4}} checked="checked" {{/if}}>
-          <label for="checkDoc5">อื่นๆ</label>&nbsp;
-        </p>
-        <p class="value">{{form4.checkDocOther}}</p>
-      </div>
-      <div class="form4-line4">
-        <p>
-          การเตรียมรับ : &nbsp;&nbsp;
-          <input type="checkbox" name="type1" id="type1" {{setChecked 'type1' form4.roomType }}>
-          <label for="type1">สามัญ</label>
-        </p>
-        <p>
-          <input type="checkbox" name="type2" id="type2" {{setChecked 'type2' form4.roomType }}>
-          <label for="type2">พิเศษรวม</label>&nbsp;
-        </p>
-        <p>
-          <input type="checkbox" name="type3" id="type3" {{setChecked 'type3' form4.roomType }}>
-          <label for="type3">ห้องแยก</label>&nbsp;
-        </p>
-        <p>
-          <input type="checkbox" name="type4" id="type4" {{setChecked 'type4' form4.roomType }}>
-          <label for="type4">หอผู้ป่วยวิกฤต</label>&nbsp;
-        </p>
-        <p></p>
-        <p class="block" style="font-weight:700;">ของผู้ป่วยที่นำมา</p>
-        <p>
-          <input type="checkbox" name="dontBring" id="dontBring" {{setChecked 'dontBring' form4.bring}}>
-          <label for="dontBring">ไม่มี</label>&nbsp;
-        </p>
-        <p>
-          <input type="checkbox" name="bring" id="bring" {{setChecked 'bring' form4.bring}}>
-          <label for="bring">มี (ระบุ)</label>&nbsp;
-        </p>
-      </div>
-      <div class="form4-line5">
-        <p>อุปกรณ์ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>
-        <p>
-          <input type="checkbox" name="equip1" id="equip1" {{#if form4.equip1}} checked="checked" {{/if}}>
-          <label for="equip1">O2 Canular</label>
-        </p>
-        <p>
-          <input type="checkbox" name="equip2" id="equip2" {{#if form4.equip2}} checked="checked" {{/if}}>
-          <label for="equip2">O2 Mask</label>&nbsp;
-        </p>
-        <p>
-          <input type="checkbox" name="equip3" id="equip3" {{#if form4.equip3}} checked="checked" {{/if}}>
-          <label for="equip3">Respiratory</label>&nbsp;
-        </p>
-        <p>
-          <input type="checkbox" name="equip4" id="equip4" {{#if form4.equip4}} checked="checked" {{/if}}>
-          <label for="equip4">อื่นๆ</label>&nbsp;
-        </p>
-        <p class="value">{{form4.equipmentOther}}</p>
-        <p></p>
-        <p class="block"></p>
-        <p class="value">{{form4.bringOther}}</p>
-      </div>
-      <div class="form4-line6">
-        <p>ผู้แจ้ง</p>
-        <p class="value">{{form4.reporter}}</p>
-        <p>วันที่</p>
-        <p class="value">{{form4.reportDate}}</p>
-        <p>เวลา</p>
-        <p class="value">{{form4.reportTime}}</p>
-        <p>น.</p>
-        <p>ผู้รับแจ้ง</p>
-        <p class="value">{{form4.reported}}</p>
-        <p></p>
-        <p class="block">ผู้ตรวจสอบ</p>
-        <p class="value">{{form4.examiner}}</p>
-      </div>
-      <div style="margin-top:5px;"></div>
+      
     </div>
   </div>
   <div class="printContainer2" id="form1">
-    <div class="block-wrapper1" style="border-bottom:1px solid black;">
+    <div class="border4">
       <div class="form4-line7">
-        <p>2. ประวัติการเจ็บป่วยปัจจุบัน เข้ารับรักษาวันที่</p>
+        <p> </p>
+        <p><b>2. ประวัติการเจ็บป่วยปัจจุบัน เข้ารับรักษาวันที่</b></p>
         <p class="value">{{form4.checkInDate}}</p>
         <p>เวลา</p>
         <p class="value">{{form4.checkInTime}}</p>
         <p>น</p>
       </div>
       <div class="form4-line8">
+        <p></p>
         <p>ถึงหอผู้ป่วยโดย</p>
         <p>
           <input type="checkbox" name="walk" id="walk" {{setChecked 'เดิน' form4.transport}}>
@@ -653,10 +665,12 @@
         <p class="value">{{form4.transportOther}}</p>
       </div>
       <div class="form4-line9">
+        <p></p>
         <p>อาการสำคัญที่มาโรงพยาบาล</p>
         <p class="value">{{form4.symptom}}</p>
       </div>
       <div class="form4-line10">
+        <p></p>
         <p>ประวัติการเจ็บป่วยปัจจุบัน &nbsp;&nbsp;</p>
         <p>G</p>
         <p class="value">{{form4.G}}</p>
@@ -673,10 +687,12 @@
         <p class="value">{{form4.ANC}}</p>
       </div>
       <div class="form4-line11">
+        <p></p>
         <p>การแก้ไขก่อนมารพ</p>
         <p class="value">{{form4.beforeArrive}}</p>
       </div>
       <div class="form4-line12">
+        <p></p>
         <p>Vital Sign : Temp</p>
         <p class="value">{{form4.Temp}}</p>
         <p>c</p>
@@ -694,14 +710,16 @@
         <p>%</p>
       </div>
       <div class="form4-line13" style="margin-bottom:5px; ">
+        <p></p>
         <p>อื่นๆ</p>
         <p class="value">{{form4.symptom}}</p>
       </div>
     </div>
   </div>
   <div class="printContainer2" id="form1">
-    <div class="block-wrapper1" style="border-bottom: 1px solid black;">
+    <div class="border4">
       <div class="form4-line14">
+        <p></p>
         <p>3. ประวัติการเจ็บป่วยในอดีต</p>
         <p>
           <input type="checkbox" name="cantMeasure" id="cantMeasure" {{#if form4.cannotTell3}} checked="checked" {{/if}}>
@@ -709,6 +727,7 @@
         </p>
       </div>
       <div class="form4-line15">
+        <p></p>
         <p>โรคทางพันธุกรรม</p>
         <p>
           <input type="checkbox" name="nohaveGenetic" id="nohaveGenetic" {{setChecked 'geneticsNo' form4.genetics}}>
@@ -734,6 +753,7 @@
         <p class="value">{{form4.anyMedicationOther}}</p>
       </div>
       <div class="form4-line16">
+        <p></p>
         <p>ประวัติการแพ้ยา / อาหาร</p>
         <p>
           <input type="checkbox" name="medicalProblemsNo" id="medicalProblemsNo" {{ setChecked 'medicalProblemsNo' form4.medicalProblems
@@ -761,6 +781,7 @@
         <p class="value">{{form4.surgicalHistoryOther}}</p>
       </div>
       <div class="form4-line17" style="margin-bottom: 5px;">
+        <p></p>
         <p>ประวัติการใช้ยา</p>
         <p>
           <input type="checkbox" name="medicationHistoryNo" id="medicationHistoryNo" {{setChecked 'medicationHistoryNo' form4.medicationHistory}}>
@@ -776,13 +797,15 @@
     </div>
   </div>
   <div class="printContainer2" id="form1">
-    <div class="block-wrapper1" style="border-bottom: 1px solid black;">
+    <div class="border4">
       <div class="form4-line18">
-        <p>4. ประวัตส่วนตัว/ครอบครัว</p>
+        <p></p>
+        <p><b>4. ประวัตส่วนตัว/ครอบครัว</b></p>
         <p>บทบาทของผู้ป่วยในครอบครัว</p>
         <p class="value">{{form4.roleInFamily}}</p>
       </div>
       <div class="form4-line19">
+        <p></p>
         <p>ระดับการศึกษา</p>
         <p class="value">{{form4.educationLevel}}</p>
         <p>สถานภาพสมรส</p>
@@ -793,6 +816,7 @@
         <p class="value">{{form4.religion}}</p>
       </div>
       <div class="form4-line20" style="margin-bottom: 5px;">
+        <p></p>
         <p>บุคคลที่ติดต่อได้</p>
         <p class="value">{{form4.secondaryContact}}</p>
         <p>เกี่ยวข้องเป็น</p>
