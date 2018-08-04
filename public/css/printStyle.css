@@ -11,7 +11,7 @@
   padding:  60px 80px;
   line-height: 1; 
   font-size: 12px;
-  /* border: black solid 1px;  */
+  /* border: black solid 1px;  */ 
   margin: 0 auto;
 }
 
@@ -69,93 +69,93 @@ table{
 
 .form1-line1{
   display: grid;
-  grid-template-columns: 12% 22% 3.25% 11.5% 28% 3% 20.25%;
+  grid-template-columns:0.5% 12% 22% 3.25% 11.5% 28% 3% 20.25%;
 }
 .form1-line2and3{
   display: grid;
-  grid-template-columns: 3.25% 96.75%;
+  grid-template-columns:0.5% 3.25% 96.75%;
 }
 .form1-line4{
   display: grid;
-  grid-template-columns: 1.25% 5% 1.25% 5% 1.25% 5% 1% 5% 2.25% 6% 6% 3% 11% 3% 11% 3% 9% 5% 4.75% 11.25%;
+  grid-template-columns:0.5% 1.25% 5% 1.25% 5% 1.25% 5% 1% 5% 2.25% 6% 6% 3% 11% 3% 11% 3% 9% 5% 4.75% 11.25%;
 }
 .form1-line5{
   display: grid;
-  grid-template-columns: 7.75% 6.25% 5% 2.5% 6.25% 6% 74%;
+  grid-template-columns:0.5% 7.75% 6.25% 5% 2.5% 6.25% 6% 74%;
 }
 .form1-line6{
   display: grid;
-  grid-template-columns: 4% 7% 4.5% 7% 4.5% 7% 5.25% 7% 3.5% 7% 8% 7% 2% 7% 2% 7% 3.5% 6.75%;
+  grid-template-columns:0.5% 4% 7% 4.5% 7% 4.5% 7% 5.25% 7% 3.5% 7% 9% 7% 2% 7% 2% 7% 3.5% 5.75%;
 }
 
 .form1-line7{
   display: grid;
-  grid-template-columns: 7.5% 29.75% 18.5% 44.25%;
+  grid-template-columns:0.5% 7.5% 29.75% 18.5% 44.25%;
 }
 
 .form1-line8{
   display: grid;
-  grid-template-columns: 32.5% 67.5%;
+  grid-template-columns:0.5% 32.5% 67.5%;
 }
 .form1-line9{
   display: grid;
-  grid-template-columns: 10.5% 89.5%;
+  grid-template-columns:0.5% 10.5% 89.5%;
 }
 .form1-line10{
   display: grid;
-  grid-template-columns: 9% 5.25% 10% 5% 10% 4.25% 25% 4.5% 27%;
+  grid-template-columns:0.5% 9% 5.25% 10% 5% 10% 4.25% 25% 4.5% 27%;
 }
 .form1-line11{
   display: grid;
-  grid-template-columns: 61.75% 38.25%;
+  grid-template-columns:0.5% 66.50% 33%;
 }
 .form1-line12{
   display: grid;
-  grid-template-columns: 6.75% 93.25%;
+  grid-template-columns:0.5% 7.50% 92%;
 }
 .form1-line13{
   display: grid;
-  grid-template-columns: 4.5% 7.5% 3% 2% 7.5% 5% 2% 7.5% 5% 1.75% 7.5% 7% 2.5% 7.5% 4% 2% 7.75% 3%;
+  grid-template-columns:0.5% 4.5% 7.5% 3% 2% 7.5% 5% 2% 7.5% 5% 1.75% 7.5% 7% 2.5% 7.5% 4% 2% 7.75% 3%;
 }
 .form1-line14{
   display: grid;
-  grid-template-columns: 3% 16.5% 3.5% 17% 10% 12%;
+  grid-template-columns:0.5% 3% 16.5% 3.5% 17% 10% 12%;
 }
 .form1-line15{
   display: grid;
-  grid-template-columns: 5.5% 34.5% 10% 2% 13% 5% 13.5% 3% 13.5%;
+  grid-template-columns:0.5% 5.5% 34.5% 10% 2% 13% 5% 13.5% 3% 13.5%;
 }
 .form1-line16{
   display: grid;
-  grid-template-columns: 4% 36% 10% 8.25% 16.75% 5% 2% 17% 1%;
+  grid-template-columns:0.5% 5% 35% 10% 8.25% 16.75% 5% 2% 17% 1%;
 }
 .form1-line17{
   display: grid;
-  grid-template-columns: 4% 36% 10% 4.5% 20.5% 6.5% 18.5%;
+  grid-template-columns:0.5% 5% 35% 10% 4.5% 20.5% 6.5% 18.5%;
 }
 .form1-line18{
   display: grid;
-  grid-template-columns: 6.5% 33.5% 10% 2% 27.5% 1.5% 18% 1%;
+  grid-template-columns:0.5% 7.5% 32.5% 10% 2% 27.5% 1.5% 18% 1%;
 }
 .form1-line19{
   display: grid;
-  grid-template-columns: 7.5% 32.5% 10% 4.75% 45.25%;
+  grid-template-columns:0.5% 8.5% 31.5% 10% 5.75% 44.25%;
 }
 .form1-line20and21{
   display: grid;
-  grid-template-columns: 4.75% 35.25%;
+  grid-template-columns:0.5% 5.75% 34.25%;
 }
 .form1-line22{
   display: grid;
-  grid-template-columns: 11% 18.75% 2% 9.25% 18.5% 7.5% 15% 4.75% 13.25%;
+  grid-template-columns:0.5% 12% 17.75% 2% 9.25% 18.5% 7.5% 15% 5.75% 12.25%;
 }
 .form1-line23{
   display: grid;
-  grid-template-columns: 3.5% 96.5%;
+  grid-template-columns:0.5% 3.5% 96.5%;
 }
 .form1-line24{
   display: grid;
-  grid-template-columns: 11.75% 88.25%;
+  grid-template-columns:0.5% 12.75% 87.25%;
 }
 .form1-line25{
   display: grid;
@@ -163,60 +163,60 @@ table{
 }
 .form1-line26{
   display: grid;
-  grid-template-columns: 5% 31% 2.75% 10.25% 2% 3.25% 7.5% 6.25% 11.75%;
+  grid-template-columns:0.5% 5% 31% 2.75% 10.25% 2% 3.25% 7.5% 6.25% 11.75%;
 }
 .form1-line27{
   display: grid;
-  grid-template-columns: 2.25% 15.75% 2.5% 15.5% 4% 40%;
+  grid-template-columns:0.5% 2.25% 15.75% 2.5% 15.5% 4% 40%;
 }
 
 .form2-line1{
   display: grid;
-  grid-template-columns: 5% 29% 3% 7.5% 2% 2.25% 18% 4% 29.25%;
+  grid-template-columns: 0.5% 5% 29% 3% 7.5% 2% 2% 18% 4% 29%;
 }
 .form2-line2{
   display: grid;
-  grid-template-columns: 1.25% 5% 1.25% 5% 1.25% 5% 1% 5% 2.5% 5% 3% 3% 10% 3% 9.5% 39.25%;
+  grid-template-columns: 0.5% 1.25% 5% 1.25% 5% 1.25% 5% 1% 5% 2.5% 5% 3% 3% 10% 3% 10% 38.25%;
 }
 .form2-line3{
   display: grid;
-  grid-template-columns: 28.5% 71.5%;
+  grid-template-columns: 0.5% 31.5% 68%;
 }
 .form2-line4{
   display: grid;
-  grid-template-columns: 8% 30% 2% 10% 14% 10.5% 2% 10.5% 2%;
+  grid-template-columns: 0.5% 8% 30% 2% 10% 14% 10% 2% 10.5% 2%;
 }
 .form2-line5{
   display: grid;
-  grid-template-columns: 11.25% 26.75% 2% 10% 14% 10.5% 2% 10.5% 2%;
+  grid-template-columns: 0.5% 11.25% 26.75% 2% 10% 14% 10% 2% 10.5% 2%;
 }
 .form2-line6{
   display: grid;
-  grid-template-columns: 9.5% 15.5% 3% 10% 1% 11% 14% 10.5% 2% 10.5% 2%;
+  grid-template-columns: 0.5% 9.5% 15.5% 3% 10% 1% 11% 14% 10% 2% 10.5% 2%;
 }
 .form2-line7{
   display: grid;
-  grid-template-columns: 8% 30% 1%;
+  grid-template-columns: 0.5% 8% 30% 1%;
 }
 .form2-line8{
   display: grid;
-  grid-template-columns: 28% 3% 20% 3% 15% 2% 5% 24%;
+  grid-template-columns: 0.5% 28% 3% 20% 3% 15% 2% 5% 23.5%;
 }
 .form2-line9{
   display: grid;
-  grid-template-columns: 16% 84%;
+  grid-template-columns: 0.5% 17% 82.5%;
 }
 .form2-line10{
   display: grid;
-  grid-template-columns: 22% 29.25% 6.5% 42.25%;
+  grid-template-columns: 0.5% 23% 28% 6.5% 42%;
 }
 .form2-line11{
   display: grid;
-  grid-template-columns: 57.25% 6.75% 26% 10%;
+  grid-template-columns: 57.25% 6.25% 26% 10%;
 }
 .form2-line12{
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 0.5% 20% 79.5%;
 }
 .form2-line13{
   display: grid;
@@ -228,67 +228,67 @@ table{
 }
 .form2-line15{
   display: grid;
-  grid-template-columns: 45% 6% 10% 3% 8% 10% 3%;
+  grid-template-columns: 0.5% 44.5% 6% 10% 3% 8% 10% 3%;
 }
 .form2-line16{
   display: grid;
-  grid-template-columns: 20% 40% 20%;
+  grid-template-columns: 0.5% 20% 39.5% 20%;
 }
 .form2-line17{
   display: grid;
-  grid-template-columns: 20% 40% 20%;
+  grid-template-columns: 0.5% 20% 39.5% 20%;
 }
 .form2-line18{
   display: grid;
-  grid-template-columns: 40% 9.5% 10% 3% 2% 10% 1% 10% 3%;
+  grid-template-columns: 0.5% 39% 10% 10% 3% 2% 10% 1% 10% 3%;
 }
 .form2-line19{
   display: grid;
-  grid-template-columns: 16% 74%;
+  grid-template-columns: 0.5% 17% 72.5%;
 }
 .form2-line20{
   display: grid;
-  grid-template-columns: 3% 15% 4% 2% 8% 1% 15% 7% 2% 8% 5% 3% 26%;
+  grid-template-columns: 0.5% 3% 15% 4% 2% 8% 1% 15% 7% 2% 8% 5% 3% 26%;
 }
 .form2-line21{
   display: grid;
-  grid-template-columns: 5% 3% 10% 5% 10% 5% 10% 4% 5% 4% 5% 4.5% 5%;
+  grid-template-columns: 0.5% 5% 3% 10% 5% 10% 5% 10% 4% 5% 4% 5% 4.75% 5%;
 }
 .form2-line22{
   display: grid;
-  grid-template-columns: 2% 10% 4% 2% 10% 4% 2% 10% 4% 35%;
+  grid-template-columns:0.5% 2% 10% 4% 2% 10% 4% 2% 10% 4% 35.5%;
 }
 .form2-line23{
   display: grid;
-  grid-template-columns: 12.5% 87.5%;
+  grid-template-columns:0.5% 14.5% 85%;
 }
 .form2-line24{
   display: grid;
-  grid-template-columns: 10% 15% 3% 50% 3%;
+  grid-template-columns:0.5% 10% 15% 3% 50% 2.5%;
 }
 .form2-line25{
   display: grid;
-  grid-template-columns: 12% 32% 10% 12% 32%;
+  grid-template-columns:0.5% 12% 32% 11.5% 12% 32%;
 }
 .form2-line26{
   display: grid;
-  grid-template-columns: 8% 4% 3% 2% 4% 4% 1% 4% 4% 2% 4% 14% 7.5% 36.5%;
+  grid-template-columns:0.5% 8% 4% 3% 2% 4% 4% 1% 4% 4% 2% 4% 15.5% 7.5% 36.5%;
 }
 .form2-line27{
   display: grid;
-  grid-template-columns: 13.5% 30.5% 10% 6% 38%;
+  grid-template-columns:0.5% 13.5% 30.5% 11.5% 6% 38%;
 }
 .form2-line28{
   display: grid;
-  grid-template-columns: 9% 35% 10% 7% 37%;
+  grid-template-columns:0.5% 9% 35% 11.5% 7% 37%;
 }
 .form2-line29{
   display: grid;
-  grid-template-columns: 11% 33% 10% 10.5% 33.5%;
+  grid-template-columns:0.5% 11% 33% 11.5% 10.5% 33.5%;
 }
 .form2-line30{
   display: grid;
-  grid-template-columns: 10.5% 33.5% 10% 5% 29% 10%;
+  grid-template-columns:0.5% 10.5% 33.5% 11.5% 5% 29% 10%;
 }
 
 /* Form3 */

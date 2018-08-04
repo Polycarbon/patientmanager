@@ -660,6 +660,7 @@
     </p>
   </div>
   <div class="form2-line1">
+    <p></p>
     <p>ชื่อ-สกุล</p>
     <p class="value">{{form2.patient_name}}</p>
     <p>อายุ</p>
@@ -671,6 +672,7 @@
     <p class="value">{{form2.doctor}}</p>
   </div>
   <div class="form2-line2">
+    <p></p>
     <p>G</p>
     <p class="value">{{form2.G}}</p>
     <p>P</p>
@@ -689,6 +691,7 @@
     <p class="value">{{form2.Preg_sym}}</p>
   </div>
   <div class="form2-line3">
+    <p></p>
     <p>Labour :&nbsp;
       <input type="checkbox" name="spontaneous" id="spontaneous" {{setChecked '1' form2.Labour}}>
       <label for="spontaneous">Spontaneous</label>&nbsp;
@@ -698,6 +701,7 @@
     <p class="value">{{form2.Labour_field}}</p>
   </div>
   <div class="form2-line4">
+    <p></p>
     <p>เจ็บครรภ์จริง</p>
     <p class="value">{{form2.Labour_hurt}}</p>
     <p>น.</p>
@@ -709,6 +713,7 @@
     <p>นาที</p>
   </div>
   <div class="form2-line5">
+    <p></p>
     <p>ปากมดลูกเปิดหมด</p>
     <p class="value">{{form2.uterus}}</p>
     <p>น.</p>
@@ -720,6 +725,7 @@
     <p>นาที</p>
   </div>
   <div class="form2-line6">
+    <p></p>
     <p>ทารกคลอดวันที่</p>
     <p class="value">{{form2.bornDate}}</p>
     <p>เวลา</p>
@@ -733,11 +739,13 @@
     <p>นาที</p>
   </div>
   <div class="form2-line7">
+    <p></p>
     <p>รกคลอดเวลา</p>
     <p class="value">{{form2.placenta}}</p>
     <p>น.</p>
   </div>
   <div class="form2-line8">
+    <p></p>
     <p>Type of MR :&nbsp;
       <input type="checkbox" name="spontaneous" id="spontaneous" {{setChecked '1' form2.MR}}>
       <label for="spontaneous">Spontaneous</label>&nbsp;
@@ -753,10 +761,12 @@
     <p class="value">{{form2.appearance}}</p>
   </div>
   <div class="form2-line9">
+    <p></p>
     <p>Medication (Time &amp; does)</p>
     <p class="value">{{form2.med_time_does}}</p>
   </div>
   <div class="form2-line10">
+    <p></p>
     <p>Delivery :&nbsp;
       <input type="checkbox" name="normal" id="normal" {{setChecked '1' form2.Delivery}}>
       <label for="spontaneous">Normal</label>&nbsp;
@@ -774,6 +784,7 @@
     <p>แพทย์/พยาบาล</p>
   </div>
   <div class="form2-line12">
+    <p></p>
     <p>
       Injuries : Type of Episiotomy :&nbsp;
     </p>
@@ -819,6 +830,7 @@
     </p>
   </div>
   <div class="form2-line15" style="margin-bottom: 15px;">
+    <p></p>
     <p>
       รกและสายสะดือ :&nbsp;
       <input type="checkbox" name="spontaneous_delivery" id="spontaneous_delivery" {{setChecked '1' form2.placenta_cord}}>
@@ -834,6 +846,7 @@
     <p>ซม.</p>
   </div>
   <div class="form2-line16">
+    <p></p>
     <p>
       ลักษณะรก :&nbsp;
       <input type="checkbox" name="placenta_normal" id="placenta_normal" {{setChecked '1' form2.placenta_app}}>
@@ -849,11 +862,13 @@
       <label for="placenta_incomplete">ไม่ครบ</label>&nbsp;
     </p>
   </div>
-  <div class="form2-line17" style="margin-bottom: 15px;">
+  <div class="form2-line17" >
+    <p></p>
     <p>ลักษณะผิดปกติ (ระบุ)</p>
     <p class="value">{{form2.abnormalcord_text}}</p>
   </div>
   <div class="form2-line18">
+    <p></p>
     <p>
       POSTPARTUM CONDITION :&nbsp;
       <input type="checkbox" name="postpartum_normal" id="postpartum_normal" {{setChecked '1' form2.POSTPARTUM}}>
@@ -870,11 +885,13 @@
     <p class="value">{{form2.mmHg}}</p>
     <p>mmHg</p>
   </div>
-  <div class="form2-line19" style="margin-bottom: 15px;">
+  <div class="form2-line19">
+    <p></p>
     <p>Medication (Time &amp; does)</p>
     <p class="value">{{form2.med_time_does2}}</p>
   </div>
   <div class="form2-line20">
+    <p></p>
     <p>เวลา</p>
     <p class="value">{{form2.time1}}</p>
     <p>น.</p>
@@ -888,8 +905,7 @@
     <p>/min</p>
     <p>note</p>
     <p class="value">{{form2.note1}}</p>
-  </div>
-  <div class="form2-line20">
+    <br>
     <p>เวลา</p>
     <p class="value">{{form2.time2}}</p>
     <p>น.</p>
@@ -903,8 +919,7 @@
     <p>/min</p>
     <p>note</p>
     <p class="value">{{form2.note2}}</p>
-  </div>
-  <div class="form2-line20">
+    <br>
     <p>เวลา</p>
     <p class="value">{{form2.time3}}</p>
     <p>น.</p>
@@ -918,8 +933,7 @@
     <p>/min</p>
     <p>note</p>
     <p class="value">{{form2.note3}}</p>
-  </div>
-  <div class="form2-line20">
+    <br>
     <p>เวลา</p>
     <p class="value">{{form2.time4}}</p>
     <p>น.</p>
@@ -933,8 +947,7 @@
     <p>/min</p>
     <p>note</p>
     <p class="value">{{form2.note4}}</p>
-  </div>
-  <div class="form2-line20" style="margin-bottom: 15px;">
+    <br>
     <p>เวลา</p>
     <p class="value">{{form2.time5}}</p>
     <p>น.</p>
@@ -950,6 +963,7 @@
     <p class="value">{{form2.note5}}</p>
   </div>
   <div class="form2-line21" style="margin-bottom: 15px;">
+    <p></p>
     <p>ทารก :</p>
     <p>เพศ</p>
     <p class="value">{{form2.gender}}</p>
@@ -965,6 +979,7 @@
     <p class="value">{{form2.min10}}</p>
   </div>
   <div class="form2-line22">
+    <p></p>
     <p>OF</p>
     <p class="value">{{form2.OF}}</p>
     <p>ซม.</p>
@@ -983,10 +998,12 @@
     </p>
   </div>
   <div class="form2-line23" style="margin-bottom:15px;">
+    <p></p>
     <p>Remark &amp; Treatment</p>
     <p class="value">{{form2.remark}}</p>
   </div>
   <div class="form2-line24">
+    <p></p>
     <p>หลังคลอด 2 ชม.</p>
     <p></p>
     <p>มารดา</p>
@@ -994,6 +1011,7 @@
     <p>ทารก</p>
   </div>
   <div class="form2-line25">
+    <p></p>
     <p>สภาพทั่วไปก่อนย้าย</p>
     <p class="value">{{form2.mom_state}}</p>
     <p></p>
@@ -1001,6 +1019,7 @@
     <p class="value">{{form2.baby_state}}</p>
   </div>
   <div class="form2-line26">
+    <p></p>
     <p>สัญญานชีพT</p>
     <p class="value">{{form2.T_cc}}</p>
     <p>c</p>
@@ -1017,6 +1036,7 @@
     <p class="value">{{form2.temp}}</p>
   </div>
   <div class="form2-line27">
+    <p></p>
     <p>การหดรัดตัวของมดลูก</p>
     <p class="value">{{form2.uterus_contract}}</p>
     <p></p>
@@ -1024,6 +1044,7 @@
     <p class="value">{{form2.baby_milk}}</p>
   </div>
   <div class="form2-line28">
+    <p></p>
     <p>การขับปัสสาวะ</p>
     <p class="value">{{form2.urine_out}}</p>
     <p></p>
@@ -1031,6 +1052,7 @@
     <p class="value">{{form2.excretion}}</p>
   </div>
   <div class="form2-line29">
+    <p></p>
     <p>การหลั่งของน้ำนม</p>
     <p class="value">{{form2.breast_milk}}</p>
     <p></p>
@@ -1038,6 +1060,7 @@
     <p class="value">{{form2.baby_abnormalities}}</p>
   </div>
   <div class="form2-line30">
+    <p></p>
     <p>ภาวะผิดปกติอื่นๆ</p>
     <p class="value">{{form2.mom_abnormalities}}</p>
     <p></p>
