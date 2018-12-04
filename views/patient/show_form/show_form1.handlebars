@@ -680,9 +680,9 @@
     <p>
       วัน-เดือน-ปี ที่บันทึก
     </p>
-    <p class="value">2nd September, 2018</p>
+    <p class="value">{{form1.recordDate}}</p>
     <p>เวลา</p>
-    <p class="value">11:11</p>
+    <p class="value">{{form1.recordTime}}</p>
     <p>ประวัติได้จาก&nbsp;
       <input type="checkbox" name="fromPatientHimself" id="patientHimself" {{setChecked '1' form1.history}}>
       <label for="gotHistoryFrom">ผู้ป่วย</label>
@@ -694,7 +694,7 @@
       <label for="fromOther">อื่นๆ</label>
     </p>
     <p>อื่นๆ</p>
-    <p class="value">คนอื่น</p>
+    <p class="value">{{form1.history_Other}}</p>
   </div>
   <div class="form1-line2and3">
     <p>CC :</p>
