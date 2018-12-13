@@ -48,8 +48,12 @@ input[type='checkbox']{
 
 .value {
   font-weight: 700;
+  line-height: 1; 
+  position: relative;
+  vertical-align: middle;
   border-bottom: 1px dotted black;   
   text-align: center;
+  bottom: 1px;
 }
 
 table{
@@ -67,6 +71,10 @@ table{
 
 #form1 td{
  text-align: center;
+}
+
+.bt{
+  line-height: 0.5px;
 }
 
 .form1-line1{
@@ -89,7 +97,7 @@ table{
 }
 .form1-line6{
   display: grid;
-  grid-template-columns: 0% 4% 7% 4.5% 7% 4.5% 7% 5.25% 7% 3.5% 7% 8% 7% 2% 7% 2% 7% 3.5% 6.75%;
+  grid-template-columns: 0% 4% 7% 4.5% 7% 4.5% 7% 5.25% 7% 3.5% 7% 8% 5% 2% 7% 2% 7% 3.5% 6.75%;
 }
 
 .form1-line7{
@@ -131,7 +139,7 @@ table{
 }
 .form1-line16{
   display: grid;
-  grid-template-columns: 0% 5% 34.5% 10% 8.25% 16.75% 5% 2% 16% 1%;
+  grid-template-columns: 0% 5% 34.5% 10% 8.25% 16.75% 5% 2% 18% 1%;
 }
 .form1-line17{
   display: grid;
@@ -139,19 +147,19 @@ table{
 }
 .form1-line18{
   display: grid;
-  grid-template-columns: 0% 8% 32.5% 10% 2% 24.5% 1.5% 18% 1%;
+  grid-template-columns: 0% 8% 32.5% 10% 2% 24.5% 1.5% 20% 1%;
 }
 .form1-line19{
   display: grid;
-  grid-template-columns: 0% 10% 10% 10% 10% 10%; /* 0% 7.5% 32.5% 10% 4.75% 45.25%; */
+  grid-template-columns: 0% 10% 30% 10% 7% 42%; /* 0% 7.5% 32.5% 10% 4.75% 45.25%; */
 }
 .form1-line20and21{
   display: grid;
-  grid-template-columns: 0% 10% 10%;
+  grid-template-columns: 0% 10% 30%;
 }
 .form1-line22{
   display: grid;
-  grid-template-columns: 0% 11% 18.75% 2% 9.25% 18.5% 7.5% 15% 4.75% 13.25%;
+  grid-template-columns: 0% 14% 15.75% 2% 9.25% 18.5% 7.5% 15% 4.75% 13.25%;
 }
 .form1-line23{
   display: grid;
