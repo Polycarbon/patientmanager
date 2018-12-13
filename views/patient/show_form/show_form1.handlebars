@@ -185,7 +185,8 @@
       <p>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-1" name="smoke" {{#if form1.smoke}} checked="checked" {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-1" name="smoke" {{#if form1.smoke}} checked="checked"
+              {{/if}} disabled>
             <label for="personalhx-1">บุหรี่</label>
           </div>
           <div class="col s6" id="personal-smoke">
@@ -195,8 +196,8 @@
         </div>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-2" name="alcohol" {{#if form1.alcohol}} checked="checked" {{/if}}/
-              disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-2" name="alcohol" {{#if form1.alcohol}} checked="checked"
+              {{/if}}/ disabled>
             <label for="personalhx-2">สุรา</label>
           </div>
           <div class="col s6" id="personal-alcohol">
@@ -206,7 +207,8 @@
         </div>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-3" name="drug" {{#if form1.drug}} checked="checked" {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-3" name="drug" {{#if form1.drug}} checked="checked"
+              {{/if}} disabled>
             <label for="personalhx-3">ยา</label>
           </div>
           <div class="col s6" id="personal-drug">
@@ -226,38 +228,40 @@
       <label for="">Family Hx :</label>
       <p>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box1" name="DM" {{#if form1.DM}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box1" name="DM" {{#if form1.DM}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box1">DM</label>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box2" name="HT" {{#if form1.HT}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box2" name="HT" {{#if form1.HT}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box2">HT</label>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box3" name="Asthma" {{#if form1.Asthma}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box3" name="Asthma" {{#if form1.Asthma}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box3">Asthma</label>
         </div>
         <div class="col s5">
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box4" name="Renal_disease" {{#if form1.Renal_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box4" name="Renal_disease"
+              {{#if form1.Renal_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box4">Renal disease</label>
           </div>
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box5" name="Heart_disease" {{#if form1.Heart_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box5" name="Heart_disease"
+              {{#if form1.Heart_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box5">Heart disease</label>
           </div>
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box6" name="Blood_disease" {{#if form1.Blood_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box6" name="Blood_disease"
+              {{#if form1.Blood_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box6">Blood disease</label>
           </div>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box7" name="Other_disease" {{#if form1.Other_disease}} checked="checked"
-            {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box7" name="Other_disease" {{#if form1.Other_disease}}
+            checked="checked" {{/if}} disabled>
           <label for="filled-in-box7">Other</label>
         </div>
       </p>
@@ -676,10 +680,9 @@
   <div class="title">
     <p>แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</p>
   </div>
-  <div class="form1-line1">
-    <p>
-      วัน-เดือน-ปี ที่บันทึก
-    </p>
+  <div class="form1-line1" style="margin-bottom:0px;">
+    <p> </p>
+    <p>วัน-เดือน-ปี ที่บันทึก</p>
     <p class="value">{{form1.recordDate}}</p>
     <p>เวลา</p>
     <p class="value">{{form1.recordTime}}</p>
@@ -693,18 +696,20 @@
       <input type="checkbox" name="fromOther" id="fromOther" {{setChecked '3' form1.history}}>
       <label for="fromOther">อื่นๆ</label>
     </p>
-    <p>อื่นๆ</p>
     <p class="value">{{form1.history_Other}}</p>
   </div>
-  <div class="form1-line2and3">
+  <div class="form1-line2and3" style="margin-bottom:0px;">
+    <p></p>
     <p>CC :</p>
     <p class="value">{{form1.CC}}</p>
   </div>
-  <div class="form1-line2and3">
+  <div class="form1-line2and3" style="margin-bottom:0px;">
+    <p></p>
     <p>PI :</p>
     <p class="value">{{form1.PI}}</p>
   </div>
-  <div class="form1-line4" style="margin-bottom: 5px;">
+  <div class="form1-line4" style="margin-bottom:0px;">
+    <p> </p>
     <p>G</p>
     <p class="value">{{form1.G}}</p>
     <p>P</p>
@@ -727,6 +732,7 @@
     <p class="value">{{form1.ANC}}</p>
   </div>
   <div class="form1-line5">
+    <p> </p>
     <p>First ANC at</p>
     <p class="value">{{form1.first_ANC}}</p>
     <p>wks</p>
@@ -750,7 +756,8 @@
       <label for="np">no</label>
     </p>
   </div>
-  <div class="form1-line6" style="margin-bottom: 5px;">
+  <div class="form1-line6" style="margin-bottom:0px;">
+    <p> </p>
     <p>VDRL</p>
     <p class="value">{{form1.VDRL}}</p>
     <p>HbsAg</p>
@@ -770,29 +777,35 @@
     <p>DCIP</p>
     <p class="value">{{form1.DCIP}}</p>
   </div>
-  <div class="form1-line7" style="margin-bottom: 5px;">
+  <div class="form1-line7" style="margin-bottom:0px;">
+    <p> </p>
     <p>Thallasemia</p>
     <p class="value">{{form1.Thallasemia}}</p>
     <p>ภาวะแทรกซ้อนระหว่างตั้งครรภ์</p>
     <p class="value">{{form1.preg_sym}}</p>
   </div>
-  <div class="form1-line8" style="margin-bottom: 5px;">
+  <div class="form1-line8" style="margin-bottom:0px;">
+    <p> </p>
     <p>Past Hx : (โรคประจำตัว, อุบัติเหตุ, การใช้ยา, การผ่าตัด)</p>
     <p class="value">{{form1.Past_Hx}}</p>
   </div>
-  <div class="form1-line9" style="margin-bottom: 5px;">
+  <div class="form1-line9" style="margin-bottom:0px;">
+    <p> </p>
     <p>ประวัติการแพ้ยา :</p>
     <p class="value">{{form1.med_Allergic}}</p>
   </div>
-  <div class="form1-line10" style="margin-bottom: 5px;">
+  <div class="form1-line10" style="margin-bottom: 0px;">
+    <p> </p>
     <p>Personal Hx :</p>
     <p>
-      <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked" {{/if}}>
+      <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked"
+        {{/if}}>
       <label for="personalHx_smoke">บุหรี่</label>
     </p>
     <p class="value">{{form1.personal_smoke_text}}</p>
     <p>
-      <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked" {{/if}}>
+      <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked"
+        {{/if}}>
       <label for="personalHx_alcohol">สุรา</label>
     </p>
     <p class="value">{{form1.personal_alcohol_text}}</p>
@@ -804,7 +817,8 @@
     <p>อาชีพ</p>
     <p class="value">{{form1.job}}</p>
   </div>
-  <div class="form1-line11" style="margin-bottom: 5px;">
+  <div class="form1-line11" style="margin-bottom:0px;">
+
     <p>
       Family Hx :
       <input type="checkbox" name="familyHx_DM" id="familyHx_DM" {{#if form1.DM}} checked="checked" {{/if}}>
@@ -813,21 +827,23 @@
       <label for="familyHx_HT">HT</label>&nbsp;
       <input type="checkbox" name="familyHx_Asthma" id="familyHx_Asthma" {{#if form1.Asthma}} checked="checked" {{/if}}>
       <label for="familyHx_Asthma">Asthma</label>&nbsp;
-      <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Renal_disease">Renal disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Heart_disease">Heart disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Blood_disease">Blood disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked" {{/if}}>
+      <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked"
+        {{/if}}>&nbsp;
       <label for="familyHx_Other">Other</label>
     </p>
     <p class="value">{{form1.family_Other}}</p>
   </div>
-  <div class="form1-line12" style="margin-bottom:15px;">
+  <div class="form1-line12" style="margin-bottom:0px;">
+    <p> </p>
     <p>Social Hx :</p>
     <p class="value">{{form1.Social_Hx}}</p>
   </div>
@@ -924,6 +940,7 @@
     </p>
   </div>
   <div class="form1-line13" style="margin-bottom: 5px;">
+    <p> </p>
     <p>V/S : T</p>
     <p class="value">{{form1.T}}</p>
     <p>c,</p>
@@ -944,6 +961,7 @@
     <p>cms</p>
   </div>
   <div class="form1-line14">
+    <p> </p>
     <p>GA :</p>
     <p class="value">{{form1.GA}}</p>
     <p>Skin :</p>
@@ -952,6 +970,7 @@
     <p style="text-decoration:underline;">การตรวจครรภ์</p>
   </div>
   <div class="form1-line15">
+    <p> </p>
     <p>HEENT</p>
     <p class="value">{{form1.HEENT_lower}}</p>
     <p></p>
@@ -963,6 +982,7 @@
     <p class="value">{{form1.FHS}}</p>
   </div>
   <div class="form1-line16">
+    <p></p>
     <p>Heart :</p>
     <p class="value">{{form1.Heart}}</p>
     <p></p>
@@ -974,6 +994,7 @@
     <p>%</p>
   </div>
   <div class="form1-line17">
+    <p> </p>
     <p>Lung :</p>
     <p class="value">{{form1.Lung}}</p>
     <p></p>
@@ -983,6 +1004,7 @@
     <p class="value">{{form1.Membrane}}</p>
   </div>
   <div class="form1-line18">
+    <p> </p>
     <p>Abdomen :</p>
     <p class="value">{{form1.Abdomen}}</p>
     <p></p>
@@ -993,21 +1015,25 @@
     <p>น.</p>
   </div>
   <div class="form1-line19">
-    <p>Extremities :</p>
+    <p> </p>
+    <p>Extremities :</p>{{!-- &nbsp; --}}
     <p class="value">{{form1.Extremities}}</p>
     <p></p>
     <p>Others :</p>
     <p class="value">{{form1.Others}}</p>
   </div>
   <div class="form1-line20and21">
+    <p> </p>
     <p>Neuro &nbsp;:</p>
     <p class="value">{{form1.Neuro}}</p>
   </div>
   <div class="form1-line20and21">
+    <p> </p>
     <p>Others :</p>
     <p class="value">{{form1.Preg_other}}</p>
   </div>
   <div class="form1-line22">
+    <p> </p>
     <p>Investigation : Hct</p>
     <p class="value">{{form1.Inves_hct}}</p>
     <p>%</p>
@@ -1019,10 +1045,12 @@
     <p class="value">{{form1.Inves_other}}</p>
   </div>
   <div class="form1-line23">
+    <p> </p>
     <p>Imp :</p>
     <p class="value">{{form1.imp}}</p>
   </div>
   <div class="form1-line24" style="margin-bottom: 5px;">
+    <p> </p>
     <p>Plan for Treatment :</p>
     <p class="value">{{form1.plan}}</p>
   </div>
@@ -1035,6 +1063,7 @@
     <p>(staff)</p>
   </div>
   <div class="form1-line26">
+    <p> </p>
     <p>ชื่อ-สกุล</p>
     <p class="value">{{form1.patient_name}}</p>
     <p>อายุ</p>
@@ -1046,6 +1075,7 @@
     <p class="value">{{form1.room}}</p>
   </div>
   <div class="form1-line27">
+    <p> </p>
     <p>HN</p>
     <p class="value">{{form1.HN}}</p>
     <p>AN</p>
