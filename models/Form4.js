@@ -212,6 +212,18 @@ const Form4 = new Schema({
   },
   user_updated: {
     type: String
+  },
+  consciusLevel: {
+    type: String
+  },
+  apperceptionLevel: {
+    type: String
+  },
+  cannotTell5_1: {
+    type: String
+  },
+  cannotTell5_2: {
+    type: String
   }
 });
 

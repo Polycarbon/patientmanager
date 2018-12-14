@@ -466,7 +466,6 @@
     <div class="col s12">
       <div class="row"></div>
       <div class="col s12 left">
-<<<<<<< HEAD
         <span style="font-weight: 600;">5. สติปัญญาและการรับรู้
         </span>
       </div>
@@ -477,7 +476,7 @@
         <label for="">ระดับความรู้สึกตัว</label>
         <p>
           <div class="col s2">
-            <input type="radio" class="filled-in" id="consciousOpt1" name="medicationHistory" value="consciousOpt1" />
+            <input type="radio" class="filled-in" id="consciousOpt1" name="consciusLevel" value="consciousOpt1" />
             <label for="consciousOpt1">รู้สึกตัวดี</label>
           </div>
           <div class="col s2">
@@ -496,38 +495,109 @@
       </div>
 
       <div class="col s12">
-        <label for="">5.1 สติปัญญา</label>
+        <div class="row"></div>
+          <div class="col s12 left">
+            <span class="left" style="font-weight: 600; margin-right:20px;">5.1 สติปัญญา  
+            </span>
+            <div class="col s2">
+              <input type="checkbox" class="filled-in" id="apperceptionOpt1" name="apperceptionLevel" value="apperceptionOpt1" />
+              <label for="apperceptionOpt1">ประเมินไม่ได้</label>
+            </div>
+            <div class="col s2">
+              <input type="checkbox" class="filled-in" id="apperceptionOpt2" name="apperceptionLevel" value="apperceptionOpt2" />
+              <label for="apperceptionOpt2">ปกติ</label>
+            </div>
+            <div class="col s2">
+              <input type="checkbox" class="filled-in" id="apperceptionOpt3" name="apperceptionLevel" value="apperceptionOpt3" />
+              <label for="apperceptionOpt3">ไม่ปกติ</label>
+            </div>
+          </div>
+        <div class="row"></div>
+      </div>
+      <div class="col s12">
+      <div class="row"></div>
+        <div class="col s12 left">
+          <span class="left" style="font-weight: 600; margin-right:20px;">5.2 ประสาทสัมผัส
+          </span>
+          <div class="col s2">
+            <input type="checkbox" class="filled-in" id="senseOpt1" name="senseLevel" value="senseOpt1" />
+            <label for="senseOpt1">ประเมินไม่ได้</label>
+          </div>
+          <div class="col s2">
+            <input type="checkbox" class="filled-in" id="senseOpt2" name="senseLevel" value="senseOpt2" />
+            <label for="senseOpt2">ปกติ</label>
+          </div>
+          <div class="col s2">
+            <input type="checkbox" class="filled-in" id="senseOpt3" name="senseLevel" value="senseOpt3" />
+            <label for="senseOpt3">ไม่ปกติ</label>
+          </div>
+        </div>
+      <div class="row"></div>
+      <div class="col s12">
+      <div class="col s2">
+        <label for="">การพูด</label>
         <p>
-          <div class="col s2">
-            <input type="radio" class="filled-in" id="consciousOpt1" name="medicationHistory" value="consciousOpt1" />
-            <label for="consciousOpt1">รู้สึกตัวดี</label>
+          <div class="col s5">
+            <input type="radio" class="filled-in" id="speak_sense" name="speak_sense" value="speak_sense" />
+            <label for="speak_sense">ปกติ</label>
           </div>
-          <div class="col s2">
-            <input type="radio" class="filled-in" id="consciousOpt2" name="consciusLevel" value="consciousOpt2" />
-            <label for="consciousOpt2">สับสน</label>
-          </div>
-          <div class="col s2">
-            <input type="radio" class="filled-in" id="consciousOpt3" name="consciusLevel" value="consciousOpt3" />
-            <label for="consciousOpt3">ซึม</label>
-          </div>
-          <div class="col s2">
-            <input type="radio" class="filled-in" id="consciousOpt4" name="consciusLevel" value="consciousOpt4" />
-            <label for="consciousOpt4">ไม่รู้สึกตัว</label>
+          <div class="col s7">
+            <input type="radio" class="filled-in" id="speak_senseNo" name="speak_sense" value="speak_senseNo" />
+            <label for="speak_senseNo">ไม่ปกติ</label>
           </div>
         </p>
       </div>
-      <div class="col s12 divider grey"></div>
-    
-    
-=======
-        <span class="left" style="font-weight: 600; margin-right:20px;">9. สิ่งเสพติด
-        </span>
-        <div class="col s3">
-          <input type="checkbox" class="filled-in" name="cannotTell9" id="cannotTell9">
-          <label for="cannotTell9">ประเมินไม่ได้</label>
-        </div>
+      <div class="col s3" id="speak_senseOther">
+        <input type="text" name="speak_senseOther" placeholder="ระบุอาการ">
+      </div>
+
+      <div class="col s2">
+        <label for="">การได้ยิน</label>
+        <p>
+          <div class="col s5">
+            <input type="radio" class="filled-in" id="listen_sense" name="listen_sense" value="listen_sense" />
+            <label for="listen_sense">ชัดเจน</label>
+          </div>
+          <div class="col s7">
+            <input type="radio" class="filled-in" id="listen_senseNo" name="listen_sense" value="listen_senseNo" />
+            <label for="listen_senseNo">ไม่ชัดเจน</label>
+          </div>
+        </p>
+      </div>
+      <div class="col s3" id="listen_senseOther">
+        <input type="text" name="listen_senseOther" placeholder="ระบุอาการ">
       </div>
       <div class="row"></div>
+      <div class="col s2">
+        <label for="">การมองเห็น</label>
+        <p>
+          <div class="col s5">
+            <input type="radio" class="filled-in" id="see_sense" name="see_sense" value="see_sense" />
+            <label for="see_sense">ชัดเจน</label>
+          </div>
+          <div class="col s7">
+            <input type="radio" class="filled-in" id="see_senseNo" name="see_sense" value="see_senseNo" />
+            <label for="see_senseNo">ไม่ชัดเจน</label>
+          </div>
+        </p>
+      </div>
+      <div class="col s3" id="see_senseOther">
+        <input type="text" name="see_senseOther" placeholder="ระบุอาการ">
+      </div>
+      <div class="col s12 divider grey"></div>
+    
+      <div class="col s12">
+      <div class="row"></div>
+        <div class="col s12 left">
+          <span class="left" style="font-weight: 600; margin-right:20px;">9. สิ่งเสพติด
+          </span>
+          <div class="col s3">
+            <input type="checkbox" class="filled-in" name="cannotTell9" id="cannotTell9">
+            <label for="cannotTell9">ประเมินไม่ได้</label>
+          </div>
+        </div>
+      <div class="row"></div>
+    
     </div>
 
     {{!-- 9. สิ่งเสพติด --}}
@@ -572,7 +642,6 @@
     </div>
     <div class="col s12 divider grey"></div>
 
->>>>>>> Oat
     <div class="row"></div>
 
     <div class="col s12">
