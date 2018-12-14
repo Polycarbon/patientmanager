@@ -365,6 +365,16 @@ module.exports = {
       tel: req.body.tel,
       contactPlace: req.body.contactPlace,
 
+      cannotTell8: req.body.cannotTell8,
+      numUrinate: req.body.numUrinate,
+      urinate: req.body.urinate,
+      urinateOther: req.body.urinateOther,
+      numExcrete: req.body.numExcrete,
+      excrete: req.body.excrete,
+      excreteOther: req.body.excreteOther,
+      excreteBelly: req.body.excreteBelly,
+      excreteBellyOther: req.body.excreteBellyOther,
+
       cannotTell9: req.body.cannotTell9,
       cigarette: req.body.cigarette,
       cigaretteOther: req.body.cigaretteOther,

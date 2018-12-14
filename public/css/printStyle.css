@@ -222,7 +222,7 @@ table{
 }
 .form2-line11{
   display: grid;
-  grid-template-columns: 57.25% 6.25% 26% 10%;
+  grid-template-columns: 0.5% 57.25% 6.25% 26% 10%;
 }
 .form2-line12{
   display: grid;

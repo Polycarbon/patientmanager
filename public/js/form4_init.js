@@ -19,6 +19,15 @@ const surgicalHistoryOther = document.getElementsByName('surgicalHistoryOther');
 const medicationHistory = document.getElementsByName('medicationHistory');
 const medicationHistoryOther = document.getElementsByName('medicationHistoryOther');
 
+const numUrinate = document.getElementsByName('numUrinate');
+const urinate = document.getElementsByName('urinate');
+const urinateOther = document.getElementsByName('urinateOther');
+const numExcrete = document.getElementsByName('numExcrete');
+const excrete = document.getElementsByName('excrete');
+const excreteOther = document.getElementsByName('excreteOther');
+const excreteBelly = document.getElementsByName('excreteBelly');
+const excreteBellyOther = document.getElementsByName('excreteBellyOther');
+
 const cigarette = document.getElementsByName('cigarette');
 const cigaretteOther = document.getElementsByName('cigaretteOther');
 const alcohol = document.getElementsByName('alcohol');
@@ -242,7 +251,7 @@ $('#surgicalHistory').change(function () {
 $('#surgicalHistoryNo').change(function () {
   if ($('#surgicalHistoryNo').is(':checked')) {
     $('#surgicalHistoryOther').fadeOut();
-    medicationHistoryOther[0].value = "";
+    surgicalHistoryOther[0].value = "";
   }
 });
 
@@ -251,6 +260,67 @@ if ($('#surgicalHistory').is(':checked')) {
 } else {
   $('#surgicalHistoryOther').hide();
 }
+
+// Show/Hide urinateOther if checked/unchecked
+if ($('#urinateNo').is(':checked')) {
+  $('#urinateOther').show();
+} else {
+  $('#urinateOther').hide();
+}
+// Show urinateOther when urinateNo is selected
+$('#urinateNo').change(function () {
+  if ($('#urinateNo').is(':checked')) {
+    $('#urinateOther').fadeIn();
+  }
+});
+//  Hide and Reset value urinateOther when urinate is selected
+$('#urinate').change(function () {
+  if ($('#urinate').is(':checked')) {
+    $('#urinateOther').fadeOut();
+    urinateOther[0].value = "";
+  }
+});
+
+// Show/Hide excreteOther if checked/unchecked
+if ($('#excreteNo').is(':checked')) {
+  $('#excreteOther').show();
+} else {
+  $('#excreteOther').hide();
+}
+// Show excreteOther when excreteNo is selected
+$('#excreteNo').change(function () {
+  if ($('#excreteNo').is(':checked')) {
+    $('#excreteOther').fadeIn();
+  }
+});
+//  Hide and Reset value excreteOther when excrete is selected
+$('#excrete').change(function () {
+  if ($('#excrete').is(':checked')) {
+    $('#excreteOther').fadeOut();
+    excreteOther[0].value = "";
+  }
+});
+
+// Show/Hide excreteBellyOther if checked/unchecked
+if ($('#excreteBelly').is(':checked')) {
+  $('#excreteBellyOther').show();
+} else {
+  $('#excreteBellyOther').hide();
+}
+// Show excreteBellyOther when excreteBelly is selected
+$('#excreteBelly').change(function () {
+  if ($('#excreteBelly').is(':checked')) {
+    $('#excreteBellyOther').fadeIn();
+  }
+});
+//  Hide and Reset value excreteBellyOther when excreteBellyNo is selected
+$('#excreteBellyNo').change(function () {
+  if ($('#excreteBellyNo').is(':checked')) {
+    $('#excreteBellyOther').fadeOut();
+    excreteBellyOther[0].value = "";
+  }
+});
+
 
 // Show/Hide cigaretteOther if checked/unchecked
 if ($('#cigarette').is(':checked')) {
@@ -329,9 +399,39 @@ if ($('#cannotTell3').is(':checked')) {
   $('#Question3').show();
 }
 
+// Hide & reset Question8 inputs when cannotTell8 is selected
+$('#cannotTell8').change(function () {
+  if ($('#cannotTell8').is(':checked')) {
+    $('#Question8').fadeOut();
+    numUrinate[0].value = "";
+    urinate[0].checked = false;
+    urinate[1].checked = false;
+    urinateOther[0].value = "";
+    numExcrete[0].value = "";
+    excrete[0].checked = false;
+    excrete[1].checked = false;
+    excreteOther[0].value = "";
 
+    excreteBelly[0].checked = false;
+    excreteBelly[1].checked = false;
+    excreteBellyOther[0].value = "";
 
-// Hide & reset Question3 inputs when cannotTell3 is selected
+    $('#urinateOther').hide();
+    $('#excreteOther').hide();
+    $('#excreteBellyOther').hide();
+
+  } else {
+    $('#Question8').fadeIn();
+  }
+});
+// Show/Hide  if checked/unchecked
+if ($('#cannotTell8').is(':checked')) {
+  $('#Question8').hide();
+} else {
+  $('#Question8').show();
+}
+
+// Hide & reset Question9 inputs when cannotTell9 is selected
 $('#cannotTell9').change(function () {
   if ($('#cannotTell9').is(':checked')) {
     $('#Question9').fadeOut();
@@ -345,8 +445,6 @@ $('#cannotTell9').change(function () {
 
     $('#cigaretteOther').hide();
     $('#alcoholOther').hide();
-    // $('#anyMedicationOther').hide();
-    // $('#medicationHistoryOther').hide();
 
   } else {
     $('#Question9').fadeIn();

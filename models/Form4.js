@@ -141,6 +141,35 @@ const Form4 = new Schema({
   geneticsOther: {
     type: String
   },
+
+  cannotTell8: {
+    type: String
+  },
+  numUrinate: {
+    type: Number
+  },
+  urinate: {
+    type: String
+  },
+  urinateOther: {
+    type: String
+  },
+  numExcrete: {
+    type: Number
+  },
+  excrete: {
+    type: String
+  },
+  excreteOther: {
+    type: String
+  },
+  excreteBelly: {
+    type: String
+  },
+  excreteBellyOther: {
+    type: String
+  },
+
   cannotTell9: {
     type: String
   },

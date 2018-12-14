@@ -569,6 +569,16 @@ module.exports = {
         form4.tel = req.body.tel;
         form4.contactPlace = req.body.contactPlace;
 
+        form4.cannotTell8 = req.body.cannotTell8;
+        form4.numUrinate = req.body.numUrinate;
+        form4.urinate = req.body.urinate;
+        form4.urinateOther = req.body.urinateOther;
+        form4.numExcrete = req.body.numExcrete;
+        form4.excrete = req.body.excrete;
+        form4.excreteOther = req.body.excreteOther;
+        form4.excreteBelly = req.body.excreteBelly;
+        form4.excreteBellyOther = req.body.excreteBellyOther;
+
         form4.cannotTell9 = req.body.cannotTell9;
         form4.cigarette = req.body.cigarette;
         form4.cigaretteOther = req.body.cigaretteOther;

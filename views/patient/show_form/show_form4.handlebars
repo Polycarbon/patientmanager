@@ -485,6 +485,95 @@
   <div class="col s12">
     <div class="row"></div>
     <div class="col s12 left">
+      <span class="left" style="font-weight: 600; margin-right:20px;">8.การขับถ่าย
+      </span>
+      <div class="col s3">
+        <input type="checkbox" class="filled-in" name="cannotTell8" id="cannotTell8" {{#if form4.cannotTell8}} checked="checked"
+          {{/if}} disabled>
+        <label for="cannotTell8">ประเมินไม่ได้</label>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+
+  {{!-- 8.การขับถ่าย --}}
+  <div class="col s12" id="Question8">
+
+    <div class="col s5">
+      <p>
+        <div class="col s5">
+          <label>ถ่ายปัสสาวะ(ครั้ง/วัน)</label>
+          <input type="number" name="numUrinate" placeholder="ถ่ายปัสสาวะ(ครั้ง/วัน)" value="{{form4.numUrinate}}"
+            readonly>
+        </div>
+        <div class="col s3">
+          <input type="radio" class="filled-in" id="urinate" name="urinate" value="urinate"
+            {{setChecked 'urinate' form4.urinate}} disabled />
+          <label for="urinate">ปกติ</label>
+        </div>
+        <div class="col s3">
+          <input type="radio" class="filled-in" id="urinateNo" name="urinate" value="urinateNo"
+            {{setChecked 'urinateNo' form4.urinate}} disabled />
+          <label for="urinateNo">ไม่ปกติ</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s7" id="urinateOther">
+      <label></label>
+      <input type="text" name="urinateOther" placeholder="ระบุ" value="{{form4.urinateOther}}" readonly>
+    </div>
+    <div class="row"></div>
+    <div class="col s5">
+      <p>
+        <div class="col s5">
+          <label>ถ่ายอุจจาระ(ครั้ง/วัน)</label>
+          <input type="number" name="numExcrete" placeholder="ถ่ายอุจจาระ(ครั้ง/วัน)" value="{{form4.numExcrete}}"
+            readonly>
+        </div>
+        <div class="col s3">
+          <input type="radio" class="filled-in" id="excrete" name="excrete" value="excrete"
+            {{setChecked 'excrete' form4.excrete}} disabled />
+          <label for="excrete">ปกติ</label>
+        </div>
+        <div class="col s3">
+          <input type="radio" class="filled-in" id="excreteNo" name="excrete" value="excreteNo"
+            {{setChecked 'excreteNo' form4.excrete}} disabled />
+          <label for="excreteNo">ไม่ปกติ</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s7" id="excreteOther">
+      <label></label>
+      <input type="text" name="excreteOther" placeholder="ระบุ" value="{{form4.excreteOther}}" readonly>
+    </div>
+    <div class="row"></div>
+    <div class="col s2">
+      <label for="">การขับถ่ายทางหน้าท้อง</label>
+      <p>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="excreteBellyNo" name="excreteBelly" value="excreteBellyNo" value="excreteBelly"
+            {{setChecked 'excreteBellyNo' form4.excreteBelly}} disabled />
+          <label for="excreteBellyNo">ไม่มี</label>
+        </div>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="excreteBelly" name="excreteBelly" value="excreteBelly" value="excreteBelly"
+            {{setChecked 'excreteBelly' form4.excreteBelly}} disabled />
+          <label for="excreteBelly">มี</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s10" id="excreteBellyOther">
+      <label></label>
+      <input type="text" name="excreteBellyOther" placeholder="ระบุ" value="{{form4.excreteBellyOther}}" readonly>
+    </div>
+    <div class="row"></div>
+  </div>
+
+  <div class="col s12 divider grey"></div>
+
+  <div class="col s12">
+    <div class="row"></div>
+    <div class="col s12 left">
       <span class="left" style="font-weight: 600; margin-right:20px;">9. สิ่งเสพติด
       </span>
       <div class="col s3">
@@ -1115,48 +1204,51 @@
         <p></p>
         <p><b>8. การขับถ่าย</b></p>
         <p>
-          <input type="checkbox" }>
-          <label>ประเมินไม่ได้</label>
+          <input type="checkbox" name="cantMeasure8" id="cantMeasure8" {{#if form4.cannotTell8}} checked="checked"
+            {{/if}}>
+          <label for="cantMeasure8">ประเมินไม่ได้</label>
         </p>
         <p>ถ่ายปัสสาวะ</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.numUrinate}}</p>
         <p>ครั้ง/วัน</p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="normalUrinate" id="normalUrinate" {{setChecked 'urinate' form4.urinate}}>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="abnormalUrinate" id="abnormalUrinate" {{setChecked 'urinateNo' form4.urinate}}>
           <label>ไม่ปกติ</label>
         </p>
         <p>ระบุ</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.urinateOther}}</p>
       </div>
       <div class="form4-line32">
         <p></p>
         <p>ถ่ายอุจจาระ</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.numExcrete}}</p>
         <p>ครั้ง/วัน</p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="normalExcrete" id="normalExcrete" {{setChecked 'excrete' form4.excrete}}>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="abnormalExcrete" id="abnormalExcrete" {{setChecked 'excreteNo' form4.excrete}}>
           <label>ไม่ปกติ</label>
         </p>
         <p>ระบุ</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.excreteOther}}</p>
         <p>การขับถ่ายทางหน้าท้อง</p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="nohaveExcreteBelly" id="nohaveExcreteBelly"
+            {{setChecked 'excreteBellyNo' form4.excreteBelly}}>
           <label>ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" name="haveExcreteBelly" id="haveExcreteBelly"
+            {{setChecked 'excreteBelly' form4.excreteBelly}}>
           <label>มี</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.excreteBellyOther}}</p>
       </div>
     </div>
     <div class="border4">
