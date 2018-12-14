@@ -633,10 +633,6 @@
       <label for="">ward</label>
       <input type="text" name="ward" placeholder="ward" value="{{patient.ward}}" readonly>
     </div>
-    <div class="col s2">
-      <label for="">ห้องคลอด</label>
-      <input type="text" name="room" placeholder="ห้องคลอด" value="{{form1.room}}" readonly>
-    </div>
 
     <div class="col s3">
       <label for="">HN</label>
@@ -680,410 +676,409 @@
   <div class="title">
     <p>แบบรายงานประวัติ-ตรวจร่างกายผู้ป่วยทางสูติกรรม</p>
   </div>
-  <div class="form1-line1">
-    <p></p>
-    <p>
-      วัน-เดือน-ปี ที่บันทึก
-    </p>
-    <p class="value">{{form1.recordDate}}</p>
-    <p>เวลา</p>
-    <p class="value">{{form1.recordTime}}</p>
-    <p>ประวัติได้จาก&nbsp;
-      <input type="checkbox" name="fromPatientHimself" id="patientHimself" {{setChecked '1' form1.history}}>
-      <label for="gotHistoryFrom">ผู้ป่วย</label>
-      &nbsp;
-      <input type="checkbox" name="fromRelative" id="fromRelatives" {{setChecked '2' form1.history}}>
-      <label for="fromRelative">ญาติ</label>
-      &nbsp;
-      <input type="checkbox" name="fromOther" id="fromOther" {{setChecked '3' form1.history}}>
-      <label for="fromOther">อื่นๆ</label>
-    </p>
-    <p class="value">{{form1.history_Other}}</p>
-  </div>
-  <div class="form1-line2and3">
-    <p></p>
-    <p>CC :</p>
-    <p class="value">{{form1.CC}}</p>
-  </div>
-  <div class="form1-line2and3">
-    <p></p>
-    <p>PI :</p>
-    <p class="value">{{form1.PI}}</p>
-  </div>
-  <div class="form1-line4" style="margin-bottom: 5px;">
-    <p></p>
-    <p>G</p>
-    <p class="value">{{form1.G}}</p>
-    <p>P</p>
-    <p class="value">{{form1.P}}</p>
-    <p>A</p>
-    <p class="value">{{form1.A}}</p>
-    <p>L</p>
-    <p class="value">{{form1.L}}</p>
-    <p>Last</p>
-    <p class="value">{{form1.Last}}</p>
-    <p>ปี</p>
-    <p>LMP</p>
-    <p class="value">{{form1.LMP}}</p>
-    <p>EDC</p>
-    <p class="value">{{form1.EDC}}</p>
-    <p>Preg</p>
-    <p class="value">{{form1.Preg}}</p>
-    <p>wks</p>
-    <p>ANC ที่</p>
-    <p class="value">{{form1.ANC}}</p>
-  </div>
-  <div class="form1-line5">
-    <p></p>
-    <p>First ANC at</p>
-    <p class="value">{{form1.first_ANC}}</p>
-    <p>wks</p>
-    <p>รวม</p>
-    <p class="value">{{form1.count_ANC}}</p>
-    <p>ครั้ง</p>
-    <p>
-      TT:&nbsp;
-      <input type="checkbox" name="TT1" id="TT1" {{setChecked '1' form1.TT}}>
-      <label for="TT1">1</label>&nbsp;
-      <input type="checkbox" name="TT2" id="TT2" {{setChecked '2' form1.TT}}>
-      <label for="TT2">2</label>&nbsp;
-      <input type="checkbox" name="TT3" id="TT3" {{setChecked '3' form1.TT}}>
-      <label for="TT3">3</label>
-      &nbsp;&nbsp;
-      <input type="checkbox" name="catalyst" id="catalyst" {{setChecked '1' form1.TT_more}}>
-      <label for="catalyst">กระตุ้น</label>&nbsp;
-      <input type="checkbox" name="completeBeforeArrival" id="completeBeforeArrival" {{setChecked '2' form1.TT_more}}>
-      <label for="completeBeforeArrival">ครบมาก่อน</label>&nbsp;
-      <input type="checkbox" name="no" id="no" {{setChecked '3' form1.TT_more}}>
-      <label for="np">no</label>
-    </p>
-  </div>
-  <div class="form1-line6" style="margin-bottom: 5px;">
-    <p></p>
-    <p>VDRL</p>
-    <p class="value">{{form1.VDRL}}</p>
-    <p>HbsAg</p>
-    <p class="value">{{form1.HbsAg}}</p>
-    <p>HbeAg</p>
-    <p class="value">{{form1.HbeAg}}</p>
-    <p>AntiHIV</p>
-    <p class="value">{{form1.AntiHIV}}</p>
-    <p>Hct%</p>
-    <p class="value">{{form1.Hct}}</p>
-    <p>Blood Group</p>
-    <p class="value">{{form1.Blood_Group}}</p>
-    <p>Rh</p>
-    <p class="value">{{form1.Rh}}</p>
-    <p>OF</p>
-    <p class="value">{{form1.OF}}</p>
-    <p>DCIP</p>
-    <p class="value">{{form1.DCIP}}</p>
-  </div>
-  <div class="form1-line7" style="margin-bottom: 5px;">
-    <p></p>
-    <p>Thallasemia</p>
-    <p class="value">{{form1.Thallasemia}}</p>
-    <p>ภาวะแทรกซ้อนระหว่างตั้งครรภ์</p>
-    <p class="value">{{form1.preg_sym}}</p>
-  </div>
-  <div class="form1-line8" style="margin-bottom: 5px;">
-    <p></p>
-    <p>Past Hx : (โรคประจำตัว, อุบัติเหตุ, การใช้ยา, การผ่าตัด)</p>
-    <p class="value">{{form1.Past_Hx}}</p>
-  </div>
-  <div class="form1-line9" style="margin-bottom: 5px;">
-    <p></p>
-    <p>ประวัติการแพ้ยา :</p>
-    <p class="value">{{form1.med_Allergic}}</p>
-  </div>
-  <div class="form1-line10" style="margin-bottom: 5px;">
-    <p></p>
-    <p>Personal Hx :</p>
-    <p>
-      <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked"
-        {{/if}}>
-      <label for="personalHx_smoke">บุหรี่</label>
-    </p>
-    <p class="value">{{form1.personal_smoke_text}}</p>
-    <p>
-      <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked"
-        {{/if}}>
-      <label for="personalHx_alcohol">สุรา</label>
-    </p>
-    <p class="value">{{form1.personal_alcohol_text}}</p>
-    <p>
-      <input type="checkbox" name="personalHx_drug" id="personalHx_drug" {{#if form1.drug}} checked="checked" {{/if}}>
-      <label for="personalHx_drug">ยา</label>
-    </p>
-    <p class="value">{{form1.personal_drug_text}}</p>
-    <p>อาชีพ</p>
-    <p class="value">{{form1.job}}</p>
-  </div>
-  <div class="form1-line11" style="margin-bottom: 5px;">
-    <p></p>
-    <p>
-      Family Hx :
-      <input type="checkbox" name="familyHx_DM" id="familyHx_DM" {{#if form1.DM}} checked="checked" {{/if}}>
-      <label for="familyHx_DM">DM</label> &nbsp;
-      <input type="checkbox" name="familyHx_HT" id="familyHx_HT" {{#if form1.HT}} checked="checked" {{/if}}>
-      <label for="familyHx_HT">HT</label>&nbsp;
-      <input type="checkbox" name="familyHx_Asthma" id="familyHx_Asthma" {{#if form1.Asthma}} checked="checked" {{/if}}>
-      <label for="familyHx_Asthma">Asthma</label>&nbsp;
-      <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}}
-        checked="checked" {{/if}}>
-      <label for="familyHx_Renal_disease">Renal disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}}
-        checked="checked" {{/if}}>
-      <label for="familyHx_Heart_disease">Heart disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}}
-        checked="checked" {{/if}}>
-      <label for="familyHx_Blood_disease">Blood disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked"
-        {{/if}}>&nbsp;
-      <label for="familyHx_Other">Other</label>
-    </p>
-    <p class="value">{{form1.family_Other}}</p>
-  </div>
-  <div class="form1-line12" style="margin-bottom:15px;">
-    <p></p>
-    <p>Social Hx :</p>
-    <p class="value">{{form1.Social_Hx}}</p>
-  </div>
-  <div style="margin-bottom: 5px;">
-    <p>
-      <table class="form1">
-        <thead>
-          <tr>
-            <th>Review of System</th>
-            <th>ปกติ</th>
-            <th>ไม่ปกติ</th>
-            <th>ระบุ</th>
-            <th>Review of System</th>
-            <th>ปกติ</th>
-            <th>ไม่ปกติ</th>
-            <th>ระบุ</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HEENT</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.HEENT}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.HEENT}} " style='width:20px;'>
-            </td>
-            <td>{{form1.heent_Other}}</td>
-            <td>Genito Urinary</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Genito }} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Genito}} " style='width:20px;'>
-            </td>
-            <td>{{form1.genito_Other}}</td>
-          </tr>
-          <tr>
-            <td>Respiratory</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Respiratory}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Respiratory}} " style='width:20px;'>
-            </td>
-            <td>{{form1.respiratory_Other}}</td>
-            <td>Gynecological</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Gynecological}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Gynecological}} " style='width:20px;'>
-            </td>
-            <td>{{form1.gynecological_Other}}</td>
-          </tr>
-          <tr>
-            <td>Cardiovascular</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Cardiovascular}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Cardiovascular}} " style='width:20px;'>
-            </td>
-            <td>{{form1.cardiovascular_Other}}</td>
-            <td>Neurology</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Neurology}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Neurology}} " style='width:20px;'>
-            </td>
-            <td>{{form1.neurology_Other}}</td>
-          </tr>
-          <tr>
-            <td>Gastrointestital</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Gastrointestital}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Gastrointestital}} " style='width:20px;'>
-            </td>
-            <td>{{form1.gastro_Other}}</td>
-            <td>Neurology</td>
-            <td>
-              <img src="{{tableValue 'ปกติ' form1.Other}} " style='width:20px;'>
-            </td>
-            <td>
-              <img src="{{tableValue 'ไม่ปกติ' form1.Other}} " style='width:20px;'>
-            </td>
-            <td>{{form1.other_Other}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </p>
-  </div>
-  <div class="form1-line13" style="margin-bottom: 5px;">
-    <p></p>
-    <p>V/S : T</p>
-    <p class="value">{{form1.T}}</p>
-    <p>c,</p>
-    <p>PR</p>
-    <p class="value">{{form1.PR}}</p>
-    <p>/min,</p>
-    <p>RR</p>
-    <p class="value">{{form1.RR}}</p>
-    <p>/min,</p>
-    <p>BP</p>
-    <p class="value">{{form1.BP}}</p>
-    <p>mmHg,</p>
-    <p>BW</p>
-    <p class="value">{{form1.BW}}</p>
-    <p>kgs,</p>
-    <p>HT</p>
-    <p class="value">{{form1.HT}}</p>
-    <p>cms</p>
-  </div>
-  <div class="form1-line14">
-    <p></p>
-    <p>GA :</p>
-    <p class="value">{{form1.GA}}</p>
-    <p>Skin :</p>
-    <p class="value">{{form1.Skin}}</p>
-    <p></p>
-    <p style="text-decoration:underline;">การตรวจครรภ์</p>
-  </div>
-  <div class="form1-line15">
-    <p></p>
-    <p>HEENT</p>
-    <p class="value">{{form1.HEENT_lower}}</p>
-    <p></p>
-    <p>HF</p>
-    <p class="value">{{form1.HF}}</p>
-    <p>Position</p>
-    <p class="value">{{form1.Position}}</p>
-    <p>FHS</p>
-    <p class="value">{{form1.FHS}}</p>
-  </div>
-  <div class="form1-line16">
-    <p></p>
-    <p>Heart :</p>
-    <p class="value">{{form1.Heart}}</p>
-    <p></p>
-    <p>Cervix Dilate</p>
-    <p class="value">{{form1.Cervix}}</p>
-    <p>cms</p>
-    <p>Eff</p>
-    <p class="value">{{form1.Eff}}</p>
-    <p>%</p>
-  </div>
-  <div class="form1-line17">
-    <p></p>
-    <p>Lung :</p>
-    <p class="value">{{form1.Lung}}</p>
-    <p></p>
-    <p>Station</p>
-    <p class="value">{{form1.Station}}</p>
-    <p>Membrane</p>
-    <p class="value">{{form1.Membrane}}</p>
-  </div>
-  <div class="form1-line18">
-    <p></p>
-    <p>Abdomen :</p>
-    <p class="value">{{form1.Abdomen}}</p>
-    <p></p>
-    <p>AF</p>
-    <p class="value">{{form1.AF}}</p>
-    <p>at</p>
-    <p class="value">{{form1.AF_time}}</p>
-    <p>น.</p>
-  </div>
-  <div class="form1-line19">
-    <p></p>
-    <p>Extremities :</p>
-    <p class="value">{{form1.Extremities}}</p>
-    <p></p>
-    <p>Others :</p>
-    <p class="value">{{form1.Others}}</p>
-  </div>
-  <div class="form1-line20and21">
-    <p></p>
-    <p>Neuro &nbsp;:</p>
-    <p class="value">{{form1.Neuro}}</p>
-  </div>
-  <div class="form1-line20and21">
-    <p></p>
-    <p>Others :</p>
-    <p class="value">{{form1.Preg_other}}</p>
-  </div>
-  <div class="form1-line22">
-    <p></p>
-    <p>Investigation : Hct</p>
-    <p class="value">{{form1.Inves_hct}}</p>
-    <p>%</p>
-    <p>Urine Albumin</p>
-    <p class="value">{{form1.Urine_Albumin}}</p>
-    <p>Urine Sugar</p>
-    <p class="value">{{form1.Urine_Sugar}}</p>
-    <p>Others :</p>
-    <p class="value">{{form1.Inves_other}}</p>
-  </div>
-  <div class="form1-line23">
-    <p></p>
-    <p>Imp :</p>
-    <p class="value">{{form1.imp}}</p>
-  </div>
-  <div class="form1-line24" style="margin-bottom: 5px;">
-    <p></p>
-    <p>Plan for Treatment :</p>
-    <p class="value">{{form1.plan}}</p>
-  </div>
-  <div class="form1-line25" style="margin-bottom: 5px;">
-    <p></p>
-    <p>แพทย์</p>
-    <p class="value">{{form1.doctor_sign}}</p>
-    <p>/</p>
-    <p class="value">{{form1.staff_sign}}</p>
-    <p>(staff)</p>
-  </div>
-  <div class="form1-line26">
-    <p></p>
-    <p>ชื่อ-สกุล</p>
-    <p class="value">{{form1.patient_name}}</p>
-    <p>อายุ</p>
-    <p class="value">{{form1.patient_age}}</p>
-    <p>ปี</p>
-    <p>ward</p>
-    <p class="value">{{form1.ward}}</p>
-    <p>ห้องคลอด</p>
-    <p class="value">{{form1.room}}</p>
-  </div>
-  <div class="form1-line27">
-    <p></p>
-    <p>HN</p>
-    <p class="value">{{form1.HN}}</p>
-    <p>AN</p>
-    <p class="value">{{form1.AN}}</p>
-    <p>แพทย์</p>
-    <p class="value">{{form1.doctor_assigned}}</p>
+  <div class="bt">
+    <div class="form1-line1" style="margin-bottom:0px;">
+      <p> </p>
+      <p>วัน-เดือน-ปี ที่บันทึก</p>
+      <p class="value">{{form1.recordDate}}</p>
+      <p>เวลา</p>
+      <p class="value">{{form1.recordTime}}</p>
+      <p>ประวัติได้จาก&nbsp;
+        <input type="checkbox" name="fromPatientHimself" id="patientHimself" {{setChecked '1' form1.history}}>
+        <label for="gotHistoryFrom">ผู้ป่วย</label>
+        &nbsp;
+        <input type="checkbox" name="fromRelative" id="fromRelatives" {{setChecked '2' form1.history}}>
+        <label for="fromRelative">ญาติ</label>
+        &nbsp;
+        <input type="checkbox" name="fromOther" id="fromOther" {{setChecked '3' form1.history}}>
+        <label for="fromOther">อื่นๆ</label>
+      </p>
+      <p class="value">{{form1.history_Other}}</p>
+    </div>
+    <div class="form1-line2and3" style="margin-bottom:0px;">
+      <p></p>
+      <p>CC :</p>
+      <p class="value">{{form1.CC}}</p>
+    </div>
+    <div class="form1-line2and3" style="margin-bottom:0px;">
+      <p></p>
+      <p>PI :</p>
+      <p class="value">{{form1.PI}}</p>
+    </div>
+    <div class="form1-line4" style="margin-bottom:10px;">
+      <p> </p>
+      <p>G</p>
+      <p class="value">{{form1.G}}</p>
+      <p>P</p>
+      <p class="value">{{form1.P}}</p>
+      <p>A</p>
+      <p class="value">{{form1.A}}</p>
+      <p>L</p>
+      <p class="value">{{form1.L}}</p>
+      <p>Last</p>
+      <p class="value">{{form1.Last}}</p>
+      <p>ปี</p>
+      <p>LMP</p>
+      <p class="value">{{form1.LMP}}</p>
+      <p>EDC</p>
+      <p class="value">{{form1.EDC}}</p>
+      <p>Preg</p>
+      <p class="value">{{form1.Preg}}</p>
+      <p>wks</p>
+      <p>ANC ที่</p>
+      <p class="value">{{form1.ANC}}</p>
+    </div>
+    <div class="form1-line5">
+      <p> </p>
+      <p>First ANC at</p>
+      <p class="value">{{form1.first_ANC}}</p>
+      <p>wks</p>
+      <p>รวม</p>
+      <p class="value">{{form1.count_ANC}}</p>
+      <p>ครั้ง</p>
+      <p>
+        TT:&nbsp;
+        <input type="checkbox" name="TT1" id="TT1" {{setChecked '1' form1.TT}}>
+        <label for="TT1">1</label>&nbsp;
+        <input type="checkbox" name="TT2" id="TT2" {{setChecked '2' form1.TT}}>
+        <label for="TT2">2</label>&nbsp;
+        <input type="checkbox" name="TT3" id="TT3" {{setChecked '3' form1.TT}}>
+        <label for="TT3">3</label>
+        &nbsp;&nbsp;
+        <input type="checkbox" name="catalyst" id="catalyst" {{setChecked '1' form1.TT_more}}>
+        <label for="catalyst">กระตุ้น</label>&nbsp;
+        <input type="checkbox" name="completeBeforeArrival" id="completeBeforeArrival" {{setChecked '2' form1.TT_more}}>
+        <label for="completeBeforeArrival">ครบมาก่อน</label>&nbsp;
+        <input type="checkbox" name="no" id="no" {{setChecked '3' form1.TT_more}}>
+        <label for="np">no</label>
+      </p>
+    </div>
+    <div class="form1-line6" style="margin-bottom:0px;">
+      <p></p>
+      <p>VDRL</p>
+      <p class="value">{{form1.VDRL}}</p>
+      <p>HbsAg</p>
+      <p class="value">{{form1.HbsAg}}</p>
+      <p>HbeAg</p>
+      <p class="value">{{form1.HbeAg}}</p>
+      <p>AntiHIV</p>
+      <p class="value">{{form1.AntiHIV}}</p>
+      <p>Hct%</p>
+      <p class="value">{{form1.Hct}}</p>
+      <p>BloodGroup</p>
+      <p class="value">{{form1.Blood_Group}}</p>
+      <p>Rh</p>
+      <p class="value">{{form1.Rh}}</p>
+      <p>OF</p>
+      <p class="value">{{form1.OF}}</p>
+      <p>DCIP</p>
+      <p class="value">{{form1.DCIP}}</p>
+    </div>
+    <div class="form1-line7" style="margin-bottom:0px;">
+      <p> </p>
+      <p>Thallasemia</p>
+      <p class="value">{{form1.Thallasemia}}</p>
+      <p>ภาวะแทรกซ้อนระหว่างตั้งครรภ์</p>
+      <p class="value">{{form1.preg_sym}}</p>
+    </div>
+    <div class="form1-line8" style="margin-bottom:0px;">
+      <p> </p>
+      <p>Past Hx : (โรคประจำตัว, อุบัติเหตุ, การใช้ยา, การผ่าตัด)</p>
+      <p class="value">{{form1.Past_Hx}}</p>
+    </div>
+    <div class="form1-line9" style="margin-bottom:0px;">
+      <p> </p>
+      <p>ประวัติการแพ้ยา :</p>
+      <p class="value">{{form1.med_Allergic}}</p>
+    </div>
+    <div class="form1-line10" style="margin-bottom: 0px;">
+      <p> </p>
+      <p>Personal Hx :</p>
+      <p>
+        <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked"
+          {{/if}}>
+        <label for="personalHx_smoke">บุหรี่</label>
+      </p>
+      <p class="value">{{form1.personal_smoke_text}}</p>
+      <p>
+        <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked"
+          {{/if}}>
+        <label for="personalHx_alcohol">สุรา</label>
+      </p>
+      <p class="value">{{form1.personal_alcohol_text}}</p>
+      <p>
+        <input type="checkbox" name="personalHx_drug" id="personalHx_drug" {{#if form1.drug}} checked="checked" {{/if}}>
+        <label for="personalHx_drug">ยา</label>
+      </p>
+      <p class="value">{{form1.personal_drug_text}}</p>
+      <p>อาชีพ</p>
+      <p class="value">{{form1.job}}</p>
+    </div>
+    <div class="form1-line11" style="margin-bottom:0px;">
+
+      <p>
+        Family Hx :
+        <input type="checkbox" name="familyHx_DM" id="familyHx_DM" {{#if form1.DM}} checked="checked" {{/if}}>
+        <label for="familyHx_DM">DM</label> &nbsp;
+        <input type="checkbox" name="familyHx_HT" id="familyHx_HT" {{#if form1.HT}} checked="checked" {{/if}}>
+        <label for="familyHx_HT">HT</label>&nbsp;
+        <input type="checkbox" name="familyHx_Asthma" id="familyHx_Asthma" {{#if form1.Asthma}} checked="checked"
+          {{/if}}>
+        <label for="familyHx_Asthma">Asthma</label>&nbsp;
+        <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}}
+          checked="checked" {{/if}}>
+        <label for="familyHx_Renal_disease">Renal disease</label>&nbsp;
+        <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}}
+          checked="checked" {{/if}}>
+        <label for="familyHx_Heart_disease">Heart disease</label>&nbsp;
+        <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}}
+          checked="checked" {{/if}}>
+        <label for="familyHx_Blood_disease">Blood disease</label>&nbsp;
+        <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked"
+          {{/if}}>&nbsp;
+        <label for="familyHx_Other">Other</label>
+      </p>
+      <p class="value">{{form1.family_Other}}</p>
+    </div>
+    <div class="form1-line12" style="margin-bottom:0px;">
+      <p> </p>
+      <p>Social Hx :</p>
+      <p class="value">{{form1.Social_Hx}}</p>
+    </div>
+    <div style="margin-bottom: 5px;">
+      <p>
+        <table class="form1">
+          <thead>
+            <tr>
+              <th>Review of System</th>
+              <th>ปกติ</th>
+              <th>ไม่ปกติ</th>
+              <th>ระบุ</th>
+              <th>Review of System</th>
+              <th>ปกติ</th>
+              <th>ไม่ปกติ</th>
+              <th>ระบุ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HEENT</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.HEENT}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.HEENT}} " style='width:20px;'>
+              </td>
+              <td>{{form1.heent_Other}}</td>
+              <td>Genito Urinary</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Genito }} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Genito}} " style='width:20px;'>
+              </td>
+              <td>{{form1.genito_Other}}</td>
+            </tr>
+            <tr>
+              <td>Respiratory</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Respiratory}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Respiratory}} " style='width:20px;'>
+              </td>
+              <td>{{form1.respiratory_Other}}</td>
+              <td>Gynecological</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Gynecological}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Gynecological}} " style='width:20px;'>
+              </td>
+              <td>{{form1.gynecological_Other}}</td>
+            </tr>
+            <tr>
+              <td>Cardiovascular</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Cardiovascular}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Cardiovascular}} " style='width:20px;'>
+              </td>
+              <td>{{form1.cardiovascular_Other}}</td>
+              <td>Neurology</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Neurology}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Neurology}} " style='width:20px;'>
+              </td>
+              <td>{{form1.neurology_Other}}</td>
+            </tr>
+            <tr>
+              <td>Gastrointestital</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Gastrointestital}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Gastrointestital}} " style='width:20px;'>
+              </td>
+              <td>{{form1.gastro_Other}}</td>
+              <td>Neurology</td>
+              <td>
+                <img src="{{tableValue 'ปกติ' form1.Other}} " style='width:20px;'>
+              </td>
+              <td>
+                <img src="{{tableValue 'ไม่ปกติ' form1.Other}} " style='width:20px;'>
+              </td>
+              <td>{{form1.other_Other}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </div>
+    <div class="form1-line13" style="margin-bottom: 5px;">
+      <p> </p>
+      <p>V/S : T</p>
+      <p class="value">{{form1.T}}</p>
+      <p>c,</p>
+      <p>PR</p>
+      <p class="value">{{form1.PR}}</p>
+      <p>/min,</p>
+      <p>RR</p>
+      <p class="value">{{form1.RR}}</p>
+      <p>/min,</p>
+      <p>BP</p>
+      <p class="value">{{form1.BP}}</p>
+      <p>mmHg,</p>
+      <p>BW</p>
+      <p class="value">{{form1.BW}}</p>
+      <p>kgs,</p>
+      <p>HT</p>
+      <p class="value">{{form1.HT}}</p>
+      <p>cms</p>
+    </div>
+    <div class="form1-line14">
+      <p> </p>
+      <p>GA :</p>
+      <p class="value">{{form1.GA}}</p>
+      <p>Skin :</p>
+      <p class="value">{{form1.Skin}}</p>
+      <p></p>
+      <p style="text-decoration:underline;">การตรวจครรภ์</p>
+    </div>
+    <div class="form1-line15">
+      <p> </p>
+      <p>HEENT</p>
+      <p class="value">{{form1.HEENT_lower}}</p>
+      <p></p>
+      <p>HF</p>
+      <p class="value">{{form1.HF}}</p>
+      <p>Position</p>
+      <p class="value">{{form1.Position}}</p>
+      <p>FHS</p>
+      <p class="value">{{form1.FHS}}</p>
+    </div>
+    <div class="form1-line16">
+      <p></p>
+      <p>Heart :</p>
+      <p class="value">{{form1.Heart}}</p>
+      <p></p>
+      <p>Cervix Dilate</p>
+      <p class="value">{{form1.Cervix}}</p>
+      <p>cms</p>
+      <p>Eff</p>
+      <p class="value">{{form1.Eff}}</p>
+      <p>%</p>
+    </div>
+    <div class="form1-line17">
+      <p> </p>
+      <p>Lung :</p>
+      <p class="value">{{form1.Lung}}</p>
+      <p></p>
+      <p>Station</p>
+      <p class="value">{{form1.Station}}</p>
+      <p>Membrane</p>
+      <p class="value">{{form1.Membrane}}</p>
+    </div>
+    <div class="form1-line18">
+      <p> </p>
+      <p>Abdomen :</p>
+      <p class="value">{{form1.Abdomen}}</p>
+      <p></p>
+      <p>AF</p>
+      <p class="value">{{form1.AF}}</p>
+      <p>at</p>
+      <p class="value">{{form1.AF_time}}</p>
+      <p>น.</p>
+    </div>
+    <div class="form1-line19">
+      <p> </p>
+      <p>Extremities :</p>{{!-- &nbsp; --}}
+      <p class="value">{{form1.Extremities}}</p>
+      <p></p>
+      <p>Others :</p>
+      <p class="value">{{form1.Others}}</p>
+    </div>
+    <div class="form1-line20and21">
+      <p> </p>
+      <p>Neuro &nbsp;:</p>
+      <p class="value">{{form1.Neuro}}</p>
+    </div>
+    <div class="form1-line20and21">
+      <p> </p>
+      <p>Others :</p>
+      <p class="value">{{form1.Preg_other}}</p>
+    </div>
+    <div class="form1-line22">
+      <p> </p>
+      <p>Investigation : Hct</p>
+      <p class="value">{{form1.Inves_hct}}</p>
+      <p>%</p>
+      <p>Urine Albumin</p>
+      <p class="value">{{form1.Urine_Albumin}}</p>
+      <p>Urine Sugar</p>
+      <p class="value">{{form1.Urine_Sugar}}</p>
+      <p>Others :</p>
+      <p class="value">{{form1.Inves_other}}</p>
+    </div>
+    <div class="form1-line23">
+      <p> </p>
+      <p>Imp :</p>
+      <p class="value">{{form1.imp}}</p>
+    </div>
+    <div class="form1-line24" style="margin-bottom: 5px;">
+      <p> </p>
+      <p>Plan for Treatment :</p>
+      <p class="value">{{form1.plan}}</p>
+    </div>
+    <div class="form1-line25" style="margin-bottom: 5px;">
+      <p></p>
+      <p>แพทย์</p>
+      <p class="value">{{form1.doctor_sign}}</p>
+      <p>/</p>
+      <p class="value">{{form1.staff_sign}}</p>
+      <p>(staff)</p>
+    </div>
+    <div class="form1-line26">
+      <p> </p>
+      <p>ชื่อ-สกุล</p>
+      <p class="value">{{form1.patient_name}}</p>
+      <p>อายุ</p>
+      <p class="value">{{form1.patient_age}}</p>
+      <p>ปี</p>
+      <p>ward</p>
+      <p class="value">{{form1.ward}}</p>
+    </div>
+    <div class="form1-line27">
+      <p> </p>
+      <p>HN</p>
+      <p class="value">{{form1.HN}}</p>
+      <p>AN</p>
+      <p class="value">{{form1.AN}}</p>
+      <p>แพทย์</p>
+      <p class="value">{{form1.doctor_assigned}}</p>
+    </div>
   </div>
 </div>
 </div>

@@ -20,7 +20,7 @@
 .printContainer1 {
   width: 830px; 
   padding:  60px 80px 0 80px;
-  line-height: 0.5; 
+  line-height: 1; 
   font-size: 12px;
   /* border: black solid 1px; */
   margin: 0 auto;
@@ -48,8 +48,12 @@ input[type='checkbox']{
 
 .value {
   font-weight: 700;
+  line-height: 1; 
+  position: relative;
+  vertical-align: middle;
   border-bottom: 1px dotted black;   
   text-align: center;
+  bottom: 1px;
 }
 
 table{
@@ -67,6 +71,10 @@ table{
 
 #form1 td{
  text-align: center;
+}
+
+.bt{
+  line-height: 0.5px;
 }
 
 .form1-line1{
@@ -222,11 +230,11 @@ table{
 }
 .form2-line13{
   display: grid;
-  grid-template-columns: 5.75% 14.3% 80%;
+  grid-template-columns: 0% 5.75% 14.3% 80%;
 }
 .form2-line14{
   display: grid;
-  grid-template-columns: 5.75% 14.3% 80%;
+  grid-template-columns: 0% 5.75% 14.3% 80%;
 }
 .form2-line15{
   display: grid;

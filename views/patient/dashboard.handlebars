@@ -31,25 +31,27 @@
         <p class="dashboard-text record-text name-text">{{HN}}</p>
       </td>
       <td>
-        <a href="#" class="dashboard-text record-text name-text">{{name}}</a>
+        <a class="dashboard-text record-text name-text">{{name}}</a>
       </td>
       <td>
         <span class="record-text">{{formatDate date 'Do MMM '}}</span>{{!-- Do MMMM YYYY --}}
       </td>
       <td class="center">
-        <a href="/patient/show/{{_id}}" class="btn-floating btn tooltipped" data-position="top" data-delay="20" data-tooltip="เพิ่มเติม">
+        <a href="/patient/show/{{_id}}" class="btn-floating btn tooltipped" data-position="top" data-delay="20"
+          data-tooltip="เพิ่มเติม">
           <i class="material-icons">attach_file</i>
         </a>
 
-        <a href="/patient/edit/{{_id}}" class="btn-floating tooltipped" data-position="top" data-delay="20" data-tooltip="แก้ไข">
+        <a href="/patient/edit/{{_id}}" class="btn-floating tooltipped" data-position="top" data-delay="20"
+          data-tooltip="แก้ไข">
           <i class="material-icons">edit</i>
         </a>
         <form action="/patient/profile/remove/{{_id}}?_method=DELETE" method="post" id="delete-form">
           <input type="hidden" name="_method" value="DELETE">
 
           <!-- Modal Trigger -->
-          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped right" data-position="top" data-delay="20" data-tooltip="ลบผู้ป่วย"
-            href="#modal{{id}}" style="margin-right: 20px !important;">
+          <a class="waves-effect waves-light modal-trigger btn-floating red tooltipped right" data-position="top"
+            data-delay="20" data-tooltip="ลบผู้ป่วย" href="#modal{{id}}" style="margin-right: 20px !important;">
             <i class="material-icons">delete</i>
           </a>
 
