@@ -7,18 +7,20 @@
   padding: 0;
 }
 .printContainer {
+  /* width: 100%;  */
   width: 830px; 
-  padding:  60px 80px;
+  padding: 1px 80px;
   line-height: 1; 
   font-size: 12px;
   /* border: black solid 1px;  */
   margin: 0 auto;
+  display: grid;
 }
 
 .printContainer1 {
   width: 830px; 
   padding:  60px 80px 0 80px;
-  line-height: 1; 
+  line-height: 0.5; 
   font-size: 12px;
   /* border: black solid 1px; */
   margin: 0 auto;
@@ -26,7 +28,7 @@
 .printContainer2 {
   width: 830px; 
   padding:  0px 80px 0 80px;
-  line-height: 2.5; 
+  line-height: 1; 
   font-size: 12px;
   /* border: black solid 1px; */
   margin: 0 auto;
@@ -41,7 +43,7 @@
 input[type='checkbox']{
   vertical-align: middle;
   position: relative;
-  bottom: 2px;
+  bottom: 1px;
 }
 
 .value {

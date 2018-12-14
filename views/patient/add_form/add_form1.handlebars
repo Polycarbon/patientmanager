@@ -15,13 +15,14 @@
       {{!-- First Line --}}
       <div class="col s3">
         <label for="">วัน-เดือน-ปี ที่บันทึก</label>
-        <input type="text" class="datepicker" name="recordDate" placeholder="วัน-เดือน-ปี ที่บันทึก" value="{{today}}">
+        <input type="text" class="datepicker" name="recordDate" placeholder="วัน-เดือน-ปี ที่บันทึก">
       </div>
       <div class="col s3">
         <label for="">เวลา</label>
         <input type="text" class="timepicker" name="recordTime" placeholder="เวลา" {{!-- value="{{time}}" --}}>
       </div>
-      <div class="col s6">
+      <div class="
+          col s6">
         <div class="col s6">
           <label for="">ประวัติได้จาก</label>
           <select id="checkFrom" name="history">
@@ -67,15 +68,15 @@
       </div>
       <div class="col s1">
         <label for="">Last(ปี)</label>
-        <inputtype="number" min="0" name="Last" placeholder="Last">
+        <input type="number" min="0" name="Last" placeholder="Last">
       </div>
-      <div class="col s1">
+      <div class="col s2">
         <label for="">LMP</label>
-        <input type="text" name="LMP" placeholder="LMP">
+        <input type="text" class="datepicker" name="LMP" placeholder="LMP">
       </div>
-      <div class="col s1">
+      <div class="col s2">
         <label for="">EDC</label>
-        <input type="text" name="EDC" placeholder="EDC">
+        <input type="text" class="datepicker" name="EDC" placeholder="EDC">
       </div>
       <div class="col s2">
         <label for="">Preg (wks)</label>
@@ -590,7 +591,8 @@
       </div>
       <div class="col s2">
         <label for="">อายุ (ปี)</label>
-        <input type="number" min="1" max="120" name="patient_age" placeholder="อายุ (ปี)" value="{{patient.age}}" required>
+        <input type="number" min="1" max="120" name="patient_age" placeholder="อายุ (ปี)" value="{{patient.age}}"
+          required>
       </div>
       <div class="col s3">
         <label for="">ward</label>

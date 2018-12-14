@@ -185,7 +185,8 @@
       <p>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-1" name="smoke" {{#if form1.smoke}} checked="checked" {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-1" name="smoke" {{#if form1.smoke}} checked="checked"
+              {{/if}} disabled>
             <label for="personalhx-1">บุหรี่</label>
           </div>
           <div class="col s6" id="personal-smoke">
@@ -195,8 +196,8 @@
         </div>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-2" name="alcohol" {{#if form1.alcohol}} checked="checked" {{/if}}/
-              disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-2" name="alcohol" {{#if form1.alcohol}} checked="checked"
+              {{/if}}/ disabled>
             <label for="personalhx-2">สุรา</label>
           </div>
           <div class="col s6" id="personal-alcohol">
@@ -206,7 +207,8 @@
         </div>
         <div class="col s3">
           <div class="col s6">
-            <input type="checkbox" class="filled-in" id="personalhx-3" name="drug" {{#if form1.drug}} checked="checked" {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="personalhx-3" name="drug" {{#if form1.drug}} checked="checked"
+              {{/if}} disabled>
             <label for="personalhx-3">ยา</label>
           </div>
           <div class="col s6" id="personal-drug">
@@ -226,38 +228,40 @@
       <label for="">Family Hx :</label>
       <p>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box1" name="DM" {{#if form1.DM}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box1" name="DM" {{#if form1.DM}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box1">DM</label>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box2" name="HT" {{#if form1.HT}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box2" name="HT" {{#if form1.HT}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box2">HT</label>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box3" name="Asthma" {{#if form1.Asthma}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box3" name="Asthma" {{#if form1.Asthma}} checked="checked"
+            {{/if}} disabled>
           <label for="filled-in-box3">Asthma</label>
         </div>
         <div class="col s5">
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box4" name="Renal_disease" {{#if form1.Renal_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box4" name="Renal_disease"
+              {{#if form1.Renal_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box4">Renal disease</label>
           </div>
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box5" name="Heart_disease" {{#if form1.Heart_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box5" name="Heart_disease"
+              {{#if form1.Heart_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box5">Heart disease</label>
           </div>
           <div class="col s4">
-            <input type="checkbox" class="filled-in" id="filled-in-box6" name="Blood_disease" {{#if form1.Blood_disease}} checked="checked"
-              {{/if}} disabled>
+            <input type="checkbox" class="filled-in" id="filled-in-box6" name="Blood_disease"
+              {{#if form1.Blood_disease}} checked="checked" {{/if}} disabled>
             <label for="filled-in-box6">Blood disease</label>
           </div>
         </div>
         <div class="col s1">
-          <input type="checkbox" class="filled-in" id="filled-in-box7" name="Other_disease" {{#if form1.Other_disease}} checked="checked"
-            {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="filled-in-box7" name="Other_disease" {{#if form1.Other_disease}}
+            checked="checked" {{/if}} disabled>
           <label for="filled-in-box7">Other</label>
         </div>
       </p>
@@ -681,9 +685,9 @@
     <p>
       วัน-เดือน-ปี ที่บันทึก
     </p>
-    <p class="value">2nd September, 2018</p>
+    <p class="value">{{form1.recordDate}}</p>
     <p>เวลา</p>
-    <p class="value">11:11</p>
+    <p class="value">{{form1.recordTime}}</p>
     <p>ประวัติได้จาก&nbsp;
       <input type="checkbox" name="fromPatientHimself" id="patientHimself" {{setChecked '1' form1.history}}>
       <label for="gotHistoryFrom">ผู้ป่วย</label>
@@ -694,8 +698,7 @@
       <input type="checkbox" name="fromOther" id="fromOther" {{setChecked '3' form1.history}}>
       <label for="fromOther">อื่นๆ</label>
     </p>
-    <p>อื่นๆ</p>
-    <p class="value">คนอื่น</p>
+    <p class="value">{{form1.history_Other}}</p>
   </div>
   <div class="form1-line2and3">
     <p></p>
@@ -797,12 +800,14 @@
     <p></p>
     <p>Personal Hx :</p>
     <p>
-      <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked" {{/if}}>
+      <input type="checkbox" name="personalHx_smoke" id="personalHx_smoke" {{#if form1.smoke}} checked="checked"
+        {{/if}}>
       <label for="personalHx_smoke">บุหรี่</label>
     </p>
     <p class="value">{{form1.personal_smoke_text}}</p>
     <p>
-      <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked" {{/if}}>
+      <input type="checkbox" name="personalHx_alcohol" id="personalHx_alcohol" {{#if form1.alcohol}} checked="checked"
+        {{/if}}>
       <label for="personalHx_alcohol">สุรา</label>
     </p>
     <p class="value">{{form1.personal_alcohol_text}}</p>
@@ -824,16 +829,17 @@
       <label for="familyHx_HT">HT</label>&nbsp;
       <input type="checkbox" name="familyHx_Asthma" id="familyHx_Asthma" {{#if form1.Asthma}} checked="checked" {{/if}}>
       <label for="familyHx_Asthma">Asthma</label>&nbsp;
-      <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Renal_disease" id="familyHx_Renal_disease" {{#if form1.Renal_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Renal_disease">Renal disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Heart_disease" id="familyHx_Heart_disease" {{#if form1.Heart_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Heart_disease">Heart disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}} checked="checked"
-        {{/if}}>
+      <input type="checkbox" name="familyHx_Blood_disease" id="familyHx_Blood_disease" {{#if form1.Blood_disease}}
+        checked="checked" {{/if}}>
       <label for="familyHx_Blood_disease">Blood disease</label>&nbsp;
-      <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked" {{/if}}>
+      <input type="checkbox" name="familyHx_Other" id="familyHx_Other" {{#if form1.Other_disease}} checked="checked"
+        {{/if}}>&nbsp;
       <label for="familyHx_Other">Other</label>
     </p>
     <p class="value">{{form1.family_Other}}</p>

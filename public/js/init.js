@@ -9,7 +9,7 @@ $('.datepicker').pickadate({
   today: 'Today',
   clear: 'Clear',
   close: 'Ok',
-  format: 'd mmmm yyyy',
+  format: 'd mmm yy',
   closeOnSelect: false,// Close upon selecting a date,
   monthsFull: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
   monthsShort: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'],
@@ -20,7 +20,14 @@ $('.datepicker').pickadate({
 $('.datepicker').change(function () {
   var th = $(this).val();
   var spl = th.split(' ');
-  ($(this).val(spl[0] + ' ' + spl[1] + ' ' + (parseInt(spl[2]) + 543)));
+  console.log(th)
+  if (th === "") {
+    $(this).val("");
+  }
+  else {
+    $(this).val(spl[0] + ' ' + spl[1] + ' ' + (parseInt(spl[2]) + 43));
+  }
+
 });
 
 
