@@ -569,6 +569,12 @@ module.exports = {
         form4.tel = req.body.tel;
         form4.contactPlace = req.body.contactPlace;
 
+        form4.cannotTell9 = req.body.cannotTell9;
+        form4.cigarette = req.body.cigarette;
+        form4.cigaretteOther = req.body.cigaretteOther;
+        form4.alcohol = req.body.alcohol;
+        form4.alcoholOther = req.body.alcoholOther;
+
         form4.user_created = form4.user_created;
         form4.user_updated = req.user.firstName + ' ' + req.user.lastName;
 

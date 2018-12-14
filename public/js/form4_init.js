@@ -19,16 +19,21 @@ const surgicalHistoryOther = document.getElementsByName('surgicalHistoryOther');
 const medicationHistory = document.getElementsByName('medicationHistory');
 const medicationHistoryOther = document.getElementsByName('medicationHistoryOther');
 
-if(name != undefined){
+const cigarette = document.getElementsByName('cigarette');
+const cigaretteOther = document.getElementsByName('cigaretteOther');
+const alcohol = document.getElementsByName('alcohol');
+const alcoholOther = document.getElementsByName('alcoholOther');
+
+if (name != undefined) {
   name.addEventListener('keyup', autoName);
 }
-if(age != undefined){
+if (age != undefined) {
   age.addEventListener('keyup', autoAge);
 }
-if(HN != undefined){
+if (HN != undefined) {
   HN.addEventListener('keyup', autoHN);
 }
-if(wardInput[0] != undefined){
+if (wardInput[0] != undefined) {
   wardInput[0].addEventListener('keyup', autoWard);
 }
 
@@ -56,12 +61,12 @@ if (Ward.checked == true) {
 } else {
   $('#wardInput').hide();
 }
-    // Show wardInput when Ward checked
-    $('#Ward').change(function () {
-      if (Ward.checked == true) {
-        $('#wardInput').fadeIn();
-      }
-    });
+// Show wardInput when Ward checked
+$('#Ward').change(function () {
+  if (Ward.checked == true) {
+    $('#wardInput').fadeIn();
+  }
+});
 
 
 // Hide wardInput when OPD or ER selected & rest wardInput value
@@ -86,15 +91,15 @@ if ($('#equip4').is(':checked')) {
 } else {
   $('#equipmentOther').hide();
 }
-    // Hide & Reset equipmentOther when equip4 is not selected 
-    $('#equip4').change(function () {
-      if ($('#equip4').is(':checked')) {
-        $('#equipmentOther').fadeIn();
-      } else {
-        $('#equipmentOther').fadeOut();
-        equipmentOther[0].value = "";
-      }
-    });
+// Hide & Reset equipmentOther when equip4 is not selected 
+$('#equip4').change(function () {
+  if ($('#equip4').is(':checked')) {
+    $('#equipmentOther').fadeIn();
+  } else {
+    $('#equipmentOther').fadeOut();
+    equipmentOther[0].value = "";
+  }
+});
 
 $('#transportOther').hide();
 // Show transportOtherInput when transportOther selected
@@ -115,19 +120,19 @@ if ($('#bring').is(':checked')) {
 } else {
   $('#bringOther').hide();
 }
-    // Show bringOther when bring is selected
-    $('#bring').change(function () {
-      if ($('#bring').is(':checked')) {
-        $('#bringOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value bringOther when dontBring is selected
-        $('#dontBring').change(function () {
-          if ($('#dontBring').is(':checked')) {
-            $('#bringOther').fadeOut();
-            bringOther[0].value = "";
-          }
-        });
+// Show bringOther when bring is selected
+$('#bring').change(function () {
+  if ($('#bring').is(':checked')) {
+    $('#bringOther').fadeIn();
+  }
+});
+//  Hide and Reset value bringOther when dontBring is selected
+$('#dontBring').change(function () {
+  if ($('#dontBring').is(':checked')) {
+    $('#bringOther').fadeOut();
+    bringOther[0].value = "";
+  }
+});
 
 // Show/Hide geneticsOther if checked/unchecked
 if ($('#genetics').is(':checked')) {
@@ -135,19 +140,19 @@ if ($('#genetics').is(':checked')) {
 } else {
   $('#geneticsOther').hide();
 }
-    // Show geneticsOther when genetics is selected
-    $('#genetics').change(function () {
-      if ($('#genetics').is(':checked')) {
-        $('#geneticsOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value geneticsOther when geneticsNo is selected
-        $('#geneticsNo').change(function () {
-          if ($('#geneticsNo').is(':checked')) {
-            $('#geneticsOther').fadeOut();
-            geneticsOther[0].value = "";
-          }
-        });
+// Show geneticsOther when genetics is selected
+$('#genetics').change(function () {
+  if ($('#genetics').is(':checked')) {
+    $('#geneticsOther').fadeIn();
+  }
+});
+//  Hide and Reset value geneticsOther when geneticsNo is selected
+$('#geneticsNo').change(function () {
+  if ($('#geneticsNo').is(':checked')) {
+    $('#geneticsOther').fadeOut();
+    geneticsOther[0].value = "";
+  }
+});
 
 // Show/Hide anyMedicationOther if checked/unchecked
 if ($('#anyMedication').is(':checked')) {
@@ -155,19 +160,19 @@ if ($('#anyMedication').is(':checked')) {
 } else {
   $('#anyMedicationOther').hide();
 }
-    // Show anyMedicationOther when anyMedication is selected
-    $('#anyMedication').change(function () {
-      if ($('#anyMedication').is(':checked')) {
-        $('#anyMedicationOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value anyMedicationOther when anyMedicationNo is selected
-        $('#anyMedicationNo').change(function () {
-          if ($('#anyMedicationNo').is(':checked')) {
-            $('#anyMedicationOther').fadeOut();
-            anyMedicationOther[0].value = "";
-          }
-        });
+// Show anyMedicationOther when anyMedication is selected
+$('#anyMedication').change(function () {
+  if ($('#anyMedication').is(':checked')) {
+    $('#anyMedicationOther').fadeIn();
+  }
+});
+//  Hide and Reset value anyMedicationOther when anyMedicationNo is selected
+$('#anyMedicationNo').change(function () {
+  if ($('#anyMedicationNo').is(':checked')) {
+    $('#anyMedicationOther').fadeOut();
+    anyMedicationOther[0].value = "";
+  }
+});
 
 // Show/Hide medicationHistoryOther if checked/unchecked
 if ($('#medicationHistory').is(':checked')) {
@@ -175,25 +180,25 @@ if ($('#medicationHistory').is(':checked')) {
 } else {
   $('#medicationHistoryOther').hide();
 }
-    // Show medicationHistoryOther when medicationHistory is selected
-    $('#medicationHistory').change(function () {
-      if ($('#medicationHistory').is(':checked')) {
-        $('#medicationHistoryOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value medicationHistoryOther when medicationHistoryNo is selected
-        $('#medicationHistoryNo').change(function () {
-          if ($('#medicationHistoryNo').is(':checked')) {
-            $('#medicationHistoryOther').fadeOut();
-            medicationHistoryOther[0].value = "";
-          }
-        });
+// Show medicationHistoryOther when medicationHistory is selected
+$('#medicationHistory').change(function () {
+  if ($('#medicationHistory').is(':checked')) {
+    $('#medicationHistoryOther').fadeIn();
+  }
+});
+//  Hide and Reset value medicationHistoryOther when medicationHistoryNo is selected
+$('#medicationHistoryNo').change(function () {
+  if ($('#medicationHistoryNo').is(':checked')) {
+    $('#medicationHistoryOther').fadeOut();
+    medicationHistoryOther[0].value = "";
+  }
+});
 
-        if ($('#medicationHistory').is(':checked')) {
-          $('#medicationHistoryOther').show();
-        } else {
-          $('#medicationHistoryOther').hide();
-        }
+if ($('#medicationHistory').is(':checked')) {
+  $('#medicationHistoryOther').show();
+} else {
+  $('#medicationHistoryOther').hide();
+}
 
 // Show/Hide medicalProblemsOther if checked/unchecked
 if ($('#medicalProblems').is(':checked')) {
@@ -201,25 +206,25 @@ if ($('#medicalProblems').is(':checked')) {
 } else {
   $('#medicalProblemsOther').hide();
 }
-    // Show medicalProblemsOther when medicalProblems is selected
-    $('#medicalProblems').change(function () {
-      if ($('#medicalProblems').is(':checked')) {
-        $('#medicalProblemsOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value medicalProblemsOther when medicalProblemsNo is selected
-        $('#medicalProblemsNo').change(function () {
-          if ($('#medicalProblemsNo').is(':checked')) {
-            $('#medicalProblemsOther').fadeOut();
-            medicationHistoryOther[0].value = "";
-          }
-        });
+// Show medicalProblemsOther when medicalProblems is selected
+$('#medicalProblems').change(function () {
+  if ($('#medicalProblems').is(':checked')) {
+    $('#medicalProblemsOther').fadeIn();
+  }
+});
+//  Hide and Reset value medicalProblemsOther when medicalProblemsNo is selected
+$('#medicalProblemsNo').change(function () {
+  if ($('#medicalProblemsNo').is(':checked')) {
+    $('#medicalProblemsOther').fadeOut();
+    medicationHistoryOther[0].value = "";
+  }
+});
 
-        if ($('#medicalProblems').is(':checked')) {
-          $('#medicalProblemsOther').show();
-        } else {
-          $('#medicalProblemsOther').hide();
-        }
+if ($('#medicalProblems').is(':checked')) {
+  $('#medicalProblemsOther').show();
+} else {
+  $('#medicalProblemsOther').hide();
+}
 
 // Show/Hide surgicalHistoryOther if checked/unchecked
 if ($('#surgicalHistory').is(':checked')) {
@@ -227,25 +232,67 @@ if ($('#surgicalHistory').is(':checked')) {
 } else {
   $('#surgicalHistoryOther').hide();
 }
-    // Show surgicalHistoryOther when surgicalHistoryOther is selected
-    $('#surgicalHistory').change(function () {
-      if ($('#surgicalHistory').is(':checked')) {
-        $('#surgicalHistoryOther').fadeIn();
-      }
-    });
-        //  Hide and Reset value surgicalHistoryOther when surgicalHistoryNo is selected
-        $('#surgicalHistoryNo').change(function () {
-          if ($('#surgicalHistoryNo').is(':checked')) {
-            $('#surgicalHistoryOther').fadeOut();
-            medicationHistoryOther[0].value = "";
-          }
-        });
+// Show surgicalHistoryOther when surgicalHistoryOther is selected
+$('#surgicalHistory').change(function () {
+  if ($('#surgicalHistory').is(':checked')) {
+    $('#surgicalHistoryOther').fadeIn();
+  }
+});
+//  Hide and Reset value surgicalHistoryOther when surgicalHistoryNo is selected
+$('#surgicalHistoryNo').change(function () {
+  if ($('#surgicalHistoryNo').is(':checked')) {
+    $('#surgicalHistoryOther').fadeOut();
+    medicationHistoryOther[0].value = "";
+  }
+});
 
-        if ($('#surgicalHistory').is(':checked')) {
-          $('#surgicalHistoryOther').show();
-        } else {
-          $('#surgicalHistoryOther').hide();
-        }
+if ($('#surgicalHistory').is(':checked')) {
+  $('#surgicalHistoryOther').show();
+} else {
+  $('#surgicalHistoryOther').hide();
+}
+
+// Show/Hide cigaretteOther if checked/unchecked
+if ($('#cigarette').is(':checked')) {
+  $('#cigaretteOther').show();
+} else {
+  $('#cigaretteOther').hide();
+}
+// Show cigaretteOther when cigarette is selected
+$('#cigarette').change(function () {
+  if ($('#cigarette').is(':checked')) {
+    $('#cigaretteOther').fadeIn();
+  }
+});
+//  Hide and Reset value cigaretteOther when cigaretteNo is selected
+$('#cigaretteNo').change(function () {
+  if ($('#cigaretteNo').is(':checked')) {
+    $('#cigaretteOther').fadeOut();
+    cigaretteOther[0].value = "";
+  }
+});
+
+// Show/Hide alcoholOther if checked/unchecked
+if ($('#alcohol').is(':checked')) {
+  $('#alcoholOther').show();
+} else {
+  $('#alcoholOther').hide();
+}
+// Show alcoholOther when alcohol is selected
+$('#alcohol').change(function () {
+  if ($('#alcohol').is(':checked')) {
+    $('#alcoholOther').fadeIn();
+  }
+});
+//  Hide and Reset value alcoholOther when alcoholNo is selected
+$('#alcoholNo').change(function () {
+  if ($('#alcoholNo').is(':checked')) {
+    $('#alcoholOther').fadeOut();
+    alcoholOther[0].value = "";
+  }
+});
+
+
 
 // Hide & reset Question3 inputs when cannotTell3 is selected
 $('#cannotTell3').change(function () {
@@ -282,3 +329,32 @@ if ($('#cannotTell3').is(':checked')) {
   $('#Question3').show();
 }
 
+
+
+// Hide & reset Question3 inputs when cannotTell3 is selected
+$('#cannotTell9').change(function () {
+  if ($('#cannotTell9').is(':checked')) {
+    $('#Question9').fadeOut();
+    cigarette[0].checked = false;
+    cigarette[1].checked = false;
+    cigaretteOther[0].value = "";
+
+    alcohol[0].checked = false;
+    alcohol[1].checked = false;
+    alcoholOther[0].value = "";
+
+    $('#cigaretteOther').hide();
+    $('#alcoholOther').hide();
+    // $('#anyMedicationOther').hide();
+    // $('#medicationHistoryOther').hide();
+
+  } else {
+    $('#Question9').fadeIn();
+  }
+});
+// Show/Hide  if checked/unchecked
+if ($('#cannotTell9').is(':checked')) {
+  $('#Question9').hide();
+} else {
+  $('#Question9').show();
+}

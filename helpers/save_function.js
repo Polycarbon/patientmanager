@@ -363,7 +363,14 @@ module.exports = {
       secondaryContact: req.body.secondaryContact,
       secondaryContactRelation: req.body.secondaryContactRelation,
       tel: req.body.tel,
-      contactPlace: req.body.contactPlace
+      contactPlace: req.body.contactPlace,
+
+      cannotTell9: req.body.cannotTell9,
+      cigarette: req.body.cigarette,
+      cigaretteOther: req.body.cigaretteOther,
+      alcohol: req.body.alcohol,
+      alcoholOther: req.body.alcoholOther,
+
     };
     return form4;
   }
