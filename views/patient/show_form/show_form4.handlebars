@@ -507,8 +507,7 @@
       <div class = "border4">
         <div class="form4-line1">
           <p></p>
-          <p>
-            1. การแจ้งรับผู้ป่วย &nbsp;&nbsp;
+          <p><b>1. การแจ้งรับผู้ป่วย &nbsp;&nbsp;</b>
             <input type="checkbox" name="OPD" id="OPD" {{setChecked 'OPD' form4.reportFrom}}>
             <label for="OPD">OPD</label>&nbsp;
             <input type="checkbox" name="ER" id="ER" {{setChecked 'ER' form4.reportFrom}}>
@@ -828,6 +827,284 @@
       </div>
     </div>
   </div>
+  <div class="printContainer2" id="form1">
+    <div class="border4">
+      <div class="form4-line21">
+        <p></p>
+        <p><b>5. สติปัญญาและการรับรู้</b></p>
+        <p>ระดับความรู้สึกตัว</p>
+        <p>
+          <input type="checkbox" name="consciousOpt1"}>
+          <label for="consciousOpt1">รู้สึกตัวดี</label>
+        </p>
+        <p>
+          <input type="checkbox" name="consciousOpt2"}>
+          <label for="consciousOpt2">สับสน</label>
+        </p>
+        <p>
+          <input type="checkbox" name="consciousOpt3"}>
+          <label for="consciousOpt3">ซึม</label>
+        </p>
+        <p>
+          <input type="checkbox" name="consciousOpt4"}>
+          <label for="consciousOpt4">ไม่รู้สึกตัว</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line22">
+        <p></p>
+        <p><b>5.1 สติปัญญา</b></p>
+        <p>
+          <input type="checkbox" name="apperceptionOpt1"}>
+          <label for="apperceptionOpt1">ประเมินไม่ได้</label>
+        </p>
+        <p>
+          <input type="checkbox" name="apperceptionOpt2"}>
+          <label for="apperceptionOpt2">ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox" name="apperceptionOpt3"}>
+          <label for="apperceptionOpt3">ไม่ปกติ</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line23">
+        <p></p>
+        <p><b>5.2 ประสาทสัมผัส</b></p>
+        <p>
+          <input type="checkbox" name="SenseOpt1"}>
+          <label for="SenseOpt1">ประเมินไม่ได้</label>
+        </p>
+        <p>
+          <input type="checkbox" name="SenseOpt2"}>
+          <label for="SenseOpt2">ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox" name="SenseOpt3"}>
+          <label for="SenseOpt3">ไม่ปกติ</label>
+        </p>
+      </div>
+      <div class="form4-line24">
+        <p></p>
+        <p>การพูด</p>
+        <p>
+          <input type="checkbox" name="speak_senseOpt2"}>
+          <label for="speak_senseOpt2">ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox" name="speak_senseOpt3"}>
+          <label for="speak_senseOpt3">ไม่ปกติ</label>
+        </p>
+        <p class="value">{{" "}}</p>
+        <p></p>
+        <p>การได้ยิน</p>
+        <p>
+          <input type="checkbox" name="listen_senseOpt1"}>
+          <label for="listen_senseOpt1">ชัดเจน</label>
+        </p>
+        <p>
+          <input type="checkbox" name="listen_senseOpt2"}>
+          <label for="listen_senseOpt2">ไม่ชัดเจน</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line25">
+        <p></p>
+        <p>การมองเห็น</p>
+        <p>
+          <input type="checkbox" name="see_senseOpt1"}>
+          <label for="see_senseOpt1">ชัดเจน</label>
+        </p>
+        <p>
+          <input type="checkbox" name="see_senseOpt2"}>
+          <label for="see_senseOpt2">ไม่ชัดเจน</label>
+        </p>
+        <p class="value">{{" "}}</p>
+        <p></p>
+        <p>อื่นๆ</p>
+        <p class="value">{{" "}}</p>
+      </div>
+    </div>
+    <div class="border4">
+      <div class="form4-line26">
+        <p></p>
+        <p><b>6. การพักผ่อน</b></p>
+        <p>นอน</p>
+        <p class="value">{{" "}}</p>
+        <p>ชั่วโมง/วัน</p>
+        <p>ปัญหาการนอน</p>
+        <p>
+          <input type="checkbox" name="sleep_issue1"}>
+          <label for="sleep_issue1">มี</label>
+        </p>
+        <p>
+          <input type="checkbox" name="sleep_issue2"}>
+          <label for="sleep_issue2">ไม่มี</label>
+        </p>
+        <p>ระบุสาเหตุ</p>
+        <p class="value">{{" "}}</p>
+        <p></p>
+        <p>การใช้ยา</p>
+        <p>
+          <input type="checkbox" name="use_pill1"}>
+          <label for="use_pill1">ไมใช้ยา</label>
+        </p>
+        <p>
+          <input type="checkbox" name="use_pill2"}>
+          <label for="use_pill2">ใช้ยา</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+    </div>
+    <div class="border4">
+      <div class="form4-line27">
+        <p></p>
+        <p><b>7. โภชนาการและการเผาผลาญ</b></p>
+        <p>
+          <input type="checkbox" name="nutrient_check1"}>
+          <label for="nutrient_check1">ประเมินไม่ได้</label>
+        </p>
+      </div>
+      <div class="form4-line28">
+        <p></p>
+        <p>รับประทานอาหาร</p>
+        <p class="value">{{" "}}</p>
+        <p>มื้อ/วัน</p>
+        <p>
+          <input type="checkbox" name="food_opt1"}>
+          <label for="food_opt1">อาหารอ่อน</label>
+        </p>
+        <p>
+          <input type="checkbox" name="food_opt2"}>
+          <label for="food_opt2">อาหารธรรมดา</label>
+        </p>
+        <p>
+          <input type="checkbox" name="food_opt3"}>
+          <label for="food_opt3">ทางสายยาง</label>
+        </p>
+        <p>
+          <input type="checkbox" name="food_opt4"}>
+          <label>อาหารเฉพาะโรค</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line29">
+        <p></p>
+        <p>ปัญหาการรับประทานอาหาร</p>
+         <p>
+          <input type="checkbox"}>
+          <label>ไม่มี</label>
+        </p>
+        <p>
+          <input type="checkbox"}>
+          <label>มี</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line30">
+        <p></p>
+        <p>การเปลี่ยนแปลงน้ำหนักตัว</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox"}>
+          <label>เพิ่มขึ้น</label>
+        </p>
+        <p class="value">{{" "}}</p>
+        <p></p>
+        <p>
+          <input type="checkbox"}>
+          <label>ลดลง</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+    </div>
+    <div class="border4">
+      <div class="form4-line31">
+        <p></p>
+        <p><b>8. การขับถ่าย</b></p>
+        <p>
+          <input type="checkbox"}>
+          <label>ประเมินไม่ได้</label>
+        </p>
+        <p>ถ่ายปัสสาวะ</p>
+        <p class="value">{{" "}}</p>
+        <p>ครั้ง/วัน</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox"}>
+          <label>ไม่ปกติ</label>
+        </p>
+        <p>ระบุ</p>
+        <p class="value">{{" "}}</p>
+      </div>
+      <div class="form4-line32">
+        <p></p>
+        <p>ถ่ายอุจจาระ</p>
+        <p class="value">{{" "}}</p>
+        <p>ครั้ง/วัน</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ปกติ</label>
+        </p>
+        <p>
+          <input type="checkbox"}>
+          <label>ไม่ปกติ</label>
+        </p>
+        <p>ระบุ</p>
+        <p class="value">{{" "}}</p>
+        <p>การขับถ่ายทางหน้าท้อง</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ไม่มี</label>
+        </p>
+        <p>
+          <input type="checkbox"}>
+          <label>มี</label>
+        </p>
+        <p class="value">{{" "}}</p>
+      </div>
+    </div>
+    <div class="border4">
+      <div class="form4-line33">
+        <p></p>
+        <p>9. สิ่งเสพติด</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ประเมินไม่ได้</label>
+        </p>
+        <p>บุหรี่</p>
+        <p>
+          <input type="checkbox"}>
+          <label>สูบ</label>
+        </p>
+        <p>(จำนวน</p>
+        <p class="value">{{" "}}</p>
+        <p>/วัน)</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ไม่สูบ</label>
+        </p>
+        <p>สุรา</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ดื่ม</label>
+        </p>
+        <p class="value">{{" "}}</p>
+        <p>/วัน</p>
+        <p>
+          <input type="checkbox"}>
+          <label>ไม่ดื่ม</label>
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div class="printContainer" style="padding-top: 20px;">
     <div class="form4-nameline">
       <p></p>

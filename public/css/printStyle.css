@@ -11,7 +11,7 @@
   padding:  60px 80px;
   line-height: 1; 
   font-size: 12px;
-  /* border: black solid 1px;  */ 
+  /* border: black solid 1px;  */
   margin: 0 auto;
 }
 
@@ -481,6 +481,58 @@ table{
 .form4-line20{
   display: grid;
   grid-template-columns: 0.5% 10.5% 25% 8% 15% 3% 13% 9% 15%;
+}
+.form4-line21{
+  display: grid;
+  grid-template-columns: 0.5% 20% 15% 10% 10% 10% 8% 26% 0.5%;
+}
+.form4-line22{
+  display: grid;
+  grid-template-columns: 0.5% 15% 15% 10% 8% 51% 0.5%;
+}
+.form4-line23{
+  display: grid;
+  grid-template-columns: 0.5% 15% 15% 10% 8% 51% 0.5%;
+}
+.form4-line24{
+  display: grid;
+  grid-template-columns: 3.5% 10% 8% 7% 15% 5% 10% 8% 8% 25% 0.5%;
+}
+.form4-line25{
+  display: grid;
+  grid-template-columns: 3.5% 10% 8% 8% 14% 5% 3% 48% 0.5%;
+}
+.form4-line26{
+  display: grid;
+  grid-template-columns: 0.5% 10% 3% 5% 10% 10% 5% 5% 7% 10% 2% 6% 7% 6% 13.5%;
+}
+.form4-line27{
+  display: grid;
+  grid-template-columns: 0.5% 25% 20%;
+}
+.form4-line28{
+  display: grid;
+  grid-template-columns: 3.5% 11% 5% 5% 10% 12% 12% 12% 28.5%;
+}
+.form4-line29{
+  display: grid;
+  grid-template-columns: 3.5% 20% 6% 4% 66% 0.5%;
+}
+.form4-line30{
+  display: grid;
+  grid-template-columns: 3.5% 20% 7% 7% 27% 1% 6% 28% 0.5%;
+}
+.form4-line31{
+  display: grid;
+  grid-template-columns: 0.5% 10% 11% 8% 5% 6% 6% 7% 3% 43% 0.5%;
+}
+.form4-line32{
+  display: grid;
+  grid-template-columns: 3.5% 8% 5% 7% 6% 7% 3% 10% 15% 6% 4% 25% 0.5%;
+}
+.form4-line33{
+  display: grid;
+  grid-template-columns: 0.5% 10% 11% 4% 5% 5% 3% 5% 8% 4% 4% 7% 5% 7%;
 }
 .form4-nameline{
   display: grid;
