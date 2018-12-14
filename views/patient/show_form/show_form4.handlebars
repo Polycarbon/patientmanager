@@ -80,19 +80,23 @@
       <label for="">อุปกรณ์</label>
       <p>
         <div class="col s3">
-          <input type="checkbox" class="filled-in" id="equip1" name="equip1" {{#if form4.equip1}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="equip1" name="equip1" {{#if form4.equip1}} checked="checked"
+            {{/if}} disabled>
           <label for="equip1">O2 Camlar</label>
         </div>
         <div class="col s3">
-          <input type="checkbox" class="filled-in" id="equip2" name="equip2" {{#if form4.equip2}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="equip2" name="equip2" {{#if form4.equip2}} checked="checked"
+            {{/if}} disabled>
           <label for="equip2">O2 Mask</label>
         </div>
         <div class="col s3">
-          <input type="checkbox" class="filled-in" id="equip3" name="equip3" {{#if form4.equip3}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="equip3" name="equip3" {{#if form4.equip3}} checked="checked"
+            {{/if}} disabled>
           <label for="equip3">Respiratory</label>
         </div>
         <div class="col s3">
-          <input type="checkbox" class="filled-in" id="equip4" name="equip4" {{#if form4.equip4}} checked="checked" {{/if}} disabled>
+          <input type="checkbox" class="filled-in" id="equip4" name="equip4" {{#if form4.equip4}} checked="checked"
+            {{/if}} disabled>
           <label for="equip4">อื่นๆ</label>
         </div>
       </p>
@@ -124,47 +128,50 @@
       <label for="">ตรวจสอบเอกสาร</label>
       <p>
         <div class="col s2">
-          <input type="checkbox" class="filled-in" id="checkDoc1" name="checkDoc1" {{#if form4.checkDoc1}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="checkDoc1" name="checkDoc1" {{#if form4.checkDoc1}} checked="checked"
+            {{/if}} disabled>
           <label for="checkDoc1">ใบ Summary</label>
         </div>
         <div class="col s2">
-          <input type="checkbox" class="filled-in" id="checkDoc2" name="checkDoc2" {{#if form4.checkDoc2}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="checkDoc2" name="checkDoc2" {{#if form4.checkDoc2}} checked="checked"
+            {{/if}} disabled>
           <label for="checkDoc2">ใบตรวจสอบสิทธิ์</label>
         </div>
         <div class="col s2">
-          <input type="checkbox" class="filled-in" id="checkDoc3" name="checkDoc3" {{#if form4.checkDoc3}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="checkDoc3" name="checkDoc3" {{#if form4.checkDoc3}} checked="checked"
+            {{/if}} disabled>
           <label for="checkDoc3">ใบ OPD Card</label>
         </div>
 
         <div class="col s2">
-          <input type="checkbox" class="filled-in" id="checkDoc4" name="checkDoc4" {{#if form4.checkDoc4}} checked="checked" {{/if}}disabled>
+          <input type="checkbox" class="filled-in" id="checkDoc4" name="checkDoc4" {{#if form4.checkDoc4}} checked="checked"
+            {{/if}} disabled>
           <label for="checkDoc4">ใบยินยอมรักษา</label>
         </div>
         <div class="col s2">
-          <input type="checkbox" class="filled-in" id="checkDoc5" name="checkDoc5" {{#if form4.checkDoc5}} checked="checked" {{/if}}
-            disabled>
+          <input type="checkbox" class="filled-in" id="checkDoc5" name="checkDoc5" {{#if form4.checkDoc5}} checked="checked"
+            {{/if}} disabled>
           <label for="checkDoc5">อื่นๆ...</label>
         </div>
       </p>
-       <div class="col s2">
-          <label>อื่นๆ</label>
-          <input type="text" class="filled-in" id="checkDocOther" name="checkDocOther" value="{{form4.checkDocOther}}" readonly/>
-        </div>
+      <div class="col s2">
+        <label>อื่นๆ</label>
+        <input type="text" class="filled-in" id="checkDocOther" name="checkDocOther" value="{{form4.checkDocOther}}"
+          readonly />
+      </div>
     </div>
     <div class="row"></div>
     <div class="col s2">
       <label for="">ของที่ผู้ป่วยนำมา</label>
       <p id="bringRadio">
         <div class="col s6">
-          <input type="radio" class="filled-in" id="dontBring" value="dontBring" name="bring" {{setChecked 'dontBring' form4.bring}}
-            disabled>
+          <input type="radio" class="filled-in" id="dontBring" value="dontBring" name="bring"
+            {{setChecked 'dontBring' form4.bring}} disabled>
           <label for="dontBring">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="bring" value="bring" name="bring" {{setChecked 'bring' form4.bring}} disabled>
+          <input type="radio" class="filled-in" id="bring" value="bring" name="bring"
+            {{setChecked 'bring' form4.bring}} disabled>
           <label for="bring">มี</label>
         </div>
       </p>
@@ -310,11 +317,13 @@
       <label for="">โรคทางพันธุกรรม</label>
       <p>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="geneticsNo" name="genetics" value="geneticsNo"  {{setChecked 'geneticsNo' form4.genetics}} disabled>
+          <input type="radio" class="filled-in" id="geneticsNo" name="genetics" value="geneticsNo"
+            {{setChecked 'geneticsNo' form4.genetics}} disabled>
           <label for="geneticsNo">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="genetics" name="genetics" value="genetics"  {{setChecked 'genetics' form4.genetics}} disabled>
+          <input type="radio" class="filled-in" id="genetics" name="genetics" value="genetics"
+            {{setChecked 'genetics' form4.genetics}} disabled>
           <label for="genetics">มี</label>
         </div>
       </p>
@@ -328,12 +337,14 @@
       <label for="">โรคประจำตัว</label>
       <p>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="anyMedicationNo" name="anyMedication" value="anyMedicationNo" {{setChecked
+          <input type="radio" class="filled-in" id="anyMedicationNo" name="anyMedication" value="anyMedicationNo"
+            {{setChecked
             'anyMedicationNo' form4.anyMedication}} disabled>
           <label for="anyMedicationNo">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="anyMedication" name="anyMedication" value="anyMedication" {{setChecked
+          <input type="radio" class="filled-in" id="anyMedication" name="anyMedication" value="anyMedication"
+            {{setChecked
             'anyMedication' form4.anyMedication}} disabled>
           <label for="anyMedication">มี</label>
         </div>
@@ -348,40 +359,44 @@
       <label for="">ประวัติการแพ้ยา/อาหาร</label>
       <p>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="medicalProblemsNo" value="medicalProblemsNo" name="medicalProblems" {{ setChecked
+          <input type="radio" class="filled-in" id="medicalProblemsNo" value="medicalProblemsNo" name="medicalProblems"
+            {{ setChecked
             'medicalProblemsNo' form4.medicalProblems }} disabled>
           <label for="medicalProblemsNo">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="medicalProblems" value="medicalProblems" name="medicalProblems" {{ setChecked
+          <input type="radio" class="filled-in" id="medicalProblems" value="medicalProblems" name="medicalProblems"
+            {{ setChecked
             'medicalProblems' form4.medicalProblems }} disabled>
           <label for="medicalProblems">มี</label>
         </div>
       </p>
     </div>
     <div class="col s4" id="medicalProblemsOther">
-        <label>.</label>
-        <input type="text" name="medicalProblemsOther" placeholder="ระบุ" value="{{form4.medicalProblemsOther}}" readonly>
-      </div>
+      <label>.</label>
+      <input type="text" name="medicalProblemsOther" placeholder="ระบุ" value="{{form4.medicalProblemsOther}}" readonly>
+    </div>
     <div class="col s2">
       <label for="">ประวัติการผ่าตัด</label>
       <p>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="surgicalHistoryNo" value="surgicalHistoryNo" name="surgicalHistory" {{ setChecked
+          <input type="radio" class="filled-in" id="surgicalHistoryNo" value="surgicalHistoryNo" name="surgicalHistory"
+            {{ setChecked
             'surgicalHistoryNo' form4.surgicalHistory}} disabled>
           <label for="surgicalHistoryNo">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="surgicalHistory" value="surgicalHistory" name="surgicalHistory" {{setChecked
+          <input type="radio" class="filled-in" id="surgicalHistory" value="surgicalHistory" name="surgicalHistory"
+            {{setChecked
             'surgicalHistory' form4.surgicalHistory}} disabled>
           <label for="surgicalHistory">มี</label>
         </div>
       </p>
     </div>
-     <div class="col s4" id="surgicalHistoryOther">
-        <label>.</label>
-        <input type="text" name="surgicalHistoryOther" placeholder="ระบุ" value="{{form4.surgicalHistoryOther}}" readonly>
-      </div>
+    <div class="col s4" id="surgicalHistoryOther">
+      <label>.</label>
+      <input type="text" name="surgicalHistoryOther" placeholder="ระบุ" value="{{form4.surgicalHistoryOther}}" readonly>
+    </div>
 
     <div class="row"></div>
 
@@ -389,20 +404,22 @@
       <label for="">ประวัติการใช้ยา</label>
       <p>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="medicationHistoryNo" name="medicationHistory" value="medicationHistoryNo" {{setChecked
+          <input type="radio" class="filled-in" id="medicationHistoryNo" name="medicationHistory" value="medicationHistoryNo"
+            {{setChecked
             'medicationHistoryNo' form4.medicationHistory}} disabled>
           <label for="medicationHistoryNo">ไม่มี</label>
         </div>
         <div class="col s6">
-          <input type="radio" class="filled-in" id="medicationHistory" name="medicationHistory" value="medicationHistory" {{setChecked 'medicationHistory' form4.medicationHistory}}
-            disabled>
+          <input type="radio" class="filled-in" id="medicationHistory" name="medicationHistory" value="medicationHistory"
+            {{setChecked 'medicationHistory' form4.medicationHistory}} disabled>
           <label for="medicationHistory">มี</label>
         </div>
       </p>
     </div>
     <div class="col s10" id="medicationHistoryOther">
       <label>.</label>
-      <input type="text" name="medicationHistoryOther" placeholder="ระบุ" value="{{form4.medicationHistoryOther}}" readonly>
+      <input type="text" name="medicationHistoryOther" placeholder="ระบุ" value="{{form4.medicationHistoryOther}}"
+        readonly>
     </div>
     <div class="row"></div>
   </div>
@@ -421,7 +438,8 @@
 
     <div class="col s4">
       <label>บทบาทของผู้ป่วยในครอบครัว</label>
-      <input type="text" name="roleInFamily" placeholder="บทบาทของผู้ป่วยในครอบครัว" value="{{form4.roleInFamily}}" readonly>
+      <input type="text" name="roleInFamily" placeholder="บทบาทของผู้ป่วยในครอบครัว" value="{{form4.roleInFamily}}"
+        readonly>
     </div>
     <div class="col s2">
       <label>ระดับการศึกษา</label>
@@ -429,7 +447,8 @@
     </div>
     <div class="col s2">
       <label>สถานภาพสมรส</label>
-      <input type="text" name="relationshipStatus" placeholder="สถานภาพสมรส" value="{{form4.relationshipStatus}}" readonly>
+      <input type="text" name="relationshipStatus" placeholder="สถานภาพสมรส" value="{{form4.relationshipStatus}}"
+        readonly>
     </div>
     <div class="col s2">
       <label>อาชีพ</label>
@@ -442,7 +461,8 @@
 
     <div class="col s3">
       <label>บุคคลที่ติดต่อได้</label>
-      <input type="text" name="secondaryContact" placeholder="บุคคลที่ติดต่อได้" value="{{form4.secondaryContact}}" readonly>
+      <input type="text" name="secondaryContact" placeholder="บุคคลที่ติดต่อได้" value="{{form4.secondaryContact}}"
+        readonly>
     </div>
     <div class="col s2">
       <label>เกี่ยวข้องเป็น</label>
@@ -460,6 +480,66 @@
     <div class="row"></div>
   </div>
 
+  <div class="col s12 divider grey"></div>
+
+  <div class="col s12">
+    <div class="row"></div>
+    <div class="col s12 left">
+      <span class="left" style="font-weight: 600; margin-right:20px;">9. สิ่งเสพติด
+      </span>
+      <div class="col s3">
+        <input type="checkbox" class="filled-in" name="cannotTell9" id="cannotTell9" {{#if form4.cannotTell9}} checked="checked"
+          {{/if}} disabled>
+        <label for="cannotTell9">ประเมินไม่ได้</label>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+
+  {{!-- 9. สิ่งเสพติด --}}
+  <div class="col s12" id="Question9">
+    <div class="col s2">
+      <label for="">บุหรี่</label>
+      <p>
+        <div class="col s5">
+          <input type="radio" class="filled-in" id="cigarette" name="cigarette" value="cigarette"
+            {{setChecked 'cigarette' form4.cigarette}} disabled />
+          <label for="cigarette">สูบ</label>
+        </div>
+        <div class="col s7">
+          <input type="radio" class="filled-in" id="cigaretteNo" name="cigarette" value="cigaretteNo"
+            {{setChecked 'cigaretteNo' form4.cigarette}} disabled />
+          <label for="cigaretteNo">ไม่สูบ</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s3" id="cigaretteOther">
+      <input type="text" name="cigaretteOther" placeholder="(จำนวนต่อวัน)" value="{{form4.cigaretteOther}}" readonly>
+    </div>
+
+    <div class="col s2">
+      <label for="">สุรา</label>
+      <p>
+        <div class="col s5">
+          <input type="radio" class="filled-in" id="alcohol" name="alcohol" value="alcohol"
+            {{setChecked 'alcohol' form4.alcohol}} disabled />
+          <label for="alcohol">ดื่ม</label>
+        </div>
+        <div class="col s7">
+          <input type="radio" class="filled-in" id="alcoholNo" name="alcohol" value="alcoholNo"
+            {{setChecked 'alcoholNo' form4.alcohol}} disabled />
+          <label for="alcoholNo">ไม่ดื่ม</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s3" id="alcoholOther">
+      <input type="text" name="alcoholOther" placeholder="(จำนวนต่อวัน)" value="{{form4.alcoholOther}}" readonly>
+    </div>
+
+
+
+    <div class="row"></div>
+  </div>
   <div class="col s12 divider grey"></div>
 
   <div class="row"></div>
@@ -504,7 +584,7 @@
 <div class="print printForm">
   <div class="printContainer1" id="form1">
     <div class="table4">
-      <div class = "border4">
+      <div class="border4">
         <div class="form4-line1">
           <p></p>
           <p><b>1. การแจ้งรับผู้ป่วย &nbsp;&nbsp;</b>
@@ -584,8 +664,8 @@
           <p class="value">{{form4.reported}}</p>
         </div>
       </div>
-      <div class = "border4">
-        <div class = "form4-2col">
+      <div class="border4">
+        <div class="form4-2col">
           <p></p>
           <p>
             <span style="font-weight: 700;"> ตรวจสอบเอกสาร</span> &nbsp;&nbsp;
@@ -602,9 +682,9 @@
           <p>
             <input type="checkbox" name="checkDoc4" id="checkDoc4" {{#if form4.checkDoc4}} checked="checked" {{/if}}>
             <label for="checkDoc4">ใบยินยอมรักษา</label>&nbsp;
-          </p>  
+          </p>
           <br>
-          
+
           <p>
             <input type="checkbox" name="checkDoc2" id="checkDoc2" {{#if form4.checkDoc1}} checked="checked" {{/if}}>
             <label for="checkDoc2">ใบตรวจสอบสิทธิ์</label>
@@ -629,7 +709,7 @@
           <p class="value">{{form4.examiner}}</p>
         </div>
       </div>
-      
+
     </div>
   </div>
   <div class="printContainer2" id="form1">
@@ -721,7 +801,8 @@
         <p></p>
         <p>3. ประวัติการเจ็บป่วยในอดีต</p>
         <p>
-          <input type="checkbox" name="cantMeasure" id="cantMeasure" {{#if form4.cannotTell3}} checked="checked" {{/if}}>
+          <input type="checkbox" name="cantMeasure" id="cantMeasure" {{#if form4.cannotTell3}} checked="checked"
+            {{/if}}>
           <label for="cantMeasure">ประเมินไม่ได้</label>
         </p>
       </div>
@@ -741,11 +822,13 @@
         <p></p>
         <p>โรคประจำตัว</p>
         <p>
-          <input type="checkbox" name="nomedicationProblem" id="nomedicationProblem" {{setChecked 'anyMedicationNo' form4.anyMedication}}>
+          <input type="checkbox" name="nomedicationProblem" id="nomedicationProblem"
+            {{setChecked 'anyMedicationNo' form4.anyMedication}}>
           <label for="nomedicationProblem">ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" name="medicationProblem" id="medicationProblem" {{setChecked 'anyMedication' form4.anyMedication}}>
+          <input type="checkbox" name="medicationProblem" id="medicationProblem"
+            {{setChecked 'anyMedication' form4.anyMedication}}>
           <label for="medicationProblem">มี</label>
         </p>
         <p>(ระบุ)</p>
@@ -755,12 +838,14 @@
         <p></p>
         <p>ประวัติการแพ้ยา / อาหาร</p>
         <p>
-          <input type="checkbox" name="medicalProblemsNo" id="medicalProblemsNo" {{ setChecked 'medicalProblemsNo' form4.medicalProblems
+          <input type="checkbox" name="medicalProblemsNo" id="medicalProblemsNo"
+            {{ setChecked 'medicalProblemsNo' form4.medicalProblems
             }}>
           <label for="medicalProblemsNo">ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" name="medicalProblems" id="medicalProblems" {{ setChecked 'medicalProblems' form4.medicalProblems
+          <input type="checkbox" name="medicalProblems" id="medicalProblems"
+            {{ setChecked 'medicalProblems' form4.medicalProblems
             }}>
           <label for="medicalProblems">มี</label>
         </p>
@@ -769,11 +854,13 @@
         <p></p>
         <p>ประวัติการผ่าตัด</p>
         <p>
-          <input type="checkbox" name="surgicalHistoryNo" id="surgicalHistoryNo" {{setChecked 'surgicalHistoryNo' form4.surgicalHistory}}>
+          <input type="checkbox" name="surgicalHistoryNo" id="surgicalHistoryNo"
+            {{setChecked 'surgicalHistoryNo' form4.surgicalHistory}}>
           <label for="surgicalHistoryNo">ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" name="surgicalHistory" id="surgicalHistory" {{setChecked 'surgicalHistory' form4.surgicalHistory}}>
+          <input type="checkbox" name="surgicalHistory" id="surgicalHistory"
+            {{setChecked 'surgicalHistory' form4.surgicalHistory}}>
           <label for="medicationProblem">มี</label>
         </p>
         <p>(ระบุ)</p>
@@ -783,11 +870,13 @@
         <p></p>
         <p>ประวัติการใช้ยา</p>
         <p>
-          <input type="checkbox" name="medicationHistoryNo" id="medicationHistoryNo" {{setChecked 'medicationHistoryNo' form4.medicationHistory}}>
+          <input type="checkbox" name="medicationHistoryNo" id="medicationHistoryNo"
+            {{setChecked 'medicationHistoryNo' form4.medicationHistory}}>
           <label for="medicationHistoryNo">ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" name="medicationHistory" id="medicationHistory" {{setChecked 'medicationHistory' form4.medicationHistory}}>
+          <input type="checkbox" name="medicationHistory" id="medicationHistory"
+            {{setChecked 'medicationHistory' form4.medicationHistory}}>
           <label for="medicationHistory">มี</label>
         </p>
         <p>(ระบุ)</p>
@@ -834,19 +923,19 @@
         <p><b>5. สติปัญญาและการรับรู้</b></p>
         <p>ระดับความรู้สึกตัว</p>
         <p>
-          <input type="checkbox" name="consciousOpt1"}>
+          <input type="checkbox" name="consciousOpt1" }>
           <label for="consciousOpt1">รู้สึกตัวดี</label>
         </p>
         <p>
-          <input type="checkbox" name="consciousOpt2"}>
+          <input type="checkbox" name="consciousOpt2" }>
           <label for="consciousOpt2">สับสน</label>
         </p>
         <p>
-          <input type="checkbox" name="consciousOpt3"}>
+          <input type="checkbox" name="consciousOpt3" }>
           <label for="consciousOpt3">ซึม</label>
         </p>
         <p>
-          <input type="checkbox" name="consciousOpt4"}>
+          <input type="checkbox" name="consciousOpt4" }>
           <label for="consciousOpt4">ไม่รู้สึกตัว</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -855,15 +944,15 @@
         <p></p>
         <p><b>5.1 สติปัญญา</b></p>
         <p>
-          <input type="checkbox" name="apperceptionOpt1"}>
+          <input type="checkbox" name="apperceptionOpt1" }>
           <label for="apperceptionOpt1">ประเมินไม่ได้</label>
         </p>
         <p>
-          <input type="checkbox" name="apperceptionOpt2"}>
+          <input type="checkbox" name="apperceptionOpt2" }>
           <label for="apperceptionOpt2">ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" name="apperceptionOpt3"}>
+          <input type="checkbox" name="apperceptionOpt3" }>
           <label for="apperceptionOpt3">ไม่ปกติ</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -872,15 +961,15 @@
         <p></p>
         <p><b>5.2 ประสาทสัมผัส</b></p>
         <p>
-          <input type="checkbox" name="SenseOpt1"}>
+          <input type="checkbox" name="SenseOpt1" }>
           <label for="SenseOpt1">ประเมินไม่ได้</label>
         </p>
         <p>
-          <input type="checkbox" name="SenseOpt2"}>
+          <input type="checkbox" name="SenseOpt2" }>
           <label for="SenseOpt2">ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" name="SenseOpt3"}>
+          <input type="checkbox" name="SenseOpt3" }>
           <label for="SenseOpt3">ไม่ปกติ</label>
         </p>
       </div>
@@ -888,22 +977,22 @@
         <p></p>
         <p>การพูด</p>
         <p>
-          <input type="checkbox" name="speak_senseOpt2"}>
+          <input type="checkbox" name="speak_senseOpt2" }>
           <label for="speak_senseOpt2">ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" name="speak_senseOpt3"}>
+          <input type="checkbox" name="speak_senseOpt3" }>
           <label for="speak_senseOpt3">ไม่ปกติ</label>
         </p>
         <p class="value">{{" "}}</p>
         <p></p>
         <p>การได้ยิน</p>
         <p>
-          <input type="checkbox" name="listen_senseOpt1"}>
+          <input type="checkbox" name="listen_senseOpt1" }>
           <label for="listen_senseOpt1">ชัดเจน</label>
         </p>
         <p>
-          <input type="checkbox" name="listen_senseOpt2"}>
+          <input type="checkbox" name="listen_senseOpt2" }>
           <label for="listen_senseOpt2">ไม่ชัดเจน</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -912,11 +1001,11 @@
         <p></p>
         <p>การมองเห็น</p>
         <p>
-          <input type="checkbox" name="see_senseOpt1"}>
+          <input type="checkbox" name="see_senseOpt1" }>
           <label for="see_senseOpt1">ชัดเจน</label>
         </p>
         <p>
-          <input type="checkbox" name="see_senseOpt2"}>
+          <input type="checkbox" name="see_senseOpt2" }>
           <label for="see_senseOpt2">ไม่ชัดเจน</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -934,11 +1023,11 @@
         <p>ชั่วโมง/วัน</p>
         <p>ปัญหาการนอน</p>
         <p>
-          <input type="checkbox" name="sleep_issue1"}>
+          <input type="checkbox" name="sleep_issue1" }>
           <label for="sleep_issue1">มี</label>
         </p>
         <p>
-          <input type="checkbox" name="sleep_issue2"}>
+          <input type="checkbox" name="sleep_issue2" }>
           <label for="sleep_issue2">ไม่มี</label>
         </p>
         <p>ระบุสาเหตุ</p>
@@ -946,11 +1035,11 @@
         <p></p>
         <p>การใช้ยา</p>
         <p>
-          <input type="checkbox" name="use_pill1"}>
+          <input type="checkbox" name="use_pill1" }>
           <label for="use_pill1">ไมใช้ยา</label>
         </p>
         <p>
-          <input type="checkbox" name="use_pill2"}>
+          <input type="checkbox" name="use_pill2" }>
           <label for="use_pill2">ใช้ยา</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -961,7 +1050,7 @@
         <p></p>
         <p><b>7. โภชนาการและการเผาผลาญ</b></p>
         <p>
-          <input type="checkbox" name="nutrient_check1"}>
+          <input type="checkbox" name="nutrient_check1" }>
           <label for="nutrient_check1">ประเมินไม่ได้</label>
         </p>
       </div>
@@ -971,19 +1060,19 @@
         <p class="value">{{" "}}</p>
         <p>มื้อ/วัน</p>
         <p>
-          <input type="checkbox" name="food_opt1"}>
+          <input type="checkbox" name="food_opt1" }>
           <label for="food_opt1">อาหารอ่อน</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt2"}>
+          <input type="checkbox" name="food_opt2" }>
           <label for="food_opt2">อาหารธรรมดา</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt3"}>
+          <input type="checkbox" name="food_opt3" }>
           <label for="food_opt3">ทางสายยาง</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt4"}>
+          <input type="checkbox" name="food_opt4" }>
           <label>อาหารเฉพาะโรค</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -991,12 +1080,12 @@
       <div class="form4-line29">
         <p></p>
         <p>ปัญหาการรับประทานอาหาร</p>
-         <p>
-          <input type="checkbox"}>
+        <p>
+          <input type="checkbox" }>
           <label>ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>มี</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -1005,17 +1094,17 @@
         <p></p>
         <p>การเปลี่ยนแปลงน้ำหนักตัว</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>เพิ่มขึ้น</label>
         </p>
         <p class="value">{{" "}}</p>
         <p></p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ลดลง</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -1026,18 +1115,18 @@
         <p></p>
         <p><b>8. การขับถ่าย</b></p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ประเมินไม่ได้</label>
         </p>
         <p>ถ่ายปัสสาวะ</p>
         <p class="value">{{" "}}</p>
         <p>ครั้ง/วัน</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ไม่ปกติ</label>
         </p>
         <p>ระบุ</p>
@@ -1049,22 +1138,22 @@
         <p class="value">{{" "}}</p>
         <p>ครั้ง/วัน</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ไม่ปกติ</label>
         </p>
         <p>ระบุ</p>
         <p class="value">{{" "}}</p>
         <p>การขับถ่ายทางหน้าท้อง</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" }>
           <label>มี</label>
         </p>
         <p class="value">{{" "}}</p>
@@ -1075,30 +1164,32 @@
         <p></p>
         <p>9. สิ่งเสพติด</p>
         <p>
-          <input type="checkbox"}>
-          <label>ประเมินไม่ได้</label>
+          <input type="checkbox" name="cantMeasure2" id="cantMeasure2" {{#if form4.cannotTell9}} checked="checked"
+            {{/if}}>
+          <label for="cantMeasure2">ประเมินไม่ได้</label>
         </p>
         <p>บุหรี่</p>
         <p>
-          <input type="checkbox"}>
-          <label>สูบ</label>
+          <input type="checkbox" name="haveCigarette" id="haveCigarette" {{setChecked 'cigarette' form4.cigarette}}>
+          <label for="haveCigarette">สูบ</label>
         </p>
         <p>(จำนวน</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.cigaretteOther}}</p>
         <p>/วัน)</p>
         <p>
-          <input type="checkbox"}>
-          <label>ไม่สูบ</label>
+          <input type="checkbox" name="nohaveCigarette" id="nohaveCigarette"
+            {{setChecked 'cigaretteNo' form4.cigarette}}>
+          <label for="nohaveCigarette">ไม่สูบ</label>
         </p>
         <p>สุรา</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" name="haveAlcohol" id="haveAlcohol" {{setChecked 'alcohol' form4.alcohol}}>
           <label>ดื่ม</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.alcoholOther}}</p>
         <p>/วัน</p>
         <p>
-          <input type="checkbox"}>
+          <input type="checkbox" name="nohaveAlcohol" id="nohaveAlcohol" {{setChecked 'alcoholNo' form4.alcohol}}>
           <label>ไม่ดื่ม</label>
         </p>
       </div>

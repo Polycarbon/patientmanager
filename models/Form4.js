@@ -66,7 +66,7 @@ const Form4 = new Schema({
   checkDoc5: {
     type: String
   },
-  checkDocOther:{
+  checkDocOther: {
     type: String
   },
   bring: {
@@ -132,13 +132,28 @@ const Form4 = new Schema({
   vitalOther: {
     type: String
   },
-  cannotTell3:{
+  cannotTell3: {
     type: String
   },
   genetics: {
     type: String
   },
   geneticsOther: {
+    type: String
+  },
+  cannotTell9: {
+    type: String
+  },
+  cigarette: {
+    type: String
+  },
+  cigaretteOther: {
+    type: String
+  },
+  alcohol: {
+    type: String
+  },
+  alcoholOther: {
     type: String
   },
   anyMedication: {

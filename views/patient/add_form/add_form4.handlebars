@@ -149,7 +149,7 @@
             <label for="checkDoc5">อื่นๆ...</label>
           </div>
           <div class="col s2">
-            <label >อื่นๆ</label>
+            <label>อื่นๆ</label>
             <input type="text" class="filled-in" id="checkDocOther" name="checkDocOther" />
           </div>
         </p>
@@ -337,7 +337,7 @@
         <label>.</label>
         <input type="text" name="anyMedicationOther" placeholder="ระบุ">
       </div>
-    <div class="row"></div>
+      <div class="row"></div>
       <div class="col s2">
         <label for="">ประวัติการแพ้ยา/อาหาร</label>
         <p>
@@ -371,7 +371,7 @@
       </div>
       <div class="col s4" id="surgicalHistoryOther">
         <label>.</label>
-        <input type="text" name="surgicalHistoryOther" placeholder="ระบุ" >
+        <input type="text" name="surgicalHistoryOther" placeholder="ระบุ">
       </div>
 
       <div class="row"></div>
@@ -463,6 +463,61 @@
 
     <div class="col s12 divider grey"></div>
 
+    <div class="col s12">
+      <div class="row"></div>
+      <div class="col s12 left">
+        <span class="left" style="font-weight: 600; margin-right:20px;">9. สิ่งเสพติด
+        </span>
+        <div class="col s3">
+          <input type="checkbox" class="filled-in" name="cannotTell9" id="cannotTell9">
+          <label for="cannotTell9">ประเมินไม่ได้</label>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+
+    {{!-- 9. สิ่งเสพติด --}}
+    <div class="col s12" id="Question9">
+      <div class="col s2">
+        <label for="">บุหรี่</label>
+        <p>
+          <div class="col s5">
+            <input type="radio" class="filled-in" id="cigarette" name="cigarette" value="cigarette" />
+            <label for="cigarette">สูบ</label>
+          </div>
+          <div class="col s7">
+            <input type="radio" class="filled-in" id="cigaretteNo" name="cigarette" value="cigaretteNo" />
+            <label for="cigaretteNo">ไม่สูบ</label>
+          </div>
+        </p>
+      </div>
+      <div class="col s3" id="cigaretteOther">
+        <input type="text" name="cigaretteOther" placeholder="(จำนวนต่อวัน)">
+      </div>
+
+      <div class="col s2">
+        <label for="">สุรา</label>
+        <p>
+          <div class="col s5">
+            <input type="radio" class="filled-in" id="alcohol" name="alcohol" value="alcohol" />
+            <label for="alcohol">ดื่ม</label>
+          </div>
+          <div class="col s7">
+            <input type="radio" class="filled-in" id="alcoholNo" name="alcohol" value="alcoholNo" />
+            <label for="alcoholNo">ไม่ดื่ม</label>
+          </div>
+        </p>
+      </div>
+      <div class="col s3" id="alcoholOther">
+        <input type="text" name="alcoholOther" placeholder="(จำนวนต่อวัน)">
+      </div>
+
+
+
+      <div class="row"></div>
+    </div>
+    <div class="col s12 divider grey"></div>
+
     <div class="row"></div>
 
     <div class="col s12">
@@ -484,7 +539,6 @@
         <input type="text" name="wardInput" placeholder="Ward" value="{{patient.ward}}">
       </div>
 
-      <div class="row"></div>
 
       <div class="col s10"></div>
       <div class="col s2">
