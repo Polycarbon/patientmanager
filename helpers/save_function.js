@@ -365,6 +365,23 @@ module.exports = {
       tel: req.body.tel,
       contactPlace: req.body.contactPlace,
 
+      cannotTell6: req.body.cannotTell6,
+      sleep: req.body.sleep,
+      sleepProblems: req.body.sleepProblems,
+      sleepProblemsOther: req.body.sleepProblemsOther,
+      usePill: req.body.usePill,
+      usePillOther: req.body.usePillOther,
+
+      cannotTell7: req.body.cannotTell7,
+      numEating: req.body.numEating,
+      Food: req.body.Food,
+      foodOther: req.body.foodOther,
+      foodProblems: req.body.foodProblems,
+      foodProblemsOther: req.body.foodProblemsOther,
+      weight: req.body.weight,
+      downWeightOther: req.body.downWeightOther,
+      upWeightOther: req.body.upWeightOther,
+
       cannotTell8: req.body.cannotTell8,
       numUrinate: req.body.numUrinate,
       urinate: req.body.urinate,

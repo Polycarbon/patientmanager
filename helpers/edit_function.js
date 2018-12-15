@@ -569,6 +569,23 @@ module.exports = {
         form4.tel = req.body.tel;
         form4.contactPlace = req.body.contactPlace;
 
+        form4.cannotTell6 = req.body.cannotTell6;
+        form4.sleep = req.body.sleep;
+        form4.sleepProblems = req.body.sleepProblems;
+        form4.sleepProblemsOther = req.body.sleepProblemsOther;
+        form4.usePill = req.body.usePill;
+        form4.usePillOther = req.body.usePillOther;
+
+        form4.cannotTell7 = req.body.cannotTell7;
+        form4.numEating = req.body.numEating;
+        form4.Food = req.body.Food;
+        form4.foodOther = req.body.foodOther;
+        form4.foodProblems = req.body.foodProblems;
+        form4.foodProblemsOther = req.body.foodProblemsOther;
+        form4.weight = req.body.weight;
+        form4.downWeightOther = req.body.downWeightOther;
+        form4.upWeightOther = req.body.upWeightOther;
+
         form4.cannotTell8 = req.body.cannotTell8;
         form4.numUrinate = req.body.numUrinate;
         form4.urinate = req.body.urinate;

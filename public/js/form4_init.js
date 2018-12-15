@@ -28,6 +28,22 @@ const excreteOther = document.getElementsByName('excreteOther');
 const excreteBelly = document.getElementsByName('excreteBelly');
 const excreteBellyOther = document.getElementsByName('excreteBellyOther');
 
+const sleep = document.getElementsByName('sleep');
+const sleepProblems = document.getElementsByName('sleepProblems');
+const sleepProblemsOther = document.getElementsByName('sleepProblemsOther');
+const usePill = document.getElementsByName('usePill');
+const usePillOther = document.getElementsByName('usePillOther');
+
+const numEating = document.getElementsByName('numEating');
+const Food = document.getElementsByName('Food');
+const foodOther = document.getElementsByName('foodOther');
+const foodProblems = document.getElementsByName('foodProblems');
+const foodProblemsOther = document.getElementsByName('foodProblemsOther');
+const weight = document.getElementsByName('weight');
+const downWeightOther = document.getElementsByName('downWeightOther');
+const upWeightOther = document.getElementsByName('upWeightOther');
+
+
 const cigarette = document.getElementsByName('cigarette');
 const cigaretteOther = document.getElementsByName('cigaretteOther');
 const alcohol = document.getElementsByName('alcohol');
@@ -261,6 +277,125 @@ if ($('#surgicalHistory').is(':checked')) {
   $('#surgicalHistoryOther').hide();
 }
 
+// Show/Hide sleepProblemsOther if checked/unchecked
+if ($('#sleepProblems').is(':checked')) {
+  $('#sleepProblemsOther').show();
+} else {
+  $('#sleepProblemsOther').hide();
+}
+// Show sleepProblemsOther when sleepProblemsNo is selected
+$('#sleepProblems').change(function () {
+  if ($('#sleepProblems').is(':checked')) {
+    $('#sleepProblemsOther').fadeIn();
+  }
+});
+//  Hide and Reset value sleepProblemsOther when sleepProblems is selected
+$('#sleepProblemsNo').change(function () {
+  if ($('#sleepProblemsNo').is(':checked')) {
+    $('#sleepProblemsOther').fadeOut();
+    sleepProblemsOther[0].value = "";
+  }
+});
+
+// Show/Hide usePillOther if checked/unchecked
+if ($('#usePill').is(':checked')) {
+  $('#usePillOther').show();
+} else {
+  $('#usePillOther').hide();
+}
+// Show usePillOther when usePillNo is selected
+$('#usePill').change(function () {
+  if ($('#usePill').is(':checked')) {
+    $('#usePillOther').fadeIn();
+  }
+});
+//  Hide and Reset value usePillOther when usePill is selected
+$('#usePillNo').change(function () {
+  if ($('#usePillNo').is(':checked')) {
+    $('#usePillOther').fadeOut();
+    usePillOther[0].value = "";
+  }
+});
+
+
+// Show/Hide sleepProblemsOther if checked/unchecked
+if ($('#sicknessFood').is(':checked')) {
+  $('#foodOther').show();
+} else {
+  $('#foodOther').hide();
+}
+// Show foodOther when sicknessFood is selected
+$('#sicknessFood').change(function () {
+  if ($('#sicknessFood').is(':checked')) {
+    $('#foodOther').fadeIn();
+  }
+});
+//  Hide and Reset value foodOther when sleepProblems is selected
+$('#sicknessFood').change(function () {
+  if ($('#sicknessFood').is(':checked')) {
+  }
+  else {
+    $('#foodOther').fadeOut();
+    foodOther[0].value = "";
+  }
+});
+
+// Show/Hide foodProblemsOther if checked/unchecked
+if ($('#foodProblems').is(':checked')) {
+  $('#foodProblemsOther').show();
+} else {
+  $('#foodProblemsOther').hide();
+}
+// Show foodProblemsOther when foodProblemsNo is selected
+$('#foodProblems').change(function () {
+  if ($('#foodProblems').is(':checked')) {
+    $('#foodProblemsOther').fadeIn();
+  }
+});
+//  Hide and Reset value foodProblemsOther when foodProblems is selected
+$('#foodProblemsNo').change(function () {
+  if ($('#foodProblemsNo').is(':checked')) {
+    $('#foodProblemsOther').fadeOut();
+    foodProblemsOther[0].value = "";
+  }
+});
+
+// Show/Hide weightOther if checked/unchecked
+if ($('#upWeight').is(':checked')) {
+  $('#upWeightOther').show();
+} else {
+  $('#upWeightOther').hide();
+}
+if ($('#downWeight').is(':checked')) {
+  $('#downWeightOther').show();
+} else {
+  $('#downWeightOther').hide();
+}
+// Show upWeightOther when upWeight is selected
+$('#upWeight').change(function () {
+  if ($('#upWeight').is(':checked')) {
+    $('#upWeightOther').fadeIn();
+  }
+});
+// Show downWeightOther when downWeight is selected
+$('#downWeight').change(function () {
+  if ($('#downWeight').is(':checked')) {
+    $('#downWeightOther').fadeIn();
+  }
+});
+
+//  Hide and Reset value weightOther when weight is selected
+$('#normalWeight').change(function () {
+  if ($('#normalWeight').is(':checked')) {
+    $('#upWeightOther').fadeOut();
+    upWeightOther[0].value = "";
+    $('#downWeightOther').fadeOut();
+    downWeightOther[0].value = "";
+  }
+});
+
+
+
 // Show/Hide urinateOther if checked/unchecked
 if ($('#urinateNo').is(':checked')) {
   $('#urinateOther').show();
@@ -397,6 +532,69 @@ if ($('#cannotTell3').is(':checked')) {
   $('#Question3').hide();
 } else {
   $('#Question3').show();
+}
+
+// Hide & reset Question9 inputs when cannotTell9 is selected
+$('#cannotTell6').change(function () {
+  if ($('#cannotTell6').is(':checked')) {
+    $('#Question6').fadeOut();
+
+    sleep[0].value = "";
+    sleepProblems[0].checked = false;
+    sleepProblems[1].checked = false;
+    sleepProblemsOther[0].value = "";
+    usePill[0].checked = false;
+    usePill[1].checked = false;
+    usePillOther[0].value = "";
+
+    $('#sleepProblemsOther').hide();
+    $('#usePillOther').hide();
+
+  } else {
+    $('#Question6').fadeIn();
+  }
+});
+// Show/Hide  if checked/unchecked
+if ($('#cannotTell6').is(':checked')) {
+  $('#Question6').hide();
+} else {
+  $('#Question6').show();
+}
+
+// Hide & reset Question7 inputs when cannotTell7 is selected
+$('#cannotTell7').change(function () {
+  if ($('#cannotTell7').is(':checked')) {
+    $('#Question7').fadeOut();
+
+    numEating[0].value = "";
+    Food[0].checked = false;
+    Food[1].checked = false;
+    Food[2].checked = false;
+    Food[3].checked = false;
+    foodOther[0].value = "";
+    foodProblems[0].checked = false;
+    foodProblems[1].checked = false;
+    foodProblemsOther[0].value = "";
+    weight[0].checked = false;
+    weight[1].checked = false;
+    weight[2].checked = false;
+    downWeightOther[0].value = "";
+    upWeightOther[0].value = "";
+
+    $('#foodOther').hide();
+    $('#foodProblemsOther').hide();
+    $('#downWeightOther').hide();
+    $('#upWeightOther').hide();
+
+  } else {
+    $('#Question7').fadeIn();
+  }
+});
+// Show/Hide  if checked/unchecked
+if ($('#cannotTell7').is(':checked')) {
+  $('#Question7').hide();
+} else {
+  $('#Question7').show();
 }
 
 // Hide & reset Question8 inputs when cannotTell8 is selected

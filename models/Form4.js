@@ -142,6 +142,53 @@ const Form4 = new Schema({
     type: String
   },
 
+  cannotTell6: {
+    type: String
+  },
+  sleep: {
+    type: Number
+  },
+  sleepProblems: {
+    type: String
+  },
+  sleepProblemsOther: {
+    type: String
+  },
+  usePill: {
+    type: String
+  },
+  usePillOther: {
+    type: String
+  },
+
+  cannotTell7: {
+    type: String
+  },
+  numEating: {
+    type: Number
+  },
+  Food: {
+    type: String
+  },
+  foodOther: {
+    type: String
+  },
+  foodProblems: {
+    type: String
+  },
+  foodProblemsOther: {
+    type: String
+  },
+  weight: {
+    type: String
+  },
+  downWeightOther: {
+    type: Number
+  },
+  upWeightOther: {
+    type: Number
+  },
+
   cannotTell8: {
     type: String
   },

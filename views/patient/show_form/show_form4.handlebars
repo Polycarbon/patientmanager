@@ -481,6 +481,167 @@
   </div>
 
   <div class="col s12 divider grey"></div>
+  <div class="col s12">
+    <div class="row"></div>
+    <div class="col s12 left">
+      <span class="left" style="font-weight: 600; margin-right:20px;">6. การพักผ่อน
+      </span>
+      <div class="col s3">
+        <input type="checkbox" class="filled-in" name="cannotTell6" id="cannotTell6" {{#if form4.cannotTell6}} checked="checked"
+          {{/if}} disabled>
+        <label for="cannotTell6">ประเมินไม่ได้</label>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+  {{!-- 6. การพักผ่อน ประเมินไม่ได้ --}}
+  <div class="col s12" id="Question6">
+    <div class="col s2">
+      <label>นอน(ชม./วัน)</label>
+      <input type="number" name="sleep" placeholder="นอน(ชม./วัน)" value="{{form4.sleep}}" readonly>
+    </div>
+    <div class="row"></div>
+    <div class="col s3">
+      <label for="">ปัญหาการนอน</label>
+      <p>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="sleepProblemsNo" name="sleepProblems" value="sleepProblemsNo"
+            {{setChecked 'sleepProblemsNo' form4.sleepProblems}} disabled />
+          <label for="sleepProblemsNo">ไม่มี</label>
+        </div>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="sleepProblems" name="sleepProblems" value="sleepProblems"
+            {{setChecked 'sleepProblems' form4.sleepProblems}} disabled />
+          <label for="sleepProblems">มี</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s3" id="sleepProblemsOther">
+      <label></label>
+      <input type="text" name="sleepProblemsOther" placeholder="ระบุ" value="{{form4.sleepProblemsOther}}" readonly>
+    </div>
+    <div class="col s3">
+      <label for="">การใช้ยา</label>
+      <p>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="usePillNo" name="usePill" value="usePillNo"
+            {{setChecked 'usePillNo' form4.usePill}} disabled />
+          <label for="usePillNo">ไม่ใช้</label>
+        </div>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="usePill" name="usePill" value="usePill"
+            {{setChecked 'usePill' form4.usePill}} disabled />
+          <label for="usePill">ใช้</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s3" id="usePillOther">
+      <label></label>
+      <input type="text" name="usePillOther" placeholder="ระบุ" value="{{form4.usePillOther}}" readonly>
+    </div>
+  </div>
+
+  <div class="row"></div>
+  <div class="col s12 divider grey"></div>
+
+  <div class="col s12">
+    <div class="row"></div>
+    <div class="col s12 left">
+      <span class="left" style="font-weight: 600; margin-right:20px;">7. โภชนาการและการเผาผลาญ
+      </span>
+      <div class="col s3">
+        <input type="checkbox" class="filled-in" name="cannotTell7" id="cannotTell7" {{#if form4.cannotTell7}} checked="checked"
+          {{/if}} disabled>
+        <label for="cannotTell7">ประเมินไม่ได้</label>
+      </div>
+    </div>
+    <div class="row"></div>
+  </div>
+
+  {{!-- 7.โภชนาการและการเผาผลาญ ประเมินไม่ได้ --}}
+  <div class="col s12" id="Question7">
+    <div class="col s6">
+
+      <div class="col s5">
+        <label>รับประทานอาหาร(มื้อ/วัน)</label>
+        <input type="number" name="numEating" placeholder="รับประทานอาหาร(มื้อ/วัน)" value="{{form4.numEating}}"
+          readonly>
+      </div>
+      <div class="col s3">
+        <input type="radio" class="filled-in" id="softFood" name="Food" value="softFood"
+          {{setChecked 'softFood' form4.Food}} disabled />
+        <label for="softFood">อาหารอ่อน</label>
+      </div>
+      <div class="col s4">
+        <input type="radio" class="filled-in" id="normalFood" name="Food" value="normalFood"
+          {{setChecked 'normalFood' form4.Food}} disabled />
+        <label for="normalFood">อาหารธรรมดา</label>
+      </div>
+      <div class="col s3">
+        <input type="radio" class="filled-in" id="hoseFood" name="Food" value="hoseFood"
+          {{setChecked 'hoseFood' form4.Food}} disabled />
+        <label for="hoseFood">ทางสายยาง</label>
+      </div>
+      <div class="col s4">
+        <input type="radio" class="filled-in" id="sicknessFood" name="Food" value="sicknessFood"
+          {{setChecked 'sicknessFood' form4.Food}} disabled />
+        <label for="sicknessFood">อาหารเฉพาะโรค</label>
+      </div>
+    </div>
+    <div class="col s6">
+      <label></label>
+      <input type="text" name="foodOther" placeholder="ระบุ" value="{{form4.foodOther}}" readonly>
+    </div>
+    <div class="row"></div>
+    <div class="col s2">
+      <label for="">ปัญหาในการรับประทานอาหาร</label>
+      <p>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="foodProblemsNo" name="foodProblems" value="foodProblemsNo"
+            {{setChecked 'foodProblemsNo' form4.foodProblems}} disabled />
+          <label for="foodProblemsNo">ไม่มี</label>
+        </div>
+        <div class="col s6">
+          <input type="radio" class="filled-in" id="foodProblems" name="foodProblems" value="foodProblems"
+            {{setChecked 'foodProblems' form4.foodProblems}} disabled />
+          <label for="foodProblems">มี</label>
+        </div>
+      </p>
+    </div>
+    <div class="col s10" id="foodProblemsOther">
+      <label></label>
+      <input type="text" name="foodProblemsOther" placeholder="ระบุ" value="{{form4.foodProblemsOther}}" readonly>
+    </div>
+    <div class="row"></div>
+    <div class="col s4">
+      <label for="">การเปลี่ยนแปลงน้ำหนักตัว</label>
+      <p>
+        <div class="col s4">
+          <input type="radio" class="filled-in" id="normalWeight" name="weight" value="normalWeight"
+            {{setChecked 'normalWeight' form4.weight}} disabled />
+          <label for="normalWeight">ปกติ</label>
+        </div>
+        <div class="col s4">
+          <input type="radio" class="filled-in" id="upWeight" name="weight" value="upWeight"
+            {{setChecked 'upWeight' form4.weight}} disabled />
+          <label for="upWeight">เพิ่มขึ้น</label>
+        </div>
+        <div class="col s4">
+          <input type="radio" class="filled-in" id="downWeight" name="weight" value="downWeight"
+            {{setChecked 'downWeight' form4.weight}} disabled />
+          <label for="downWeight">ลดลง</label>
+        </div>
+      </p>
+    </div>
+    <div class="col 3">
+      <label for="">เพิ่มขึ้น/ลดลง (kg.)</label>
+      <input type="number" name="downWeightOther" placeholder="kg." value="{{form4.downWeightOther}}" readonly>
+      <input type="number" name="upWeightOther" placeholder="kg." value="{{form4.upWeightOther}}" hidden>
+    </div>
+
+  </div>
+  <div class="row"></div>
+  <div class="col s12 divider grey"></div>
 
   <div class="col s12">
     <div class="row"></div>
@@ -672,6 +833,10 @@
 {{!-- Print Form4 --}}
 <div class="print printForm">
   <div class="printContainer1" id="form1">
+    <div class="title">
+      <p>ใบประเมินแรกรับ
+      </p>
+    </div>
     <div class="table4">
       <div class="border4">
         <div class="form4-line1">
@@ -877,11 +1042,11 @@
         <p class="value">{{form4.O2Sat}}</p>
         <p>%</p>
       </div>
-      <div class="form4-line13" style="margin-bottom:5px; ">
+      {{!-- <div class="form4-line13" style="margin-bottom:5px; ">
         <p></p>
         <p>อื่นๆ</p>
         <p class="value">{{form4.symptom}}</p>
-      </div>
+      </div> --}}
     </div>
   </div>
   <div class="printContainer2" id="form1">
@@ -1103,35 +1268,37 @@
         <p class="value">{{" "}}</p>
       </div>
     </div>
+    <br><br><br>
+
     <div class="border4">
       <div class="form4-line26">
         <p></p>
         <p><b>6. การพักผ่อน</b></p>
         <p>นอน</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.sleep}}</p>
         <p>ชั่วโมง/วัน</p>
         <p>ปัญหาการนอน</p>
         <p>
-          <input type="checkbox" name="sleep_issue1" }>
+          <input type="checkbox" name="sleep_issue1" {{setChecked 'sleepProblems' form4.sleepProblems}}>
           <label for="sleep_issue1">มี</label>
         </p>
         <p>
-          <input type="checkbox" name="sleep_issue2" }>
+          <input type="checkbox" name="sleep_issue2" {{setChecked 'sleepProblemsNo' form4.sleepProblems}}>
           <label for="sleep_issue2">ไม่มี</label>
         </p>
         <p>ระบุสาเหตุ</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.sleepProblemsOther}}</p>
         <p></p>
         <p>การใช้ยา</p>
         <p>
-          <input type="checkbox" name="use_pill1" }>
+          <input type="checkbox" name="use_pill1" {{setChecked 'usePillNo' form4.usePill}}>
           <label for="use_pill1">ไมใช้ยา</label>
         </p>
         <p>
-          <input type="checkbox" name="use_pill2" }>
+          <input type="checkbox" name="use_pill2" {{setChecked 'usePill' form4.usePill}}>
           <label for="use_pill2">ใช้ยา</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.usePillOther}}</p>
       </div>
     </div>
     <div class="border4">
@@ -1139,64 +1306,65 @@
         <p></p>
         <p><b>7. โภชนาการและการเผาผลาญ</b></p>
         <p>
-          <input type="checkbox" name="nutrient_check1" }>
-          <label for="nutrient_check1">ประเมินไม่ได้</label>
+          <input type="checkbox" name="cantMeasure7" id="cantMeasure7" {{#if form4.cannotTell7}} checked="checked"
+            {{/if}}>
+          <label for="cantMeasure7">ประเมินไม่ได้</label>
         </p>
       </div>
       <div class="form4-line28">
         <p></p>
         <p>รับประทานอาหาร</p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.numEating}}</p>
         <p>มื้อ/วัน</p>
         <p>
-          <input type="checkbox" name="food_opt1" }>
+          <input type="checkbox" name="food_opt1" {{setChecked 'softFood' form4.Food}}>
           <label for="food_opt1">อาหารอ่อน</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt2" }>
+          <input type="checkbox" name="food_opt2" {{setChecked 'normalFood' form4.Food}}>
           <label for="food_opt2">อาหารธรรมดา</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt3" }>
+          <input type="checkbox" name="food_opt3" {{setChecked 'hoseFood' form4.Food}}>
           <label for="food_opt3">ทางสายยาง</label>
         </p>
         <p>
-          <input type="checkbox" name="food_opt4" }>
+          <input type="checkbox" name="food_opt4" {{setChecked 'sicknessFood' form4.Food}}>
           <label>อาหารเฉพาะโรค</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.foodOther}}</p>
       </div>
       <div class="form4-line29">
         <p></p>
         <p>ปัญหาการรับประทานอาหาร</p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" {{setChecked 'foodProblemsNo' form4.foodProblems}}>
           <label>ไม่มี</label>
         </p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" {{setChecked 'foodProblems' form4.foodProblems}}>
           <label>มี</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.foodProblemsOther}}</p>
       </div>
       <div class="form4-line30">
         <p></p>
         <p>การเปลี่ยนแปลงน้ำหนักตัว</p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" {{setChecked 'normalWeight' form4.weight}}>
           <label>ปกติ</label>
         </p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" {{setChecked 'upWeight' form4.weight}}>
           <label>เพิ่มขึ้น</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.upWeightOther}}</p>
         <p></p>
         <p>
-          <input type="checkbox" }>
+          <input type="checkbox" {{setChecked 'downWeight' form4.weight}}>
           <label>ลดลง</label>
         </p>
-        <p class="value">{{" "}}</p>
+        <p class="value">{{form4.downWeightOther}}</p>
       </div>
     </div>
     <div class="border4">
